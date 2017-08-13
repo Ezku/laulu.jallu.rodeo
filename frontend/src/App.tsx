@@ -3,6 +3,7 @@ import * as React from 'react';
 import glamorous from 'glamorous';
 import * as css from 'glamor';
 
+import './App.css';
 import { Container, Box, Title, Hero, HeroBody } from 'bloomer';
 
 const logo = require('./logo.svg');
