@@ -1,6 +1,14 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
-import { Hero, HeroBody, Title, Container } from 'bloomer';
+import {
+  Hero,
+  HeroBody,
+  Title,
+  Navbar,
+  NavbarMenu,
+  NavbarItem,
+  Container
+} from 'bloomer';
 
 import Layout from '../theme/Layout';
 
@@ -19,5 +27,13 @@ export default () =>
             </Container>
           </HeroBody>
         </AmazingHero>
+        <Navbar className="has-shadow">
+          <Container>
+            <NavbarMenu>
+              <NavbarItem>Biisit</NavbarItem>
+              <NavbarItem>Läsyt</NavbarItem>
+            </NavbarMenu>
+          </Container>
+        </Navbar>
       </div>}
   />;
