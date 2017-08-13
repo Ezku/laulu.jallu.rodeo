@@ -49,10 +49,10 @@ export default () =>
         </Hero>
         <Navbar className="has-shadow">
           <Container>
-            <NavbarMenu>
-              <NavbarItem>Biisit</NavbarItem>
+            <NavbarBrand>
+              <NavbarItem className="is-tab is-active">Biisit</NavbarItem>
               <NavbarItem>Läsyt</NavbarItem>
-            </NavbarMenu>
+            </NavbarBrand>
           </Container>
         </Navbar>
       </div>}
