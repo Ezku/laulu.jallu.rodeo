@@ -28,8 +28,8 @@
     "eject": "react-scripts-ts eject",
     "build-css": "node-sass-chokidar src/ -o src/ --include-path ./src --include-path ./node_modules",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive --include-path ./src --include-path ./node_modules",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "npm-run-all -p watch-css watch-storybook",
+    "watch-storybook": "start-storybook -p 6006"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.4"
