@@ -28,7 +28,7 @@ export default () =>
   <Layout
     Navigation={() =>
       <div>
-        <Hero className="is-primary">
+        <Hero>
           <HeroBody>
             <Container>
               <Columns isVCentered>
