@@ -30,7 +30,7 @@ export default () =>
                 <Column>
                   <Title>laulu.jallu.rodeo</Title>
                   <Subtitle>
-                    Löydä biisit, tsekkaa läsyt, jaa omat sanoitukset
+                    Löydä biisit, tsekkaa läsyt, jaa uudet sanoitukset
                   </Subtitle>
                 </Column>
                 <Column>
