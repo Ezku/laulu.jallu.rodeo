@@ -1,4 +1,7 @@
-.PHONY: build cleanup now
+.PHONY: storybook build cleanup now
+
+storybook:
+	(cd frontend && yarn storybook)
 
 build:
 	(cd frontend && yarn build)
