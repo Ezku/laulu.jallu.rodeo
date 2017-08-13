@@ -1,6 +1,9 @@
 @import 'bulma/bulma.sass';
-$family-sans-serif: '"Roboto", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !default';
-$family-monospace: '"Roboto Mono", monospace !default';
+
+$family-sans-serif: Roboto, BlinkMacSystemFont, -apple-system, "Segoe UI",
+  "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  "Helvetica", "Arial", sans-serif;
+$family-monospace: Roboto Mono, monospace;
 
 body {
   margin: 0;
