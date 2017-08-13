@@ -16,8 +16,13 @@ import {
   NavbarItem,
   Container
 } from 'bloomer';
+import glamorous from 'glamorous';
 
 import Layout from '../theme/Layout';
+
+const MainTitle = glamorous(Title)({
+  fontFamily: 'Roboto Mono'
+});
 
 export default () =>
   <Layout
@@ -28,7 +33,7 @@ export default () =>
             <Container>
               <Columns isVCentered>
                 <Column>
-                  <Title>laulu.jallu.rodeo</Title>
+                  <MainTitle>laulu.jallu.rodeo</MainTitle>
                   <Subtitle>
                     Löydä biisit, tsekkaa läsyt, jaa uudet sanoitukset
                   </Subtitle>
