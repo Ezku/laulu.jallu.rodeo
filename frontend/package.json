@@ -11,6 +11,7 @@
     "awesome-typescript-loader": "^3.2.2",
     "bloomer": "^0.6.2",
     "bulma": "^0.5.1",
+    "font-awesome": "^4.7.0",
     "glamor": "^2.20.39",
     "glamorous": "^4.1.1",
     "node-sass-chokidar": "^0.0.3",
