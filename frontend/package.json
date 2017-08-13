@@ -7,6 +7,8 @@
     "@types/node": "^8.0.20",
     "@types/react": "^16.0.2",
     "@types/react-dom": "^15.5.2",
+    "@types/storybook__react": "^3.0.3",
+    "awesome-typescript-loader": "^3.2.2",
     "bloomer": "^0.6.2",
     "bulma": "^0.5.1",
     "node-sass-chokidar": "^0.0.3",
