@@ -1,32 +1,52 @@
 import * as React from 'react';
-import glamorous from 'glamorous';
+import 'font-awesome/css/font-awesome.css';
+
 import {
   Hero,
   HeroBody,
   Title,
+  Subtitle,
+  Columns,
+  Column,
+  Input,
+  Control,
+  Icon,
   Navbar,
-  NavbarMenu,
+  NavbarBrand,
   NavbarItem,
   Container
 } from 'bloomer';
 
 import Layout from '../theme/Layout';
 
-const AmazingHero = glamorous(Hero)({
-  background: 'linear-gradient(to right bottom, #000046, #1cb5e0)'
-});
-
 export default () =>
   <Layout
     Navigation={() =>
       <div>
-        <AmazingHero className="is-primary">
+        <Hero className="is-primary">
           <HeroBody>
             <Container>
-              <Title>laulu.jallu.rodeo</Title>
+              <Columns isVCentered>
+                <Column>
+                  <Title>laulu.jallu.rodeo</Title>
+                  <Subtitle>
+                    Löydä biisit, tsekkaa läsyt, jaa omat sanoitukset
+                  </Subtitle>
+                </Column>
+                <Column>
+                  <Control hasIcons="right">
+                    <Input
+                      isSize="large"
+                      isColor="primary"
+                      placeholder="Etsi biisiä"
+                    />
+                    <Icon isSize="large" isAlign="right" icon="search" />
+                  </Control>
+                </Column>
+              </Columns>
             </Container>
           </HeroBody>
-        </AmazingHero>
+        </Hero>
         <Navbar className="has-shadow">
           <Container>
             <NavbarMenu>
