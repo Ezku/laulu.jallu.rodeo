@@ -3,34 +3,21 @@ import * as React from 'react';
 import {
   Hero,
   HeroBody,
-  Title,
-  Subtitle,
   Columns,
   Column,
   Input,
   Control,
   Container
 } from 'bloomer';
-import glamorous from 'glamorous';
+
+import { Title, Subtitle } from './typography';
 
 import AwesomeIcon from '../components/AwesomeIcon';
 
-const Logotype = glamorous(Title)({
-  fontFamily: 'Adelle',
-  fontWeight: 900
-});
-
-const Slogan = glamorous(Subtitle)({
-  fontFamily: 'Adelle',
-  fontWeight: 300,
-  letterSpacing: '-0.01em',
-  wordSpacing: '0.01em'
-});
-
 const HeroLogoColumn = () =>
   <Column>
-    <Logotype>laulu.jallu.rodeo</Logotype>
-    <Slogan>Teekkarilaulusanoitusten mekka</Slogan>
+    <Title>laulu.jallu.rodeo</Title>
+    <Subtitle>Teekkarilaulusanoitusten mekka</Subtitle>
   </Column>;
 
 const HeroSearchColumn = () =>
