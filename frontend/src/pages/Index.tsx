@@ -20,9 +20,17 @@ import glamorous from 'glamorous';
 
 import Layout from '../theme/Layout';
 
-const MainTitle = glamorous(Title)({
-  fontFamily: 'Roboto Mono'
+const Logotype = glamorous(Title)({
+  fontFamily: 'Adelle',
+  fontWeight: 900
 });
+
+const Slogan = glamorous(Subtitle)({
+  fontFamily: 'Adelle',
+  fontWeight: 300,
+  letterSpacing: '-0.01em',
+  wordSpacing: '0.01em'
+})
 
 export default () =>
   <Layout
@@ -33,10 +41,10 @@ export default () =>
             <Container>
               <Columns isVCentered>
                 <Column>
-                  <MainTitle>laulu.jallu.rodeo</MainTitle>
-                  <Subtitle>
-                    Löydä biisit, tsekkaa läsyt, jaa uudet sanoitukset
-                  </Subtitle>
+                  <Logotype>laulu.jallu.rodeo</Logotype>
+                  <Slogan>
+                    Teekkarilaulusanoitusten mekka
+                  </Slogan>
                 </Column>
                 <Column>
                   <Control hasIcons="right">

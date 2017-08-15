@@ -7,13 +7,13 @@ export interface Props {
 }
 
 WebFontLoader.load({
-  google: {
-    families: ['Roboto:400,700', 'Roboto Mono:700']
+  typekit: {
+    id: 'cae3ngq'
   }
 });
 
 const LayoutContainer = glamorous.div({
-  fontFamily: 'Roboto, sans-serif'
+  fontFamily: 'Acumin Pro, sans-serif'
 });
 
 export default ({ Navigation }: Props) =>
