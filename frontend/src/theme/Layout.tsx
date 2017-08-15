@@ -1,19 +1,13 @@
 import * as React from 'react';
-import * as WebFontLoader from 'webfontloader';
 import glamorous from 'glamorous';
+import { sansSerifFamily } from './typography';
 
 export interface Props {
   Navigation: React.ComponentType;
 }
 
-WebFontLoader.load({
-  typekit: {
-    id: 'cae3ngq'
-  }
-});
-
 const LayoutContainer = glamorous.div({
-  fontFamily: 'Acumin Pro, sans-serif'
+  fontFamily: sansSerifFamily
 });
 
 export default ({ Navigation }: Props) =>
