@@ -3,7 +3,15 @@ import * as React from 'react';
 import { Card, CardHeader, CardContent, CardFooter, Tag } from 'bloomer';
 import glamorous from 'glamorous';
 
-import { monospaceFamily } from '../theme/typography';
+import { serifFamily, monospaceFamily } from '../theme/typography';
+
+const Name = glamorous.h2({
+  fontFamily: serifFamily,
+  fontWeight: 900,
+  fontSize: '1.618rem',
+  lineHeight: '2rem',
+  padding: '0.5rem'
+});
 
 const Lyrics = glamorous(CardContent)({
   whiteSpace: 'pre'
@@ -21,7 +29,7 @@ const AwesomeTag = glamorous(Tag)({
 export default () =>
   <Card>
     <CardHeader>
-      <h2>Koskenkorva</h2>
+      <Name>Koskenkorva</Name>
     </CardHeader>
     <Lyrics>
       <p>
