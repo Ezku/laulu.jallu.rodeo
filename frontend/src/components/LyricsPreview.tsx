@@ -14,7 +14,18 @@ const Name = glamorous.h2({
 });
 
 const Lyrics = glamorous(CardContent)({
-  whiteSpace: 'pre'
+  whiteSpace: 'pre',
+  fontFamily: serifFamily,
+  fontSize: '1.127rem',
+  lineHeight: '1.618rem',
+  fontWeight: 300
+});
+
+const Verse = glamorous.p({
+  marginBottom: '2rem',
+  ':last-child': {
+    marginBottom: 0
+  }
 });
 
 const Tags = glamorous.div({
@@ -32,11 +43,23 @@ export default () =>
       <Name>Koskenkorva</Name>
     </CardHeader>
     <Lyrics>
-      <p>
-        Nostakaamme malja, koskenkorvaa on<br />
-        väljähtyköön kalja mallas kelvoton.<br />
-        ;.; Riemuella suo, siispä veikko juo. ;.;`
-      </p>
+      <Verse>
+        Nostakaamme malja,<br />
+        koskenkorvaa on.<br />
+        Väljähtyköön kalja,<br />
+        mallas kelvoton<br />
+        :,: Riemuella suo,<br />
+        siispä veikko juo! :,:
+      </Verse>
+
+      <Verse>
+        Kalja voimallansa,<br />
+        meitä innostaa.<br />
+        Koskenkorvan kanssa<br />
+        mielet nostattaa.<br />
+        :,: Lohdutusta tuo,<br />
+        siispä veikko juo! :,:
+      </Verse>
     </Lyrics>
     <CardFooter>
       <Tags>
