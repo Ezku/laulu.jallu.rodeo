@@ -4,6 +4,9 @@ import * as Bloomer from 'bloomer';
 import * as WebFontLoader from 'webfontloader';
 
 WebFontLoader.load({
+  google: {
+    families: ['Roboto Mono:500']
+  },
   typekit: {
     id: 'cae3ngq'
   }
@@ -12,6 +15,7 @@ WebFontLoader.load({
 export const sansSerifFamily =
   '"Acumin Pro", BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif';
 export const serifFamily = 'Adelle, serif';
+export const monospaceFamily = 'Roboto Mono, monospace';
 
 export const Title = glamorous(Bloomer.Title)({
   fontFamily: serifFamily,
