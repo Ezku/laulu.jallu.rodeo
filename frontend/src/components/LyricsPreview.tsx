@@ -37,8 +37,12 @@ const AwesomeTag = glamorous(Tag)({
   margin: '0.5rem 0 0.5rem 0.5rem'
 });
 
+const AwesomeCard = glamorous(Card)({
+  borderRadius: '2px'
+});
+
 export default () =>
-  <Card>
+  <AwesomeCard>
     <CardHeader>
       <Name>Koskenkorva</Name>
     </CardHeader>
@@ -68,4 +72,4 @@ export default () =>
         <AwesomeTag>#koskenkorva</AwesomeTag>
       </Tags>
     </CardFooter>
-  </Card>;
+  </AwesomeCard>;
