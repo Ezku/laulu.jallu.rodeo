@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import { Card, CardFooter, Tag } from 'bloomer';
+import { Card, CardHeader, CardContent, CardFooter, Tag } from 'bloomer';
 import glamorous from 'glamorous';
 
 import { monospaceFamily } from '../theme/typography';
 
-const Lyrics = glamorous.div({
+const Lyrics = glamorous(CardContent)({
   whiteSpace: 'pre'
 });
 
@@ -20,7 +20,9 @@ const AwesomeTag = glamorous(Tag)({
 
 export default () =>
   <Card>
-    <h2>Koskenkorva</h2>
+    <CardHeader>
+      <h2>Koskenkorva</h2>
+    </CardHeader>
     <Lyrics>
       <p>
         Nostakaamme malja, koskenkorvaa on<br />
