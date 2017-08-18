@@ -10,6 +10,8 @@ import {
   Container
 } from 'bloomer';
 
+import glamorous from 'glamorous';
+
 import { Title, Subtitle } from './typography';
 
 import AwesomeIcon from '../components/AwesomeIcon';
@@ -28,8 +30,12 @@ const HeroSearchColumn = () =>
     </Control>
   </Column>;
 
+const AwesomeHero = glamorous(Hero)({
+  backgroundColor: '#FFF'
+});
+
 export default () =>
-  <Hero>
+  <AwesomeHero>
     <HeroBody>
       <Container>
         <Columns isVCentered>
@@ -38,4 +44,4 @@ export default () =>
         </Columns>
       </Container>
     </HeroBody>
-  </Hero>;
+  </AwesomeHero>;
