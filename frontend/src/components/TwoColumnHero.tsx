@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Hero, HeroBody, Columns, Column, Container } from 'bloomer';
+import { Hero, HeroBody, Columns, Container } from 'bloomer';
 
 import glamorous from 'glamorous';
 
@@ -18,12 +18,8 @@ export default ({ left, right }: Props) =>
     <HeroBody>
       <Container>
         <Columns isVCentered>
-          <Column>
-            {left}
-          </Column>
-          <Column>
-            {right}
-          </Column>
+          {left}
+          {right}
         </Columns>
       </Container>
     </HeroBody>
