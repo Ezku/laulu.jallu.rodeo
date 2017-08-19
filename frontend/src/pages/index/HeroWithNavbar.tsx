@@ -4,8 +4,10 @@ import { Navbar, NavbarBrand, NavbarItem, Container } from 'bloomer';
 import { Column, Input, Control } from 'bloomer';
 
 import glamorous from 'glamorous';
+import { css } from 'glamor';
 
 import { serif } from 'app/skin/fonts';
+import hasShadow from 'app/skin/hasShadow';
 import { Title, Subtitle } from 'app/theme/typography';
 
 import AwesomeIcon from 'app/components/AwesomeIcon';
@@ -26,9 +28,9 @@ const HeroSearchColumn = () =>
   </Column>;
 
 const HeroWithNavbar = () =>
-  <glamorous.Div css={serif}>
+  <glamorous.Div css={css(serif, hasShadow)}>
     <TwoColumnHero left={<HeroLogoColumn />} right={<HeroSearchColumn />} />
-    <Navbar className="has-shadow">
+    <Navbar>
       <Container>
         <NavbarBrand>
           <NavbarItem className="is-tab is-active">Biisit</NavbarItem>
