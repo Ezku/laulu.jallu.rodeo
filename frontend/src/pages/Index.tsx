@@ -37,8 +37,8 @@ export default () =>
   <Layout
     Navigation={HeroWithNavbar}
     Content={() =>
-      <Columns isCentered>
-        <Column isSize={8}>
+      <Columns>
+        <Column isSize={4}>
           <LyricsPreview />
         </Column>
       </Columns>}
