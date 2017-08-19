@@ -14,7 +14,7 @@ import glamorous from 'glamorous';
 
 import { Title, Subtitle } from './typography';
 
-import AwesomeIcon from '../components/AwesomeIcon';
+import AwesomeIcon from 'app/components/AwesomeIcon';
 
 const HeroLogoColumn = () =>
   <Column>

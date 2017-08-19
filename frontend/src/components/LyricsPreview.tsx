@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Card, CardContent, CardFooter, Tag } from 'bloomer';
 import glamorous from 'glamorous';
 
-import { serifFamily, monospaceFamily } from '../theme/typography';
+import { serifFamily, monospaceFamily } from 'app/theme/typography';
 
 const Name = glamorous.h2({
   fontFamily: serifFamily,

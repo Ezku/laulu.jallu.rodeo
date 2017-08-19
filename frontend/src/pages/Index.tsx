@@ -10,12 +10,12 @@ import {
 } from 'bloomer';
 
 import glamorous from 'glamorous';
-import { serifFamily } from '../theme/typography';
+import { serifFamily } from 'app/theme/typography';
 
-import Layout from '../theme/Layout';
-import Hero from '../theme/Hero';
+import Layout from 'app/theme/Layout';
+import Hero from 'app/theme/Hero';
 
-import LyricsPreview from '../components/LyricsPreview';
+import LyricsPreview from 'app/components/LyricsPreview';
 
 const HeroWithNavbar = glamorous(() =>
   <div>
