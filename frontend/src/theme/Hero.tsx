@@ -1,20 +1,11 @@
 import * as React from 'react';
 
-import {
-  Hero,
-  HeroBody,
-  Columns,
-  Column,
-  Input,
-  Control,
-  Container
-} from 'bloomer';
-
-import glamorous from 'glamorous';
+import { Column, Input, Control } from 'bloomer';
 
 import { Title, Subtitle } from './typography';
 
 import AwesomeIcon from 'app/components/AwesomeIcon';
+import TwoColumnHero from 'app/components/TwoColumnHero';
 
 const HeroLogoColumn = () =>
   <Column>
@@ -30,18 +21,5 @@ const HeroSearchColumn = () =>
     </Control>
   </Column>;
 
-const AwesomeHero = glamorous(Hero)({
-  backgroundColor: '#FFF'
-});
-
 export default () =>
-  <AwesomeHero>
-    <HeroBody>
-      <Container>
-        <Columns isVCentered>
-          <HeroLogoColumn />
-          <HeroSearchColumn />
-        </Columns>
-      </Container>
-    </HeroBody>
-  </AwesomeHero>;
+  <TwoColumnHero left={<HeroLogoColumn />} right={<HeroSearchColumn />} />;
