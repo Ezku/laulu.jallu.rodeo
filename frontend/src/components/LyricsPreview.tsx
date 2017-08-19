@@ -14,9 +14,9 @@ const Name = glamorous.h2({
 });
 
 const Lyrics = glamorous(CardContent)({
-  whiteSpace: 'pre',
+  whiteSpace: 'pre-wrap',
   fontFamily: serifFamily,
-  fontSize: '1.127rem',
+  fontSize: '16px',
   lineHeight: '1.618rem',
   fontWeight: 300
 });
