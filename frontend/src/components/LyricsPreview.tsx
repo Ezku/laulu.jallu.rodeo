@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Card, CardHeader, CardContent, CardFooter, Tag } from 'bloomer';
+import { Card, CardContent, CardFooter, Tag } from 'bloomer';
 import glamorous from 'glamorous';
 
 import { serifFamily, monospaceFamily } from '../theme/typography';
@@ -8,9 +8,9 @@ import { serifFamily, monospaceFamily } from '../theme/typography';
 const Name = glamorous.h2({
   fontFamily: serifFamily,
   fontWeight: 900,
-  fontSize: '1.618rem',
-  lineHeight: '2rem',
-  padding: '0.5rem'
+  fontSize: '24px',
+  lineHeight: '1em',
+  marginBottom: '16px'
 });
 
 const Lyrics = glamorous(CardContent)({
@@ -43,10 +43,8 @@ const AwesomeCard = glamorous(Card)({
 
 export default () =>
   <AwesomeCard>
-    <CardHeader>
-      <Name>Koskenkorva</Name>
-    </CardHeader>
     <Lyrics>
+      <Name>Koskenkorva</Name>
       <Verse>
         Nostakaamme malja,<br />
         koskenkorvaa on.<br />
