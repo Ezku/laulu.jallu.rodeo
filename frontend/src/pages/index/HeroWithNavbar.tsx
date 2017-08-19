@@ -6,7 +6,7 @@ import { Column, Input, Control } from 'bloomer';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 
-import { serif } from 'app/skin/fonts';
+import { serif, sansSerif } from 'app/skin/fonts';
 import hasShadow from 'app/skin/hasShadow';
 import { Title, Subtitle } from 'app/theme/typography';
 
@@ -30,7 +30,7 @@ const HeroSearchColumn = () =>
 const HeroWithNavbar = () =>
   <glamorous.Div css={css(serif, hasShadow)}>
     <TwoColumnHero left={<HeroLogoColumn />} right={<HeroSearchColumn />} />
-    <Navbar>
+    <Navbar {...sansSerif}>
       <Container>
         <NavbarBrand>
           <NavbarItem className="is-tab is-active">Biisit</NavbarItem>
