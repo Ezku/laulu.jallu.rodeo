@@ -1,6 +1,6 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
-import { sansSerifFamily, monospaceFamily } from './typography';
+import { monospaceFamily } from './typography';
 
 import { Tile, Section, Container } from 'bloomer';
 
@@ -8,10 +8,6 @@ export interface Props {
   Navigation: React.ComponentType;
   Content: React.ComponentType;
 }
-
-const LayoutContainer = glamorous.div({
-  fontFamily: sansSerifFamily
-});
 
 const CategoryHeader = glamorous.h2({
   fontFamily: monospaceFamily,
@@ -25,7 +21,7 @@ const CategoryHeader = glamorous.h2({
 });
 
 export default ({ Navigation, Content }: Props) =>
-  <LayoutContainer>
+  <div>
     <Navigation />
     <Section>
       <Container>
@@ -39,4 +35,4 @@ export default ({ Navigation, Content }: Props) =>
         </Tile>
       </Container>
     </Section>
-  </LayoutContainer>;
+  </div>;
