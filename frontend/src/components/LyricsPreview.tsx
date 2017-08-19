@@ -41,6 +41,16 @@ const AwesomeCard = glamorous(Card)({
   borderRadius: '2px'
 });
 
+const Line = glamorous.div({
+  paddingLeft: '1rem',
+  textIndent: '-1rem',
+  ':after': {
+    content: '↲',
+    fontSize: '0.618rem',
+    marginLeft: '0.5rem'
+  }
+});
+
 const AwesomeFooter = glamorous(CardFooter)({
   backgroundColor: '#fafbfc'
 });
@@ -50,21 +60,9 @@ export default () =>
     <Lyrics>
       <Name>Koskenkorva</Name>
       <Verse>
-        Nostakaamme malja,<br />
-        koskenkorvaa on.<br />
-        Väljähtyköön kalja,<br />
-        mallas kelvoton<br />
-        :,: Riemuella suo,<br />
-        siispä veikko juo! :,:
-      </Verse>
-
-      <Verse>
-        Kalja voimallansa,<br />
-        meitä innostaa.<br />
-        Koskenkorvan kanssa<br />
-        mielet nostattaa.<br />
-        :,: Lohdutusta tuo,<br />
-        siispä veikko juo! :,:
+        <Line>Nostakaamme malja, koskenkorvaa on.</Line>
+        <Line>Väljähtyköön kalja, mallas kelvoton</Line>
+        <Line>:,: Riemuella suo, siispä veikko juo! :,:</Line>
       </Verse>
     </Lyrics>
     <AwesomeFooter>
