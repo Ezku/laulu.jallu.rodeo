@@ -15,7 +15,7 @@ import { serif } from 'app/skin/fonts';
 import Layout from 'app/theme/Layout';
 import Hero from 'app/theme/Hero';
 
-import LyricsPreview from 'app/components/LyricsPreview';
+import LyricsPreview from './index/LyricsPreview';
 
 const HeroWithNavbar = () =>
   <glamorous.Div css={serif}>
