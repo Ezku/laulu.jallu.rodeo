@@ -1,25 +1,27 @@
 import * as React from 'react';
-
-import { Card, CardContent, CardFooter, Tag } from 'bloomer';
 import glamorous from 'glamorous';
+import { css } from 'glamor';
+import { Card, CardContent, CardFooter, Tag } from 'bloomer';
 
-import { serifFamily, monospaceFamily } from 'app/theme/typography';
+import { serif, monospace } from 'app/skin/fonts';
 
-const Name = glamorous.h2({
-  fontFamily: serifFamily,
-  fontWeight: 900,
-  fontSize: '24px',
-  lineHeight: '1em',
-  marginBottom: '16px'
-});
+const Name = glamorous.h2(
+  css(serif, {
+    fontWeight: 900,
+    fontSize: '24px',
+    lineHeight: '1em',
+    marginBottom: '16px'
+  })
+);
 
-const Lyrics = glamorous(CardContent)({
-  whiteSpace: 'pre-wrap',
-  fontFamily: serifFamily,
-  fontSize: '16px',
-  lineHeight: '1.618rem',
-  fontWeight: 300
-});
+const Lyrics = glamorous(CardContent)(
+  css(serif, {
+    whiteSpace: 'pre-wrap',
+    fontSize: '16px',
+    lineHeight: '1.618rem',
+    fontWeight: 300
+  })
+);
 
 const Verse = glamorous.p({
   marginBottom: '2rem',
@@ -28,11 +30,12 @@ const Verse = glamorous.p({
   }
 });
 
-const AwesomeTags = glamorous.div({
-  fontFamily: monospaceFamily,
-  weight: '500',
-  fontSize: '0.7rem'
-});
+const AwesomeTags = glamorous.div(
+  css(monospace, {
+    weight: '500',
+    fontSize: '0.7rem'
+  })
+);
 const AwesomeTag = glamorous(Tag)({
   margin: '0.5rem 0 0.5rem 0.5rem'
 });

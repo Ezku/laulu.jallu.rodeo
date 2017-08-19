@@ -10,15 +10,15 @@ import {
 } from 'bloomer';
 
 import glamorous from 'glamorous';
-import { serifFamily } from 'app/theme/typography';
+import { serif } from 'app/skin/fonts';
 
 import Layout from 'app/theme/Layout';
 import Hero from 'app/theme/Hero';
 
 import LyricsPreview from 'app/components/LyricsPreview';
 
-const HeroWithNavbar = glamorous(() =>
-  <div>
+const HeroWithNavbar = () =>
+  <glamorous.Div css={serif}>
     <Hero />
     <Navbar className="has-shadow">
       <Container>
@@ -28,10 +28,7 @@ const HeroWithNavbar = glamorous(() =>
         </NavbarBrand>
       </Container>
     </Navbar>
-  </div>
-)({
-  fontFamily: serifFamily
-});
+  </glamorous.Div>;
 
 export default () =>
   <Layout
