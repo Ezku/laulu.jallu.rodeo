@@ -28,7 +28,7 @@ const Verse = glamorous.p({
   }
 });
 
-const Tags = glamorous.div({
+const AwesomeTags = glamorous.div({
   fontFamily: monospaceFamily,
   weight: '500',
   fontSize: '0.7rem'
@@ -39,6 +39,10 @@ const AwesomeTag = glamorous(Tag)({
 
 const AwesomeCard = glamorous(Card)({
   borderRadius: '2px'
+});
+
+const AwesomeFooter = glamorous(CardFooter)({
+  backgroundColor: '#fafbfc'
 });
 
 export default () =>
@@ -63,11 +67,11 @@ export default () =>
         siispä veikko juo! :,:
       </Verse>
     </Lyrics>
-    <CardFooter>
-      <Tags>
+    <AwesomeFooter>
+      <AwesomeTags>
         <AwesomeTag>#herkkää</AwesomeTag>
         <AwesomeTag>#lyyristä</AwesomeTag>
         <AwesomeTag>#koskenkorva</AwesomeTag>
-      </Tags>
-    </CardFooter>
+      </AwesomeTags>
+    </AwesomeFooter>
   </AwesomeCard>;
