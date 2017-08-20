@@ -3,7 +3,7 @@ import glamorous from 'glamorous';
 import { css } from 'glamor';
 import { Card, CardContent, CardFooter, Tag } from 'bloomer';
 
-import { serif, monospace } from 'app/skin/fonts';
+import { serif, sansSerif, monospace } from 'app/skin/fonts';
 
 const Name = glamorous.h2(
   css(serif, {
@@ -15,7 +15,7 @@ const Name = glamorous.h2(
 );
 
 const Lyrics = glamorous(CardContent)(
-  css(serif, {
+  css(sansSerif, {
     whiteSpace: 'pre-wrap',
     fontSize: '16px',
     lineHeight: '1.618rem',
