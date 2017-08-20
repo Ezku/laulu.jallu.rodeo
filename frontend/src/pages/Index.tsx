@@ -17,7 +17,8 @@ const CategoryHeader = glamorous.h2(
     textTransform: 'uppercase',
     letterSpacing: '0.2rem',
     marginBottom: '2rem',
-    borderBottom: '1px solid #ddd'
+    borderBottom: '1px solid #ddd',
+    '-webkit-text-stroke-width': '0.1px'
   })
 );
 
