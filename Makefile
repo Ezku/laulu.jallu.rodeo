@@ -1,4 +1,4 @@
-.PHONY: storybook build serve cleanup now
+.PHONY: storybook build serve cleanup deploy now
 
 storybook:
 	(cd frontend && yarn storybook)
@@ -12,5 +12,9 @@ serve: build
 cleanup:
 	find frontend/build -type f -name '*.js.map' -delete
 
-now: build cleanup
+deploy: build cleanup
 	(cd frontend/build && now --name laulu.jallu.rodeo --public)
+
+now: deploy
+	now alias
+	
