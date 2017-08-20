@@ -7,7 +7,7 @@ import { serif, sansSerif, monospace } from 'app/skin/fonts';
 
 const Name = glamorous.h2(
   css(serif, {
-    fontWeight: 900,
+    fontWeight: 700,
     fontSize: '24px',
     lineHeight: '1em',
     marginBottom: '16px'
