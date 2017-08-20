@@ -1,14 +1,30 @@
 import * as React from 'react';
+import { css } from 'glamor';
+import glamorous from 'glamorous';
 
 import { Navbar, NavbarBrand, NavbarItem, Container } from 'bloomer';
 import { Column, Input, Control } from 'bloomer';
-import glamorous from 'glamorous';
+import * as Bloomer from 'bloomer';
 
 import hasShadow from 'app/skin/hasShadow';
-import { Title, Subtitle } from 'app/theme/typography';
+import { serif } from 'app/skin/fonts';
 
 import AwesomeIcon from 'app/components/AwesomeIcon';
 import HeroColumns from 'app/components/HeroColumns';
+
+const Title = glamorous(Bloomer.Title)(
+  css(serif, {
+    fontWeight: 900
+  })
+);
+
+const Subtitle = glamorous(Bloomer.Subtitle)(
+  css(serif, {
+    fontWeight: 300,
+    letterSpacing: '-0.01em',
+    wordSpacing: '0.01em'
+  })
+);
 
 const HeroLogoColumn = () =>
   <Column>
