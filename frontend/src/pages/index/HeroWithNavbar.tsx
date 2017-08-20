@@ -11,7 +11,7 @@ import hasShadow from 'app/skin/hasShadow';
 import { Title, Subtitle } from 'app/theme/typography';
 
 import AwesomeIcon from 'app/components/AwesomeIcon';
-import TwoColumnHero from 'app/components/TwoColumnHero';
+import HeroColumns from 'app/components/HeroColumns';
 
 const HeroLogoColumn = () =>
   <Column>
@@ -29,7 +29,10 @@ const HeroSearchColumn = () =>
 
 const HeroWithNavbar = () =>
   <glamorous.Div css={css(serif, hasShadow)}>
-    <TwoColumnHero left={<HeroLogoColumn />} right={<HeroSearchColumn />} />
+    <HeroColumns>
+      <HeroLogoColumn />
+      <HeroSearchColumn />
+    </HeroColumns>
     <Navbar {...sansSerif}>
       <Container>
         <NavbarBrand>
