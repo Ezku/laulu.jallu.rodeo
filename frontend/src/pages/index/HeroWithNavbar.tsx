@@ -2,11 +2,8 @@ import * as React from 'react';
 
 import { Navbar, NavbarBrand, NavbarItem, Container } from 'bloomer';
 import { Column, Input, Control } from 'bloomer';
-
 import glamorous from 'glamorous';
-import { css } from 'glamor';
 
-import { serif, sansSerif } from 'app/skin/fonts';
 import hasShadow from 'app/skin/hasShadow';
 import { Title, Subtitle } from 'app/theme/typography';
 
@@ -28,12 +25,12 @@ const HeroSearchColumn = () =>
   </Column>;
 
 const HeroWithNavbar = () =>
-  <glamorous.Div css={css(serif, hasShadow)}>
+  <glamorous.Div css={hasShadow}>
     <HeroColumns>
       <HeroLogoColumn />
       <HeroSearchColumn />
     </HeroColumns>
-    <Navbar {...sansSerif}>
+    <Navbar>
       <Container>
         <NavbarBrand>
           <NavbarItem className="is-tab is-active">Biisit</NavbarItem>
