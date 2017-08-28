@@ -9,30 +9,35 @@ import { monospace } from 'app/skin/fonts';
 import Hero from './index/Hero';
 import LyricsPreview from './index/LyricsPreview';
 
-const CategoryHeader = glamorous.h2(
+const Ol = glamorous.ol(
   css(monospace, {
-    fontSize: '1.618rem',
-    lineHeight: '2rem',
-    fontWeight: 700,
-    textTransform: 'uppercase',
-    letterSpacing: '0.2rem',
-    marginBottom: '2rem',
-    borderBottom: '1px solid #ddd',
-    '-webkit-text-stroke-width': '0.1px'
+    fontSize: '1rem',
+    lineHeight: '1.618rem',
+    fontWeight: 500,
+    listStylePosition: 'inside'
   })
 );
+
+const A = glamorous.a({
+  borderBottom: '1px solid',
+  display: 'inline-block'
+});
 
 export default () =>
   <Layout
     header={<Hero />}
     content={
-      <div>
-        <CategoryHeader>Biisit / #parhaat</CategoryHeader>
-        <Columns>
-          <Column isSize={4}>
-            <LyricsPreview />
-          </Column>
-        </Columns>
-      </div>
+      <Columns>
+        <Column isSize={5}>
+          <Ol>
+            <li>
+              <A href="#koskenkorva">Koskenkorva</A>
+            </li>
+          </Ol>
+        </Column>
+        <Column isSize={7}>
+          <LyricsPreview />
+        </Column>
+      </Columns>
     }
   />;
