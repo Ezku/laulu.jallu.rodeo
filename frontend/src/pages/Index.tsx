@@ -6,7 +6,7 @@ import { css } from 'glamor';
 import Layout from 'app/components/Layout';
 import { monospace } from 'app/skin/fonts';
 
-import HeroWithNavbar from './index/HeroWithNavbar';
+import Hero from './index/Hero';
 import LyricsPreview from './index/LyricsPreview';
 
 const CategoryHeader = glamorous.h2(
@@ -24,7 +24,7 @@ const CategoryHeader = glamorous.h2(
 
 export default () =>
   <Layout
-    header={<HeroWithNavbar />}
+    header={<Hero />}
     content={
       <div>
         <CategoryHeader>Biisit / #parhaat</CategoryHeader>
