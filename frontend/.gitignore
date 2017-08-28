@@ -19,3 +19,7 @@ yarn-error.log*
 
 # sass compiler output
 src/**/*.css
+
+# external node_modules but not app symlink
+node_modules/*
+!node_modules/app
