@@ -133,6 +133,10 @@
   version "8.0.20"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.20.tgz#65c7375255c24b184c215a5d0b63247c32f01c91"
 
+"@types/parsimmon@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@types/parsimmon/-/parsimmon-1.3.0.tgz#0509b11d85e7d10f83141e5d4490ba8ad5e5cbec"
+
 "@types/react-dom@^15.5.2":
   version "15.5.2"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-15.5.2.tgz#f7203c75a1728812355f037ea112611d082555e6"
@@ -5270,6 +5274,10 @@ parse5@^1.5.1:
 parseurl@~1.3.1:
   version "1.3.1"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.1.tgz#c8ab8c9223ba34888aa64a297b28853bec18da56"
+
+parsimmon@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/parsimmon/-/parsimmon-1.6.2.tgz#28fbe6b8caa38ab89f52b77f8c7743563c7d9aff"
 
 pascalcase@^0.1.1:
   version "0.1.1"
