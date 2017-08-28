@@ -34,7 +34,7 @@ const HeroLogoColumn = () =>
 const HeroSearchColumn = () =>
   <Column isSize={7}>
     <Control hasIcons="right">
-      <Input isSize="large" isColor="primary" placeholder="Etsi biisiä" />
+      <Input isSize="large" isColor="primary" placeholder="Etsi sanoitusta" />
       <AwesomeIcon isSize="large" isAlign="right" icon="search" />
     </Control>
   </Column>;
