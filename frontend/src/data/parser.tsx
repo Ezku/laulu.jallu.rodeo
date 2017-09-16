@@ -30,6 +30,11 @@ const heading = P.seqMap(
   })
 );
 
+const description = P.string('(')
+  .then(P.regex(/[^)]*/))
+  .skip(P.string(')'));
+
 export const song = {
-  heading
+  heading,
+  description
 };

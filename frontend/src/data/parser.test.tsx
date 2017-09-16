@@ -26,4 +26,13 @@ describe('song', () => {
       expect(song.heading.tryParse('1. name')).toEqual({ ordinal: '1', name: 'name' });
     });
   });
+
+  describe('description', () => {
+    it('parsers a parenthesized bit of text', () => {
+      expect(song.description.tryParse('(description)')).toEqual('description');
+      expect(song.description.tryParse(`(${['multi', 'line', 'description'].join('\n')})`)).toEqual(
+        ['multi', 'line', 'description'].join('\n')
+      );
+    });
+  });
 });
