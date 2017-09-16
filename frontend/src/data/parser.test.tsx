@@ -1,7 +1,15 @@
 import db from './laulukirja';
 
-import { tableOfContents, song, songbook } from './parser';
+import { utils, tableOfContents, song, songbook } from './parser';
 import types from './types';
+
+describe('utils', () => {
+  describe('textline', () => {
+    it('accepts a line of text', () => {
+      expect(utils.textline.tryParse('foo bar')).toEqual('foo bar');
+    });
+  });
+});
 
 describe('tableOfContents', () => {
   describe('line', () => {
