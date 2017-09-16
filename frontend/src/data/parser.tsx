@@ -1,14 +1,13 @@
 import * as P from 'parsimmon';
 
+import types from './types';
+
 const line = P.seqMap(
   P.digits,
   P.string('.')
     .then(P.whitespace)
     .then(P.regex(/.+/)),
-  (ordinal, name) => ({
-    ordinal,
-    name
-  })
+  types.tableOfContents.line
 );
 
 // tslint:disable-next-line:quotemark
@@ -24,10 +23,7 @@ const heading = P.seqMap(
   P.string('.')
     .then(P.whitespace)
     .then(P.regex(/.+/)),
-  (ordinal, name) => ({
-    ordinal,
-    name
-  })
+  types.song.heading
 );
 
 const description = P.string('(')
