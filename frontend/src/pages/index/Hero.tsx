@@ -28,13 +28,13 @@ const Subtitle = glamorous(Bloomer.Subtitle)(
 const HeroLogoColumn = () => (
   <Column isSize={5}>
     <Title>laulu.jallu.rodeo</Title>
-    <Subtitle>Teekkarilaulusanoitusten mekka</Subtitle>
+    <Subtitle>Salattujen laulujen kirja</Subtitle>
   </Column>
 );
 
 const HeroSearchColumn = () => (
   <Column isSize={7}>
-    <Control hasIcons="right">
+    <Control hasIcons="right" {...css({ display: 'none' })}>
       <Input isSize="large" isColor="primary" placeholder="Etsi sanoitusta" />
       <AwesomeIcon isSize="large" isAlign="right" icon="search" />
     </Control>
