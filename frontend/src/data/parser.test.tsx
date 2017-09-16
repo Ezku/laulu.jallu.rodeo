@@ -45,6 +45,9 @@ describe('song', () => {
     it('produces ordinal and name', () => {
       expect(song.props.heading.tryParse('1. name')).toEqual({ ordinal: '1', name: 'name' });
     });
+    it('handles empty name', () => {
+      expect(song.props.heading.tryParse('13.')).toEqual({ ordinal: '13', name: undefined });
+    });
   });
 
   describe('description', () => {
