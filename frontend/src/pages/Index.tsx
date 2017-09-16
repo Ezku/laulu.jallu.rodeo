@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Column, Columns } from 'bloomer';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
+import slugify from 'slugify';
 
 import Layout from 'app/components/Layout';
 import { monospace } from 'app/skin/fonts';
@@ -36,16 +37,16 @@ export default () => (
           <Ol>
             {songbook.tableOfContents.map(item => (
               <li key={item.ordinal}>
-                <A href="#koskenkorva">{item.name}</A>
+                {item.name ? <A href={'#' + slugify(item.name)}>{item.name}</A> : null}
               </li>
             ))}
           </Ol>
         </Column>
         <Column isSize={7}>
           {songbook.songs.map((s, index) => (
-            <div>
-              <LyricsPreview song={s} key={index} />
-              <pre>{JSON.stringify(s, null, 2)}</pre>
+            <div key={index}>
+              {s.name ? <a id={slugify(s.name)} /> : null}
+              <LyricsPreview song={s} />
             </div>
           ))}
         </Column>
