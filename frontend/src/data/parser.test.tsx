@@ -152,7 +152,7 @@ describe('songbook', () => {
           ])
         ),
         types.song.record(
-          types.song.props.heading('1', 'Ylioppilasriemua'),
+          types.song.props.heading('2', 'Ylioppilasriemua'),
           types.song.props.description(),
           types.song.props.verses([
             types.song.props.verse([
