@@ -1,5 +1,3 @@
-import db from './laulukirja';
-
 import { utils, tableOfContents, song, songbook } from './parser';
 import types from './types';
 
@@ -105,10 +103,29 @@ describe('song', () => {
   });
 });
 
+const mockDb = `
+1. One
+
+1. One
+(It's good)
+
+This is verse one
+`;
+
 describe('songbook', () => {
   describe('db', () => {
     it('successfully parses songbook db', () => {
-      expect(songbook.db.tryParse(db)).toBeDefined();
+      expect(songbook.db.tryParse(mockDb)).toEqual({
+        tableOfContents: [types.tableOfContents.props.line('1', 'One')],
+        songs: [
+          types.song.record(
+            types.song.props.heading('1', 'One'),
+            // tslint:disable-next-line:quotemark
+            types.song.props.description("It's good"),
+            types.song.props.verses([types.song.props.verse(['This is verse one'])])
+          )
+        ]
+      });
     });
   });
 });
