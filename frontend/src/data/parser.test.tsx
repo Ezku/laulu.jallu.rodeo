@@ -8,6 +8,9 @@ describe('utils', () => {
     it('accepts a line of text', () => {
       expect(utils.textline.tryParse('foo bar')).toEqual('foo bar');
     });
+    it('trims line', () => {
+      expect(utils.textline.tryParse(' <-- whitespace --> ')).toEqual('<-- whitespace -->');
+    });
   });
 });
 

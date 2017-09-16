@@ -3,7 +3,12 @@ import * as P from 'parsimmon';
 import types from './types';
 
 const newline = P.string('\n');
-const textline = P.regex(/.+/);
+const textline = P.regex(/.+/).map(s => s.trim());
+
+export const utils = {
+  newline,
+  textline
+};
 
 const tocLine = P.seqMap(
   P.digits,
