@@ -18,7 +18,7 @@ const tocLine = P.alt(
   ordinal.map(types.tableOfContents.props.line)
 );
 
-const tableOfContentsRecord = P.sepBy(tocLine, newline).map(types.tableOfContents.record);
+const tableOfContentsRecord = P.sepBy1(tocLine, newline).map(types.tableOfContents.record);
 
 export const tableOfContents = {
   props: {
