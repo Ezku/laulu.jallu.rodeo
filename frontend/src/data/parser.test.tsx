@@ -1,6 +1,7 @@
 import db from './laulukirja';
 
 import { tableOfContents, song, songbook } from './parser';
+import types from './types';
 
 describe('tableOfContents', () => {
   describe('line', () => {
@@ -40,24 +41,26 @@ describe('song', () => {
 
   describe('verse', () => {
     it('parses lines of text', () => {
-      expect(song.verse.tryParse('this was a triumph')).toEqual(['this was a triumph']);
-      expect(song.verse.tryParse(['i am making a note here:', 'huge success'].join('\n'))).toEqual([
-        'i am making a note here:',
-        'huge success'
-      ]);
+      expect(song.verse.tryParse('this was a triumph')).toEqual(
+        types.song.verse(['this was a triumph'])
+      );
+      expect(song.verse.tryParse(['i am making a note here:', 'huge success'].join('\n'))).toEqual(
+        types.song.verse(['i am making a note here:', 'huge success'])
+      );
     });
   });
 
   describe('verses', () => {
     it('parses verses separated by two or more newlines', () => {
-      expect(song.verses.tryParse('this was a triumph')).toEqual([['this was a triumph']]);
-      expect(
-        song.verses.tryParse(['i am making a note here:', 'huge success'].join('\n'))
-      ).toEqual([['i am making a note here:', 'huge success']]);
-      expect(song.verses.tryParse(['verse one', 'verse two'].join('\n\n'))).toEqual([
-        ['verse one'],
-        ['verse two']
-      ]);
+      expect(song.verses.tryParse('this was a triumph')).toEqual(
+        types.song.verses([types.song.verse(['this was a triumph'])])
+      );
+      expect(song.verses.tryParse(['i am making a note here:', 'huge success'].join('\n'))).toEqual(
+        types.song.verses([types.song.verse(['i am making a note here:', 'huge success'])])
+      );
+      expect(song.verses.tryParse(['verse one', 'verse two'].join('\n\n'))).toEqual(
+        types.song.verses([types.song.verse(['verse one']), types.song.verse(['verse two'])])
+      );
     });
   });
 });

@@ -35,8 +35,12 @@ const description = P.string('(')
 
 const multipleNewlines = P.regex(/\n{2,}/);
 
-const verse = P.sepBy(textline, newline);
-const verses = P.sepBy(verse, multipleNewlines);
+const verse = P.sepBy(textline, newline).map(types.song.verse);
+const verses = P.sepBy(verse, multipleNewlines).map(parsedVerses => {
+  return {
+    verses: parsedVerses
+  };
+});
 
 export const song = {
   heading,

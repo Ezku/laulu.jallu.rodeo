@@ -8,6 +8,14 @@ export type SongHeading = {
   name: string;
 };
 
+export type SongVerse = {
+  verse: string[];
+};
+
+export type SongVerses = {
+  verses: SongVerse[];
+};
+
 const types = {
   tableOfContents: {
     line: (ordinal: string, name: string): TableOfContentsLine => ({
@@ -19,6 +27,12 @@ const types = {
     heading: (ordinal: string, name: string) => ({
       ordinal,
       name
+    }),
+    verse: (lines: string[]): SongVerse => ({
+      verse: lines
+    }),
+    verses: (verses: SongVerse[]): SongVerses => ({
+      verses
     })
   }
 };
