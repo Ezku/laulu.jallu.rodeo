@@ -4,6 +4,7 @@ import types from './types';
 
 const newline = P.string('\n');
 const textline = P.regex(/.+/).map(s => s.trim());
+const multipleNewlines = P.regex(/\n{2,}/);
 
 export const utils = {
   newline,
@@ -41,8 +42,6 @@ const description = P.string('(')
   .atMost(1)
   .skip(P.optWhitespace)
   .map(descriptions => types.song.props.description(descriptions[0]));
-
-const multipleNewlines = P.regex(/\n{2,}/);
 
 const verse = P.sepBy(textline, newline).map(types.song.props.verse);
 const verses = P.sepBy(verse, multipleNewlines).map(parsedVerses => {

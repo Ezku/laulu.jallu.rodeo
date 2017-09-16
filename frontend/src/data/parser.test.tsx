@@ -12,6 +12,12 @@ describe('utils', () => {
       expect(utils.textline.tryParse(' <-- whitespace --> ')).toEqual('<-- whitespace -->');
     });
   });
+
+  describe('multipleNewlines', () => {
+    it('accepts more than 1 newline in a row', () => {
+      expect(utils.multipleNewlines.tryParse('\n\n\n')).toEqual('\n\n\n');
+    });
+  });
 });
 
 describe('tableOfContents', () => {
