@@ -10,8 +10,21 @@ WebFontLoader.load({
   }
 });
 
-export const sansSerifFamily =
-  'acumin-pro, BlinkMacSystemFont, -apple-system, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif';
+export const sansSerifFamily = [
+  'acumin-pro',
+  'BlinkMacSystemFont',
+  '-apple-system',
+  '"Segoe UI"',
+  '"Oxygen"',
+  '"Ubuntu"',
+  '"Cantarell"',
+  '"Fira Sans"',
+  '"Droid Sans"',
+  '"Helvetica Neue"',
+  '"Helvetica"',
+  '"Arial"',
+  'sans-serif'
+].join(', ');
 export const serifFamily = 'Adelle, serif';
 export const monospaceFamily = 'Roboto Mono, monospace';
 

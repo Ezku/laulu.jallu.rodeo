@@ -9,14 +9,14 @@ const AwesomeHero = glamorous(Hero)({
 });
 
 type Props = {
-  children: React.ReactElement<any>[];
+  children: React.ReactElement<{}>[];
 };
 
 export default ({ children }: Props) =>
   <AwesomeHero>
     <HeroBody>
       <Container>
-        <Columns isVCentered>
+        <Columns isVCentered={true}>
           {children}
         </Columns>
       </Container>
