@@ -1,3 +1,7 @@
+export type TableOfContents = {
+  tableOfContents: TableOfContentsLine[];
+};
+
 export type TableOfContentsLine = {
   ordinal: string;
   name: string;
@@ -18,9 +22,14 @@ export type SongVerses = {
 
 const types = {
   tableOfContents: {
-    line: (ordinal: string, name: string): TableOfContentsLine => ({
-      ordinal,
-      name
+    props: {
+      line: (ordinal: string, name: string): TableOfContentsLine => ({
+        ordinal,
+        name
+      })
+    },
+    record: (lines: TableOfContentsLine[]) => ({
+      tableOfContents: lines
     })
   },
   song: {

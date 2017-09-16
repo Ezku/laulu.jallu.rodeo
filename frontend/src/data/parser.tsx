@@ -10,15 +10,16 @@ const tocLine = P.seqMap(
   P.string('.')
     .then(P.whitespace)
     .then(textline),
-  types.tableOfContents.line
+  types.tableOfContents.props.line
 );
 
-// tslint:disable-next-line:quotemark
-const lines = P.sepBy(tocLine, newline);
+const tableOfContentsRecord = P.sepBy(tocLine, newline).map(types.tableOfContents.record);
 
 export const tableOfContents = {
-  line: tocLine,
-  lines
+  props: {
+    line: tocLine
+  },
+  record: tableOfContentsRecord
 };
 
 const heading = P.seqMap(
@@ -55,10 +56,10 @@ const songs = P.sepBy(
 );
 
 export const db = P.seqMap(
-  P.optWhitespace.then(tableOfContents.lines).skip(P.whitespace),
+  P.optWhitespace.then(tableOfContents.record).skip(P.whitespace),
   songs.skip(P.optWhitespace),
   (toc, s) => ({
-    tableOfContents: toc,
+    tableOfContents: toc.tableOfContents,
     songs: s
   })
 );
