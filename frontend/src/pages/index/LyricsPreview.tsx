@@ -72,7 +72,9 @@ export default (props: Props) => (
   <AwesomeCard>
     <Lyrics>
       <Header>
-        <Name>{props.song.name}</Name>
+        <Name>
+          {props.song.ordinal}. {props.song.name}
+        </Name>
         {props.song.description ? <Description>{props.song.description}</Description> : null}
       </Header>
       {props.song.verses.map((verse, verseNumber) => (
