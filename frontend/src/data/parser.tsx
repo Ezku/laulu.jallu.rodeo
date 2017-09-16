@@ -3,7 +3,7 @@ import * as P from 'parsimmon';
 import types from './types';
 
 const newline = P.string('\n');
-const textline = P.regex(/.+/).map(s => s.trim());
+const textline = P.regex(/.+/);
 const multipleNewlines = P.regex(/\n{2,}/);
 
 export const utils = {
