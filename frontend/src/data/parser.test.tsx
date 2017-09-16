@@ -45,4 +45,17 @@ describe('song', () => {
       ]);
     });
   });
+
+  describe('verses', () => {
+    it('parses verses separated by two or more newlines', () => {
+      expect(song.verses.tryParse('this was a triumph')).toEqual([['this was a triumph']]);
+      expect(
+        song.verses.tryParse(['i am making a note here:', 'huge success'].join('\n'))
+      ).toEqual([['i am making a note here:', 'huge success']]);
+      expect(song.verses.tryParse(['verse one', 'verse two'].join('\n\n'))).toEqual([
+        ['verse one'],
+        ['verse two']
+      ]);
+    });
+  });
 });
