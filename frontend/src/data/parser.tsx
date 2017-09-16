@@ -5,6 +5,7 @@ import types from './types';
 const newline = P.string('\n');
 const textline = P.regex(/.+/);
 const multipleNewlines = P.regex(/\n{2,}/);
+const ordinal = P.digits.skip(P.string('.'));
 
 export const utils = {
   newline,
@@ -12,12 +13,9 @@ export const utils = {
   multipleNewlines
 };
 
-const tocLine = P.seqMap(
-  P.digits,
-  P.string('.')
-    .then(P.whitespace)
-    .then(textline),
-  types.tableOfContents.props.line
+const tocLine = P.alt(
+  P.seqMap(ordinal, P.whitespace.then(textline), types.tableOfContents.props.line),
+  ordinal.map(types.tableOfContents.props.line)
 );
 
 const tableOfContentsRecord = P.sepBy(tocLine, newline).map(types.tableOfContents.record);
@@ -29,7 +27,6 @@ export const tableOfContents = {
   record: tableOfContentsRecord
 };
 
-const ordinal = P.digits.skip(P.string('.'));
 const heading = P.alt(
   P.seqMap(ordinal, P.whitespace.then(textline), types.song.props.heading),
   ordinal.map(types.song.props.heading)
