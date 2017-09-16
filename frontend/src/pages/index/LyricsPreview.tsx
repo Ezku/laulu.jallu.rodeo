@@ -66,12 +66,12 @@ export type Props = {
 export default (props: Props) => (
   <AwesomeCard>
     <Lyrics>
-      <Name>Koskenkorva</Name>
-      <Verse>
-        <Line>Nostakaamme malja, koskenkorvaa on.</Line>
-        <Line>Väljähtyköön kalja, mallas kelvoton</Line>
-        <Line>:,: Riemuella suo, siispä veikko juo! :,:</Line>
-      </Verse>
+      <Name>{props.song.name}</Name>
+      {props.song.verses.map((verse, verseNumber) => (
+        <Verse key={verseNumber}>
+          {verse.verse.map((line, lineNumber) => <Line key={lineNumber}>{line}</Line>)}
+        </Verse>
+      ))}
     </Lyrics>
     <AwesomeFooter>
       <AwesomeTags>
