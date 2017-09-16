@@ -16,13 +16,15 @@ const Ol = glamorous.ol(
     fontSize: '1rem',
     lineHeight: '1.618rem',
     fontWeight: 500,
-    listStylePosition: 'inside'
+    listStylePosition: 'outside',
+    marginLeft: '3rem',
+    marginRight: '1rem'
   })
 );
 
 const A = glamorous.a({
-  borderBottom: '1px solid',
-  display: 'inline-block'
+  display: 'inline',
+  textDecoration: 'none'
 });
 
 export default () => (
@@ -32,9 +34,11 @@ export default () => (
       <Columns>
         <Column isSize={5}>
           <Ol>
-            <li>
-              <A href="#koskenkorva">Koskenkorva</A>
-            </li>
+            {songbook.tableOfContents.map(item => (
+              <li key={item.ordinal}>
+                <A href="#koskenkorva">{item.name}</A>
+              </li>
+            ))}
           </Ol>
         </Column>
         <Column isSize={7}>
