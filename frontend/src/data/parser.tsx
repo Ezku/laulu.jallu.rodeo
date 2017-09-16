@@ -34,7 +34,10 @@ const description = P.string('(')
   .then(P.regex(/[^)]*/))
   .skip(P.string(')'));
 
+const verse = P.sepBy(P.regex(/.+/), P.string('\n'));
+
 export const song = {
   heading,
-  description
+  description,
+  verse
 };

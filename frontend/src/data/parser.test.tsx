@@ -35,4 +35,14 @@ describe('song', () => {
       );
     });
   });
+
+  describe('verse', () => {
+    it('parses lines of text', () => {
+      expect(song.verse.tryParse('this was a triumph')).toEqual(['this was a triumph']);
+      expect(song.verse.tryParse(['i am making a note here:', 'huge success'].join('\n'))).toEqual([
+        'i am making a note here:',
+        'huge success'
+      ]);
+    });
+  });
 });
