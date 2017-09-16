@@ -117,14 +117,6 @@ describe('song', () => {
         ])
       );
     });
-    it('cleans up lines with whitespace between verses', () => {
-      expect(song.props.verses.tryParse(['verse one', ' ', 'verse two'].join('\n'))).toEqual(
-        types.song.props.verses([
-          types.song.props.verse(['verse one']),
-          types.song.props.verse(['verse two'])
-        ])
-      );
-    });
   });
 
   describe('record', () => {
@@ -134,28 +126,6 @@ describe('song', () => {
           types.song.props.heading('1', 'name'),
           types.song.props.description(),
           types.song.props.verses([types.song.props.verse(['verse one'])])
-        )
-      );
-      expect(song.record.tryParse(['2. name', 'verse one', '', 'verse two'].join('\n'))).toEqual(
-        types.song.record(
-          types.song.props.heading('2', 'name'),
-          types.song.props.description(),
-          types.song.props.verses([
-            types.song.props.verse(['verse one']),
-            types.song.props.verse(['verse two'])
-          ])
-        )
-      );
-    });
-    it('cleans up lines with whitespace between verses', () => {
-      expect(song.record.tryParse(['2. name', 'verse one', ' ', 'verse two'].join('\n'))).toEqual(
-        types.song.record(
-          types.song.props.heading('2', 'name'),
-          types.song.props.description(),
-          types.song.props.verses([
-            types.song.props.verse(['verse one']),
-            types.song.props.verse(['verse two'])
-          ])
         )
       );
     });
