@@ -54,7 +54,7 @@ const songs = P.sepBy(
   multipleNewlines
 );
 
-export const songbook = P.seqMap(
+export const db = P.seqMap(
   P.optWhitespace.then(tableOfContents.lines).skip(P.whitespace),
   songs.skip(P.optWhitespace),
   (toc, s) => ({
@@ -62,3 +62,8 @@ export const songbook = P.seqMap(
     songs: s
   })
 );
+
+export const songbook = {
+  songs,
+  db
+};

@@ -66,7 +66,9 @@ describe('song', () => {
 });
 
 describe('songbook', () => {
-  it('successfully parses songbook db', () => {
-    expect(songbook.tryParse(db)).toBeDefined();
+  describe('db', () => {
+    it('successfully parses songbook db', () => {
+      expect(songbook.db.tryParse(db)).toBeDefined();
+    });
   });
 });
