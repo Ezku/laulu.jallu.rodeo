@@ -12,6 +12,10 @@ export type SongHeading = {
   name: string;
 };
 
+export type SongDescription = {
+  description?: string;
+};
+
 export type SongVerse = {
   verse: string[];
 };
@@ -34,10 +38,11 @@ const types = {
   },
   song: {
     props: {
-      heading: (ordinal: string, name: string) => ({
+      heading: (ordinal: string, name: string): SongHeading => ({
         ordinal,
         name
       }),
+      description: (description?: string): SongDescription => ({ description }),
       verse: (lines: string[]): SongVerse => ({
         verse: lines
       }),

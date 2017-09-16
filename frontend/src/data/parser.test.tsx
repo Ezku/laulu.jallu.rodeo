@@ -37,10 +37,12 @@ describe('song', () => {
 
   describe('description', () => {
     it('parsers a parenthesized bit of text', () => {
-      expect(song.props.description.tryParse('(description)')).toEqual('description');
+      expect(song.props.description.tryParse('(2001 vintage)')).toEqual(
+        types.song.props.description('2001 vintage')
+      );
       expect(
         song.props.description.tryParse(`(${['multi', 'line', 'description'].join('\n')})`)
-      ).toEqual(['multi', 'line', 'description'].join('\n'));
+      ).toEqual(types.song.props.description(['multi', 'line', 'description'].join('\n')));
     });
   });
 
