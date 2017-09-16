@@ -10,11 +10,13 @@ const multipleNewlines = P.regex(/\n(\s*\n)*/).map(lines =>
     .map(s => s.trim())
     .join('\n')
 );
+const onlyWhitespace = P.regex(/\s+$/);
 
 export const utils = {
   newline,
   textline,
-  multipleNewlines
+  multipleNewlines,
+  onlyWhitespace
 };
 
 const tocLine = P.seqMap(

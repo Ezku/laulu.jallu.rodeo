@@ -21,6 +21,21 @@ describe('utils', () => {
       expect(utils.multipleNewlines.tryParse('\n \n')).toEqual('\n\n');
     });
   });
+
+  describe('onlyWhitespace', () => {
+    it('does not accept an empty string', () => {
+      expect(utils.onlyWhitespace.parse('').status).toBeFalsy();
+    });
+    it('accepts a string with spaces', () => {
+      expect(utils.onlyWhitespace.parse('    ').status).toBeTruthy();
+    });
+    describe('with newline', () => {
+      it('can ensure newline is not followed by empty line', () => {
+        expect(utils.newline.then(utils.onlyWhitespace).parse('\n   ').status).toBeTruthy();
+        expect(utils.newline.notFollowedBy(utils.onlyWhitespace).parse('\n  ').status).toBeFalsy();
+      });
+    });
+  });
 });
 
 describe('tableOfContents', () => {
