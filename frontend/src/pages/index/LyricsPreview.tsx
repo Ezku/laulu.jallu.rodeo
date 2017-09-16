@@ -10,8 +10,24 @@ const Name = glamorous.h2(
   css(serif, {
     fontWeight: 700,
     fontSize: '24px',
-    lineHeight: '1em',
-    marginBottom: '16px'
+    lineHeight: '1em'
+  })
+);
+
+const Header = glamorous.header({
+  marginBottom: '16px'
+});
+
+const Description = glamorous.h3(
+  css(serif, {
+    fontWeight: 300,
+    lineHeight: '1.618rem',
+    ':before': {
+      content: '('
+    },
+    ':after': {
+      content: ')'
+    }
   })
 );
 
@@ -66,7 +82,10 @@ export type Props = {
 export default (props: Props) => (
   <AwesomeCard>
     <Lyrics>
-      <Name>{props.song.name}</Name>
+      <Header>
+        <Name>{props.song.name}</Name>
+        {props.song.description ? <Description>{props.song.description}</Description> : null}
+      </Header>
       {props.song.verses.map((verse, verseNumber) => (
         <Verse key={verseNumber}>
           {verse.verse.map((line, lineNumber) => <Line key={lineNumber}>{line}</Line>)}
