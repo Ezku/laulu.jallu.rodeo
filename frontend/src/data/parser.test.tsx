@@ -91,11 +91,20 @@ describe('song', () => {
   });
 
   describe('record', () => {
-    it('successfully parses, heading and verses', () => {
+    it('successfully parses heading and verses', () => {
       expect(song.record.tryParse(['1. name', 'verse one'].join('\n'))).toEqual(
         types.song.record(
           types.song.props.heading('1', 'name'),
           types.song.props.description(),
+          types.song.props.verses([types.song.props.verse(['verse one'])])
+        )
+      );
+    });
+    it('successfully parses heading, description and verses', () => {
+      expect(song.record.tryParse(['1. name', '(description)', 'verse one'].join('\n'))).toEqual(
+        types.song.record(
+          types.song.props.heading('1', 'name'),
+          types.song.props.description('description'),
           types.song.props.verses([types.song.props.verse(['verse one'])])
         )
       );

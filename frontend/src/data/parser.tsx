@@ -38,11 +38,12 @@ const heading = P.seqMap(
 );
 
 const description = P.string('(')
-  .then(P.regex(/[^)]*/))
+  .then(P.regex(/[^)]+/))
   .skip(P.string(')'))
   .atMost(1)
-  .skip(P.optWhitespace)
-  .map(descriptions => types.song.props.description(descriptions[0]));
+  .map(descriptions => {
+    return types.song.props.description(descriptions[0]);
+  });
 
 const verse = P.sepBy(textline, newline).map(types.song.props.verse);
 const verses = P.sepBy(verse, multipleNewlines).map(parsedVerses => {
@@ -58,7 +59,12 @@ export const song = {
     verse,
     verses
   },
-  record: P.seqMap(heading, description.skip(P.optWhitespace), verses, types.song.record)
+  record: P.seqMap(
+    heading.skip(newline),
+    description.skip(P.optWhitespace),
+    verses,
+    types.song.record
+  )
 };
 
 const songs = P.sepBy(song.record, multipleNewlines);
