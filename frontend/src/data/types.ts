@@ -9,7 +9,7 @@ export type TableOfContentsLine = {
 
 export type SongHeading = {
   ordinal: string;
-  name: string;
+  name?: string;
 };
 
 export type SongDescription = {
@@ -45,7 +45,7 @@ const types = {
   },
   song: {
     props: {
-      heading: (ordinal: string, name: string): SongHeading => ({
+      heading: (ordinal: string, name?: string): SongHeading => ({
         ordinal,
         name
       }),

@@ -29,12 +29,10 @@ export const tableOfContents = {
   record: tableOfContentsRecord
 };
 
-const heading = P.seqMap(
-  P.digits,
-  P.string('.')
-    .then(P.whitespace)
-    .then(textline),
-  types.song.props.heading
+const ordinal = P.digits.skip(P.string('.'));
+const heading = P.alt(
+  P.seqMap(ordinal, P.whitespace.then(textline), types.song.props.heading),
+  ordinal.map(types.song.props.heading)
 );
 
 const description = P.string('(')
