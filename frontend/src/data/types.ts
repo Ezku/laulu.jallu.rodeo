@@ -24,6 +24,13 @@ export type SongVerses = {
   verses: SongVerse[];
 };
 
+export type Song = {
+  ordinal: string;
+  name: string;
+  description?: string;
+  verses: SongVerse[];
+};
+
 const types = {
   tableOfContents: {
     props: {
@@ -49,7 +56,13 @@ const types = {
       verses: (verses: SongVerse[]): SongVerses => ({
         verses
       })
-    }
+    },
+    record: (heading: SongHeading, description: SongDescription, verses: SongVerses) => ({
+      ordinal: heading.ordinal,
+      name: heading.name,
+      description: description.description,
+      verses: verses.verses
+    })
   }
 };
 
