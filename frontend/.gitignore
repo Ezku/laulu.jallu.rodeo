@@ -21,7 +21,7 @@ yarn-error.log*
 src/**/*.css
 
 # db
-src/data/laulukirja.ts
+src/data/db.ts
 
 # external node_modules but not app symlink
 node_modules/*

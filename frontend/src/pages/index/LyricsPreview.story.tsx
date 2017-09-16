@@ -5,6 +5,11 @@ import { Container, Columns, Column } from 'bloomer';
 import { storiesOf } from '@storybook/react';
 
 import LyricsPreview from './LyricsPreview';
+import songbook from 'app/data/songbook';
+
+function oneOf<V>(values: V[]): V {
+  return values[Math.floor(Math.random() * values.length)];
+}
 
 storiesOf('LyricsPreview', module)
   .addDecorator(story => (
@@ -14,4 +19,4 @@ storiesOf('LyricsPreview', module)
       </Columns>
     </Container>
   ))
-  .add('as anonymous', () => <LyricsPreview />);
+  .add('random song from the book', () => <LyricsPreview song={oneOf(songbook.songs)} />);

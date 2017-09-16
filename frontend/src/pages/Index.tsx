@@ -9,7 +9,7 @@ import { monospace } from 'app/skin/fonts';
 import Hero from './index/Hero';
 import LyricsPreview from './index/LyricsPreview';
 
-import lyrics from 'app/data/lyrics';
+import songbook from 'app/data/songbook';
 
 const Ol = glamorous.ol(
   css(monospace, {
@@ -38,7 +38,12 @@ export default () => (
           </Ol>
         </Column>
         <Column isSize={7}>
-          {lyrics.map(l => <LyricsPreview />)}
+          {songbook.songs.map((s, index) => (
+            <div>
+              <LyricsPreview song={s} key={index} />
+              <pre>{JSON.stringify(s, null, 2)}</pre>
+            </div>
+          ))}
         </Column>
       </Columns>
     }

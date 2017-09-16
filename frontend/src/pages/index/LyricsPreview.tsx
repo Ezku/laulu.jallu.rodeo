@@ -4,6 +4,7 @@ import { css } from 'glamor';
 import { Card, CardContent, CardFooter, Tag } from 'bloomer';
 
 import { serif, sansSerif, monospace } from 'app/skin/fonts';
+import { Song } from 'app/data/types';
 
 const Name = glamorous.h2(
   css(serif, {
@@ -58,7 +59,11 @@ const AwesomeFooter = glamorous(CardFooter)({
   backgroundColor: '#fafbfc'
 });
 
-export default () => (
+export type Props = {
+  song: Song;
+};
+
+export default (props: Props) => (
   <AwesomeCard>
     <Lyrics>
       <Name>Koskenkorva</Name>
