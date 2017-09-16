@@ -41,6 +41,7 @@ Siis jos sä kerran ryyppäät, niin
 ryyppää kunnolla,
 ja jos sä kerran unhoitat, niin
 KAIKKI UNHOITA!
+
 4. Olen heittänyt verkon
 (säv., san. Kerkko Koskinen)
 
