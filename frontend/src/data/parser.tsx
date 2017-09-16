@@ -4,19 +4,12 @@ import types from './types';
 
 const newline = P.string('\n');
 const textline = P.regex(/.+/).map(s => s.trim());
-const multipleNewlines = P.regex(/\n(\s*\n)*/).map(lines =>
-  lines
-    .split('\n')
-    .map(s => s.trim())
-    .join('\n')
-);
-const onlyWhitespace = P.regex(/\s+$/);
+const multipleNewlines = P.regex(/\n{2,}/);
 
 export const utils = {
   newline,
   textline,
-  multipleNewlines,
-  onlyWhitespace
+  multipleNewlines
 };
 
 const tocLine = P.seqMap(
