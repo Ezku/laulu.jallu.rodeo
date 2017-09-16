@@ -62,7 +62,8 @@ export const song = {
   )
 };
 
-const songs = P.optWhitespace.then(P.sepBy(song.record, multipleNewlines)).skip(P.optWhitespace);
+const songBreak = P.alt(multipleNewlines, newline);
+const songs = P.optWhitespace.then(P.sepBy(song.record, songBreak)).skip(P.optWhitespace);
 
 export const db = P.seqMap(
   P.optWhitespace.then(tableOfContents.record).skip(P.whitespace),
