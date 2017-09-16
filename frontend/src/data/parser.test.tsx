@@ -1,4 +1,4 @@
-import { tableOfContents } from './parser';
+import { tableOfContents, song } from './parser';
 
 describe('tableOfContents', () => {
   describe('line', () => {
@@ -16,6 +16,14 @@ describe('tableOfContents', () => {
         { ordinal: '2', name: 'bar' },
         { ordinal: '3', name: 'qux' }
       ]);
+    });
+  });
+});
+
+describe('song', () => {
+  describe('heading', () => {
+    it('produces ordinal and name', () => {
+      expect(song.heading.tryParse('1. name')).toEqual({ ordinal: '1', name: 'name' });
     });
   });
 });

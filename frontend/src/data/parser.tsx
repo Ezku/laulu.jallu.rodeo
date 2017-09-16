@@ -18,3 +18,18 @@ export const tableOfContents = {
   line,
   lines
 };
+
+const heading = P.seqMap(
+  P.digits,
+  P.string('.')
+    .then(P.whitespace)
+    .then(P.regex(/.+/)),
+  (ordinal, name) => ({
+    ordinal,
+    name
+  })
+);
+
+export const song = {
+  heading
+};
