@@ -55,6 +55,12 @@ describe('song', () => {
         song.props.verse.tryParse(['i am making a note here:', 'huge success'].join('\n'))
       ).toEqual(types.song.props.verse(['i am making a note here:', 'huge success']));
     });
+
+    it('does not mind extra whitespace', () => {
+      expect(song.props.verse.tryParse([' foo ', ' bar', 'qux '].join('\n'))).toEqual(
+        types.song.props.verse(['foo', 'bar', 'qux'])
+      );
+    });
   });
 
   describe('verses', () => {
