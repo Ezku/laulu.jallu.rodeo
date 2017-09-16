@@ -96,10 +96,6 @@ describe('song', () => {
         types.song.props.verse(['foo', 'bar', 'qux'])
       );
     });
-
-    it('does not interpret lines with only whitespace to belong to the same verse', () => {
-      expect(song.props.verse.parse(['foo', ' ', 'bar'].join('\n')).status).toBeFalsy();
-    });
   });
 
   describe('verses', () => {
