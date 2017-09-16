@@ -1,6 +1,6 @@
 import * as P from 'parsimmon';
 
-import types from './types';
+import types, { Songbook, TableOfContents, Song } from './types';
 
 const newline = P.string('\n');
 const textline = P.regex(/.+/);
@@ -18,7 +18,10 @@ const tocLine = P.alt(
   ordinal.map(types.tableOfContents.props.line)
 );
 
-const tableOfContentsRecord = P.sepBy1(tocLine, newline).map(types.tableOfContents.record);
+const tableOfContentsRecord = P.optWhitespace
+  .then(P.sepBy1(tocLine, newline))
+  .skip(P.optWhitespace)
+  .map(types.tableOfContents.record);
 
 export const tableOfContents = {
   props: {
@@ -66,10 +69,10 @@ const songBreak = P.alt(multipleNewlines, newline);
 const songs = P.optWhitespace.then(P.sepBy(song.record, songBreak)).skip(P.optWhitespace);
 
 export const db = P.seqMap(
-  P.optWhitespace.then(tableOfContents.record).skip(P.whitespace),
+  tableOfContents.record,
   songs,
-  (toc, s) => ({
-    tableOfContents: toc.tableOfContents,
+  (toc: TableOfContents, s: Song[]): Songbook => ({
+    tableOfContents: toc,
     songs: s
   })
 );
