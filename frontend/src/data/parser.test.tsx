@@ -89,12 +89,18 @@ describe('song', () => {
           types.song.props.verse(['i am making a note here:', 'huge success'])
         ])
       );
-      expect(song.props.verses.tryParse(['verse one', 'verse two'].join('\n\n'))).toEqual(
+      expect(song.props.verses.tryParse(['verse one', '', 'verse two'].join('\n'))).toEqual(
         types.song.props.verses([
           types.song.props.verse(['verse one']),
           types.song.props.verse(['verse two'])
         ])
       );
+    });
+    it('does not accept a verse that would be an acceptable heading', () => {
+      expect(
+        song.props.verses.parse(['last line of previous song', '', '2. next song name'].join('\n'))
+          .status
+      ).toBeFalsy();
     });
   });
 

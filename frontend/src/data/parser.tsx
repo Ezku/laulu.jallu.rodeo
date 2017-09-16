@@ -44,7 +44,7 @@ const description = P.string('(')
   });
 
 const verse = P.sepBy(textline, newline.notFollowedBy(heading)).map(types.song.props.verse);
-const verses = P.sepBy(verse, multipleNewlines).map(parsedVerses => {
+const verses = P.sepBy(verse, multipleNewlines.notFollowedBy(heading)).map(parsedVerses => {
   return {
     verses: parsedVerses
   };
