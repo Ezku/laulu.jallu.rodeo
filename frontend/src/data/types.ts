@@ -33,16 +33,18 @@ const types = {
     })
   },
   song: {
-    heading: (ordinal: string, name: string) => ({
-      ordinal,
-      name
-    }),
-    verse: (lines: string[]): SongVerse => ({
-      verse: lines
-    }),
-    verses: (verses: SongVerse[]): SongVerses => ({
-      verses
-    })
+    props: {
+      heading: (ordinal: string, name: string) => ({
+        ordinal,
+        name
+      }),
+      verse: (lines: string[]): SongVerse => ({
+        verse: lines
+      }),
+      verses: (verses: SongVerse[]): SongVerses => ({
+        verses
+      })
+    }
   }
 };
 

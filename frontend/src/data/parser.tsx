@@ -27,7 +27,7 @@ const heading = P.seqMap(
   P.string('.')
     .then(P.whitespace)
     .then(textline),
-  types.song.heading
+  types.song.props.heading
 );
 
 const description = P.string('(')
@@ -36,7 +36,7 @@ const description = P.string('(')
 
 const multipleNewlines = P.regex(/\n{2,}/);
 
-const verse = P.sepBy(textline, newline).map(types.song.verse);
+const verse = P.sepBy(textline, newline).map(types.song.props.verse);
 const verses = P.sepBy(verse, multipleNewlines).map(parsedVerses => {
   return {
     verses: parsedVerses
@@ -44,16 +44,16 @@ const verses = P.sepBy(verse, multipleNewlines).map(parsedVerses => {
 });
 
 export const song = {
-  heading,
-  description,
-  verse,
-  verses
+  props: {
+    heading,
+    description,
+    verse,
+    verses
+  },
+  record: P.seq(heading, description.atMost(1).skip(P.whitespace), verses)
 };
 
-const songs = P.sepBy(
-  P.seq(heading, description.atMost(1).skip(P.whitespace), verses),
-  multipleNewlines
-);
+const songs = P.sepBy(song.record, multipleNewlines);
 
 export const db = P.seqMap(
   P.optWhitespace.then(tableOfContents.record).skip(P.whitespace),
