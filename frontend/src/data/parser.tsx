@@ -53,7 +53,7 @@ export const song = {
     verse,
     verses
   },
-  record: P.seqMap(heading, description.skip(P.whitespace), verses, types.song.record)
+  record: P.seqMap(heading, description.skip(P.optWhitespace), verses, types.song.record)
 };
 
 const songs = P.sepBy(song.record, multipleNewlines);
