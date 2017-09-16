@@ -17,6 +17,9 @@ describe('utils', () => {
     it('accepts more than 1 newline in a row', () => {
       expect(utils.multipleNewlines.tryParse('\n\n\n')).toEqual('\n\n\n');
     });
+    it('cleans up lines with only whitespace', () => {
+      expect(utils.multipleNewlines.tryParse('\n \n')).toEqual('\n\n');
+    });
   });
 });
 
