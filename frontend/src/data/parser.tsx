@@ -14,7 +14,7 @@ export const utils = {
 };
 
 const tocLine = P.alt(
-  P.seqMap(ordinal, P.whitespace.then(textline), types.tableOfContents.props.line),
+  P.seqMap(ordinal, P.string(' ').then(textline), types.tableOfContents.props.line),
   ordinal.map(types.tableOfContents.props.line)
 );
 
@@ -28,7 +28,7 @@ export const tableOfContents = {
 };
 
 const heading = P.alt(
-  P.seqMap(ordinal, P.whitespace.then(textline), types.song.props.heading),
+  P.seqMap(ordinal, P.string(' ').then(textline), types.song.props.heading),
   ordinal.map(types.song.props.heading)
 );
 
