@@ -12,13 +12,12 @@ type Props = {
   children: React.ReactElement<{}>[];
 };
 
-export default ({ children }: Props) =>
+export default ({ children }: Props) => (
   <AwesomeHero>
     <HeroBody>
       <Container>
-        <Columns isVCentered={true}>
-          {children}
-        </Columns>
+        <Columns isVCentered>{children}</Columns>
       </Container>
     </HeroBody>
-  </AwesomeHero>;
+  </AwesomeHero>
+);

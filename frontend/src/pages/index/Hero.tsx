@@ -25,26 +25,29 @@ const Subtitle = glamorous(Bloomer.Subtitle)(
   })
 );
 
-const HeroLogoColumn = () =>
+const HeroLogoColumn = () => (
   <Column isSize={5}>
     <Title>laulu.jallu.rodeo</Title>
     <Subtitle>Teekkarilaulusanoitusten mekka</Subtitle>
-  </Column>;
+  </Column>
+);
 
-const HeroSearchColumn = () =>
+const HeroSearchColumn = () => (
   <Column isSize={7}>
     <Control hasIcons="right">
       <Input isSize="large" isColor="primary" placeholder="Etsi sanoitusta" />
       <AwesomeIcon isSize="large" isAlign="right" icon="search" />
     </Control>
-  </Column>;
+  </Column>
+);
 
-const Hero = () =>
+const Hero = () => (
   <div {...hasShadow}>
     <HeroColumns>
       <HeroLogoColumn />
       <HeroSearchColumn />
     </HeroColumns>
-  </div>;
+  </div>
+);
 
 export default Hero;

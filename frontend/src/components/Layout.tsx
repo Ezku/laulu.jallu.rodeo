@@ -6,12 +6,11 @@ export interface Props {
   content: React.ReactElement<{}>;
 }
 
-export default ({ header, content }: Props) =>
+export default ({ header, content }: Props) => (
   <div>
     {header}
     <Section>
-      <Container>
-        {content}
-      </Container>
+      <Container>{content}</Container>
     </Section>
-  </div>;
+  </div>
+);

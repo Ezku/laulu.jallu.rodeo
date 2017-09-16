@@ -10,7 +10,7 @@ describe('tableOfContents', () => {
   describe('lines', () => {
     it('produces a list of ordinals and names', () => {
       // tslint:disable-next-line:quotemark
-      const lines = ['1. foo', '2. bar', '3. qux'].join("\n");
+      const lines = ['1. foo', '2. bar', '3. qux'].join('\n');
       expect(tableOfContents.lines.tryParse(lines)).toEqual([
         { ordinal: '1', name: 'foo' },
         { ordinal: '2', name: 'bar' },

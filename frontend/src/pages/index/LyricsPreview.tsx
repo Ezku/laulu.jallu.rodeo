@@ -58,7 +58,7 @@ const AwesomeFooter = glamorous(CardFooter)({
   backgroundColor: '#fafbfc'
 });
 
-export default () =>
+export default () => (
   <AwesomeCard>
     <Lyrics>
       <Name>Koskenkorva</Name>
@@ -75,4 +75,5 @@ export default () =>
         <AwesomeTag>#koskenkorva</AwesomeTag>
       </AwesomeTags>
     </AwesomeFooter>
-  </AwesomeCard>;
+  </AwesomeCard>
+);

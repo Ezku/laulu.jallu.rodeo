@@ -25,7 +25,7 @@ const A = glamorous.a({
   display: 'inline-block'
 });
 
-export default () =>
+export default () => (
   <Layout
     header={<Hero />}
     content={
@@ -42,4 +42,5 @@ export default () =>
         </Column>
       </Columns>
     }
-  />;
+  />
+);

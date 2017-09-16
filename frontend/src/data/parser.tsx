@@ -2,7 +2,9 @@ import * as P from 'parsimmon';
 
 const line = P.seqMap(
   P.digits,
-  P.string('.').then(P.whitespace).then(P.regex(/.+/)),
+  P.string('.')
+    .then(P.whitespace)
+    .then(P.regex(/.+/)),
   (ordinal, name) => ({
     ordinal,
     name
@@ -10,7 +12,7 @@ const line = P.seqMap(
 );
 
 // tslint:disable-next-line:quotemark
-const lines = P.sepBy(line, P.string("\n"));
+const lines = P.sepBy(line, P.string('\n'));
 
 export const tableOfContents = {
   line,
