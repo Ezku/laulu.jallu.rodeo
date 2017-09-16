@@ -1,9 +1,9 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
-import { Card, CardContent, CardFooter, Tag } from 'bloomer';
+import { Card, CardContent } from 'bloomer';
 
-import { serif, sansSerif, monospace } from 'app/skin/fonts';
+import { serif, sansSerif } from 'app/skin/fonts';
 import { Song } from 'app/data/types';
 
 const Name = glamorous.h2(
@@ -47,16 +47,6 @@ const Verse = glamorous.p({
   }
 });
 
-const AwesomeTags = glamorous.div(
-  css(monospace, {
-    weight: '500',
-    fontSize: '0.7rem'
-  })
-);
-const AwesomeTag = glamorous(Tag)({
-  margin: '0.5rem 0 0.5rem 0.5rem'
-});
-
 const AwesomeCard = glamorous(Card)({
   borderRadius: '2px'
 });
@@ -69,10 +59,6 @@ const Line = glamorous.div({
     fontSize: '0.618rem',
     marginLeft: '0.5rem'
   }
-});
-
-const AwesomeFooter = glamorous(CardFooter)({
-  backgroundColor: '#fafbfc'
 });
 
 export type Props = {
@@ -92,12 +78,5 @@ export default (props: Props) => (
         </Verse>
       ))}
     </Lyrics>
-    <AwesomeFooter>
-      <AwesomeTags>
-        <AwesomeTag>#herkkää</AwesomeTag>
-        <AwesomeTag>#lyyristä</AwesomeTag>
-        <AwesomeTag>#koskenkorva</AwesomeTag>
-      </AwesomeTags>
-    </AwesomeFooter>
   </AwesomeCard>
 );
