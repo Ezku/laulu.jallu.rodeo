@@ -62,11 +62,11 @@ export const song = {
   )
 };
 
-const songs = P.sepBy(song.record, multipleNewlines);
+const songs = P.optWhitespace.then(P.sepBy(song.record, multipleNewlines)).skip(P.optWhitespace);
 
 export const db = P.seqMap(
   P.optWhitespace.then(tableOfContents.record).skip(P.whitespace),
-  songs.skip(P.optWhitespace),
+  songs,
   (toc, s) => ({
     tableOfContents: toc.tableOfContents,
     songs: s
