@@ -18,7 +18,7 @@
     "noUnusedLocals": true,
     "typeRoots": ["./node_modules/@types", "./typings"]
   },
-  "include": ["./src", "./node_modules/app"],
+  "include": ["./src", "./node_modules/app", "./typings"],
   "exclude": [
     "node_modules",
     "build",
