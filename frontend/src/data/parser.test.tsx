@@ -124,7 +124,42 @@ const mockDb = `
 This is verse one
 `;
 
+const songsWithoutWhitespace = `
+1. Koskenkorva
+Kalja voimallansa meitä innostaa,
+Koskenkorvan kanssa mielet nostattaa.
+2. Ylioppilasriemua
+On elomme häipyvä muistoista pois
+ken mennyttä kauankaan muistella vois?
+`;
 describe('songbook', () => {
+  describe('songs', () => {
+    it('should handle songs without whitespace in between', () => {
+      expect(songbook.songs.tryParse(songsWithoutWhitespace)).toEqual([
+        types.song.record(
+          types.song.props.heading('1', 'Koskenkorva'),
+          types.song.props.description(),
+          types.song.props.verses([
+            types.song.props.verse([
+              'Kalja voimallansa meitä innostaa,',
+              'Koskenkorvan kanssa mielet nostattaa.'
+            ])
+          ])
+        ),
+        types.song.record(
+          types.song.props.heading('1', 'Ylioppilasriemua'),
+          types.song.props.description(),
+          types.song.props.verses([
+            types.song.props.verse([
+              'On elomme häipyvä muistoista pois',
+              'ken mennyttä kauankaan muistella vois?'
+            ])
+          ])
+        )
+      ]);
+    });
+  });
+
   describe('db', () => {
     it('successfully parses songbook db', () => {
       expect(songbook.db.tryParse(mockDb)).toEqual({
