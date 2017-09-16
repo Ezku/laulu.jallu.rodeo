@@ -1,4 +1,6 @@
-import { tableOfContents, song } from './parser';
+import db from './laulukirja';
+
+import { tableOfContents, song, songbook } from './parser';
 
 describe('tableOfContents', () => {
   describe('line', () => {
@@ -57,5 +59,11 @@ describe('song', () => {
         ['verse two']
       ]);
     });
+  });
+});
+
+describe('songbook', () => {
+  it('successfully parses songbook db', () => {
+    expect(songbook.tryParse(db)).toBeDefined();
   });
 });

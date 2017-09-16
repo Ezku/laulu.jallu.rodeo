@@ -44,3 +44,17 @@ export const song = {
   verse,
   verses
 };
+
+const songs = P.sepBy(
+  P.seq(heading, description.atMost(1).skip(P.whitespace), verses),
+  multipleNewlines
+);
+
+export const songbook = P.seqMap(
+  P.optWhitespace.then(tableOfContents.lines).skip(P.whitespace),
+  songs.skip(P.optWhitespace),
+  (toc, s) => ({
+    tableOfContents: toc,
+    songs: s
+  })
+);
