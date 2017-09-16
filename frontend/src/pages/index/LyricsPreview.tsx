@@ -10,7 +10,8 @@ const Name = glamorous.h2(
   css(serif, {
     fontWeight: 700,
     fontSize: '24px',
-    lineHeight: '1em'
+    lineHeight: '1em',
+    marginBottom: '0.618rem'
   })
 );
 
@@ -21,6 +22,7 @@ const Header = glamorous.header({
 const Description = glamorous.h3(
   css(serif, {
     fontWeight: 300,
+    fontSize: '16px',
     lineHeight: '1.618rem',
     ':before': {
       content: '('
@@ -48,7 +50,8 @@ const Verse = glamorous.p({
 });
 
 const AwesomeCard = glamorous(Card)({
-  borderRadius: '2px'
+  borderRadius: '2px',
+  marginBottom: '32px'
 });
 
 const Line = glamorous.div({
