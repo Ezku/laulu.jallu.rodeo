@@ -70,6 +70,11 @@ describe('song', () => {
         song.props.verse.tryParse(['i am making a note here:', 'huge success'].join('\n'))
       ).toEqual(types.song.props.verse(['i am making a note here:', 'huge success']));
     });
+    it('does not accept a line that would be an acceptable heading', () => {
+      expect(
+        song.props.verse.parse(['last line in song', '2. next song name'].join('\n')).status
+      ).toBeFalsy();
+    });
   });
 
   describe('verses', () => {
