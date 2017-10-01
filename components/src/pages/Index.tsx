@@ -1,31 +1,31 @@
-import * as React from 'react';
-import { Column, Columns } from 'bloomer';
-import glamorous from 'glamorous';
-import { css } from 'glamor';
-import slugify from 'slugify';
+import * as React from "react";
+import { Column, Columns } from "bloomer";
+import glamorous from "glamorous";
+import { css } from "glamor";
+import slugify from "slugify";
 
-import Layout from 'app/components/Layout';
-import { monospace } from 'app/skin/fonts';
+import Layout from "app/components/Layout";
+import { monospace } from "app/skin/fonts";
 
-import Hero from './index/Hero';
-import LyricsPreview from './index/LyricsPreview';
+import Hero from "./index/Hero";
+import LyricsPreview from "./index/LyricsPreview";
 
-import songbook from 'app/data/songbook';
+import songbook from "app/data/songbook";
 
 const Ol = glamorous.ol(
   css(monospace, {
-    fontSize: '1rem',
-    lineHeight: '1.618rem',
+    fontSize: "1rem",
+    lineHeight: "1.618rem",
     fontWeight: 500,
-    listStylePosition: 'outside',
-    marginLeft: '3rem',
-    marginRight: '1rem'
+    listStylePosition: "outside",
+    marginLeft: "3rem",
+    marginRight: "1rem"
   })
 );
 
 const A = glamorous.a({
-  display: 'inline',
-  textDecoration: 'none'
+  display: "inline",
+  textDecoration: "none"
 });
 
 export default () => (
@@ -37,7 +37,7 @@ export default () => (
           <Ol>
             {songbook.tableOfContents.map(item => (
               <li key={item.ordinal}>
-                {item.name ? <A href={'#' + slugify(item.name)}>{item.name}</A> : null}
+                {item.name ? <A href={"#" + slugify(item.name)}>{item.name}</A> : null}
               </li>
             ))}
           </Ol>
