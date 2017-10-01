@@ -1,20 +1,20 @@
 .PHONY: storybook build serve cleanup deploy now
 
 storybook:
-	(cd frontend && yarn storybook)
+	(cd components && yarn storybook)
 
 build:
-	(cd frontend && yarn build)
+	(cd components && yarn build)
 
 serve: build
-	serve frontend/build
+	serve components/build
 
 cleanup:
-	find frontend/build -type f -name '*.js.map' -delete
+	find components/build -type f -name '*.js.map' -delete
 
 deploy: build cleanup
-	(cd frontend/build && now --name laulu.jallu.rodeo --public)
+	(cd components/build && now --name laulu.jallu.rodeo --public)
 
 now: deploy
 	now alias
-	
+
