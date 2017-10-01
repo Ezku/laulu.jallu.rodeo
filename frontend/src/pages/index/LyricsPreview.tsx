@@ -61,6 +61,9 @@ const Line = glamorous.div({
     content: '↲',
     fontSize: '0.618rem',
     marginLeft: '0.5rem'
+  },
+  ':last-child:after': {
+    display: 'none'
   }
 });
 
