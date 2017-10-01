@@ -6,7 +6,10 @@ module.exports = (baseConfig, env) => {
   // For example, add typescript loader:
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    loader: require.resolve('awesome-typescript-loader')
+    loader: require.resolve('awesome-typescript-loader'),
+    options: {
+      configFileName: 'tsconfig.storybook.json'
+    }
   });
   config.resolve.extensions.push('.ts', '.tsx');
   return config;

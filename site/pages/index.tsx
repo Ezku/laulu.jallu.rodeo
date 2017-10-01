@@ -1,3 +1,14 @@
 import * as React from 'react';
 
-export default () => <div>hello</div>;
+import scale from '@laulu.jallu.rodeo/components/dist/utils/scale';
+
+export default () => (
+  <div>
+    hello{' '}
+    {Array(10)
+      .fill(null)
+      .map((v, i) => i - 5)
+      .map(scale)
+      .join(', ')}
+  </div>
+);
