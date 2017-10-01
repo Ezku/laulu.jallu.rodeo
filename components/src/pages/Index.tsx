@@ -16,7 +16,7 @@ const Ol = glamorous.ol(
   css(monospace, {
     fontSize: "1rem",
     lineHeight: "1.618rem",
-    fontWeight: 500,
+    fontWeight: 700,
     listStylePosition: "outside",
     marginLeft: "3rem",
     marginRight: "1rem"
