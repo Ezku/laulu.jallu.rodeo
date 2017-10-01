@@ -1,5 +1,5 @@
-import { css } from 'glamor';
+import { css, StyleAttribute } from 'glamor';
 
-const hasShadow = css({ boxShadow: '0 2px 3px rgba(10, 10, 10, 0.1)' });
+const hasShadow: StyleAttribute = css({ boxShadow: '0 2px 3px rgba(10, 10, 10, 0.1)' });
 
 export default hasShadow;
