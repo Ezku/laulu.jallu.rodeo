@@ -16,13 +16,9 @@
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
-    "typeRoots": ["./node_modules/@types", "./typings"],
-    "baseUrl": ".",
-    "paths": {
-      "app": "./src"
-    }
+    "typeRoots": ["./node_modules/@types", "./typings"]
   },
-  "include": ["./src", "./typings"],
+  "include": ["./src", "./node_modules/app", "./typings"],
   "exclude": [
     "node_modules",
     "build",
