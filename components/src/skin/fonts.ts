@@ -3,7 +3,7 @@ import { css, StyleAttribute } from "glamor";
 
 WebFontLoader.load({
   google: {
-    families: ["Overpass Mono:300,700"]
+    families: ["Overpass Mono:300,700", "Overpass:400"]
   },
   typekit: {
     id: "cae3ngq"
@@ -11,7 +11,7 @@ WebFontLoader.load({
 });
 
 export const sansSerifFamily = [
-  "acumin-pro",
+  "Overpass",
   "BlinkMacSystemFont",
   "-apple-system",
   '"Segoe UI"',

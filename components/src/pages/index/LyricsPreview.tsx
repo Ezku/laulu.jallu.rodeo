@@ -38,7 +38,7 @@ const Lyrics = glamorous(CardContent)(
     whiteSpace: "pre-wrap",
     fontSize: "16px",
     lineHeight: "1.618rem",
-    fontWeight: 300
+    fontWeight: 400
   })
 );
 
