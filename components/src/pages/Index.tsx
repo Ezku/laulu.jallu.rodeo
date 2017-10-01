@@ -24,8 +24,30 @@ const Ol = glamorous.ol(
 );
 
 const A = glamorous.a({
-  display: "inline",
-  textDecoration: "none"
+  display: "inline-block",
+  textDecoration: "none",
+  zIndex: 1,
+  position: "relative",
+  borderBottom: "1px solid transparent",
+  ":hover": {
+    borderBottomColor: "inherit",
+    ":after": {
+      top: 0
+    }
+  },
+  ":after": {
+    zIndex: -1,
+    content: " ",
+    backgroundColor: "#fff882",
+    position: "absolute",
+    left: 0,
+    right: 0,
+    bottom: 0,
+    top: "100%",
+    transitionProperty: "top",
+    transitionDuration: "0.160s",
+    transitionTimingFunction: "ease-in"
+  }
 });
 
 export default () => (
