@@ -1,5 +1,5 @@
 {
-	"devDependencies": {
-		"lerna": "^2.2.0"
-	}
+  "name": "laulu.jallu.rodeo",
+  "private": true,
+  "workspaces": ["*"]
 }
