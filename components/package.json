@@ -38,8 +38,10 @@
       "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive --include-path ./src --include-path ./node_modules",
     "storybook": "npm-run-all -p watch-css watch-storybook",
     "watch-storybook": "start-storybook -p 6006",
-    "dist": "npm-run-all -p dist-tsc",
-    "dist-tsc": "tsc -p tsconfig.dist.json"
+    "dist": "npm-run-all -p dist-tsc dist-css",
+    "dist-tsc": "tsc -p tsconfig.dist.json",
+    "dist-css":
+      "node-sass-chokidar src/ -o dist/ --include-path ./src --include-path ./node_modules"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.11"
