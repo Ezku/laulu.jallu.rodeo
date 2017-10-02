@@ -11,7 +11,7 @@
     "webpack-blocks": "^1.0.0-beta.4"
   },
   "scripts": {
-    "dev": "concurrently \"tsc --watch\" next",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   }
