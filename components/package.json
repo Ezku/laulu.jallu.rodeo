@@ -39,9 +39,13 @@
     "storybook": "npm-run-all -p watch-css watch-storybook",
     "watch-storybook": "start-storybook -p 6006",
     "dist": "npm-run-all -p dist-tsc dist-css",
+    "dist:watch": "npm-run-all -p dist-tsc:watch dist-css:watch",
     "dist-tsc": "tsc -p tsconfig.dist.json",
+    "dist-tsc:watch": "tsc -p tsconfig.dist.json --watch",
     "dist-css":
-      "node-sass-chokidar src/ -o dist/ --include-path ./src --include-path ./node_modules"
+      "node-sass-chokidar src/ -o dist/ --include-path ./src --include-path ./node_modules",
+    "dist-css:watch":
+      "npm run dist-css && node-sass-chokidar src/ -o dist/ --watch --recursive --include-path ./src --include-path ./node_modules"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.11"
