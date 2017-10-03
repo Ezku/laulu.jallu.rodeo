@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/next": "^2.4.3",
     "concurrently": "^3.5.0",
     "cssnano": "^3.10.0",
     "next": "^4.0.0-beta.2",

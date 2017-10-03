@@ -186,6 +186,17 @@
   version "21.1.1"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.1.tgz#70008ecce439774a45c7d0b543d879ec58a1b332"
 
+"@types/next@^2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@types/next/-/next-2.4.3.tgz#800da10fc00f315ec2a66fdc36865dc78fd436d9"
+  dependencies:
+    "@types/node" "*"
+    "@types/react" "*"
+
+"@types/node@*":
+  version "8.0.32"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.32.tgz#869a716538b6eec65ab3893f183d557be3cda206"
+
 "@types/node@^8.0.31":
   version "8.0.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.31.tgz#d9af61093cf4bfc9f066ca34de0175012cfb0ce9"
