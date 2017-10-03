@@ -4,12 +4,20 @@ const trash = require("trash");
 const { createConfig, match, customConfig } = require("@webpack-blocks/webpack");
 const typescript = require("@webpack-blocks/typescript");
 
+function ignorePlugin(constructorName) {
+  return (context, util) => config =>
+    Object.assign({}, config, {
+      plugins: config.plugins.filter(plugin => plugin.constructor.name !== constructorName)
+    });
+}
+
 module.exports = {
   webpack: function(config) {
     return createConfig([
       customConfig(config),
       match(["*.js"], [typescript()]),
       // See: https://github.com/zeit/next.js/blob/master/examples/with-global-stylesheet/next.config.js
+      ignorePlugin("UglifyJsPlugin"),
       customConfig({
         module: {
           rules: [
