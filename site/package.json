@@ -4,9 +4,13 @@
   "private": true,
   "dependencies": {
     "concurrently": "^3.5.0",
+    "cssnano": "^3.10.0",
     "next": "^4.0.0-beta.2",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-modules": "^0.8.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "skeleton-loader": "^1.1.4",
     "typescript": "^2.5.3",
     "webpack-blocks": "^1.0.0-beta.4"
   },
