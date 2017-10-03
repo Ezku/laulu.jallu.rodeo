@@ -13,7 +13,7 @@
     "react-dom": "^16.0.0",
     "skeleton-loader": "^1.1.4",
     "typescript": "^2.5.3",
-    "webpack-blocks": "^1.0.0-beta.4"
+    "webpack-blocks": "^1.0.0-rc"
   },
   "scripts": {
     "dev": "next",

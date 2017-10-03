@@ -239,6 +239,16 @@
     style-loader "^0.18.2"
     url-loader "^0.5.9"
 
+"@webpack-blocks/assets@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/assets/-/assets-1.0.0-rc.tgz#a68da5f8d2e7c03d572bad6fe37b87ea11bc992b"
+  dependencies:
+    css-loader "^0.28.4"
+    file-loader "^0.11.2"
+    lodash "^4.17.4"
+    style-loader "^0.18.2"
+    url-loader "^0.5.9"
+
 "@webpack-blocks/babel6@^1.0.0-beta.2":
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@webpack-blocks/babel6/-/babel6-1.0.0-beta.2.tgz#4da8f29035aafe0d192941ae32a2991976cd08ac"
@@ -246,9 +256,23 @@
     babel-core "^6.25.0"
     babel-loader "^7.1.1"
 
+"@webpack-blocks/babel@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/babel/-/babel-1.0.0-rc.tgz#4e2848120fe4bde2501052e951cd3bf2219d4f54"
+  dependencies:
+    babel-loader "^7.1.1"
+
 "@webpack-blocks/core@^1.0.0-beta":
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@webpack-blocks/core/-/core-1.0.0-beta.2.tgz#074155c08152bbf70090b662857e733bb29e52c1"
+  dependencies:
+    glob-to-regexp "^0.3.0"
+    lodash "^4.17.4"
+    webpack-merge "^2.6.1"
+
+"@webpack-blocks/core@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/core/-/core-1.0.0-rc.tgz#a820adebea589a684595b74cfff6a290e58a3c96"
   dependencies:
     glob-to-regexp "^0.3.0"
     lodash "^4.17.4"
@@ -260,16 +284,35 @@
   dependencies:
     webpack-dev-server "^2.6.1"
 
+"@webpack-blocks/dev-server@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/dev-server/-/dev-server-1.0.0-rc.tgz#5a1d8b1e4607f7c6e873470d5669683616b817cb"
+  dependencies:
+    webpack-dev-server "^2.9.1"
+
 "@webpack-blocks/extract-text@^1.0.0-beta.2":
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@webpack-blocks/extract-text/-/extract-text-1.0.0-beta.2.tgz#1634144f76c7d747acd941f37e307190abba4f0b"
   dependencies:
     extract-text-webpack-plugin "^2.1.2"
 
+"@webpack-blocks/extract-text@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/extract-text/-/extract-text-1.0.0-rc.tgz#7cfe4c37f82fd6e1ad43f48e118c694a47dee8a5"
+  dependencies:
+    extract-text-webpack-plugin "^3.0.0"
+
 "@webpack-blocks/postcss@^1.0.0-beta":
   version "1.0.0-beta"
   resolved "https://registry.yarnpkg.com/@webpack-blocks/postcss/-/postcss-1.0.0-beta.tgz#50a856cd02d5e5ce90e5b1fc9f21ae157177554b"
   dependencies:
+    postcss-loader "^1.3.3"
+
+"@webpack-blocks/postcss@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/postcss/-/postcss-1.0.0-rc.tgz#aeba5a45fe5a44c16c09787a72e217bb5889183b"
+  dependencies:
+    lodash "^4.17.4"
     postcss-loader "^1.3.3"
 
 "@webpack-blocks/sass@^1.0.0-beta.2":
@@ -281,9 +324,26 @@
     sass-loader "^6.0.6"
     style-loader "^0.18.2"
 
+"@webpack-blocks/sass@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/sass/-/sass-1.0.0-rc.tgz#b173795974898958e72a53baba447558fa6026a6"
+  dependencies:
+    css-loader "^0.28.4"
+    lodash "^4.17.4"
+    node-sass "^4.5.3"
+    sass-loader "^6.0.6"
+    style-loader "^0.18.2"
+
 "@webpack-blocks/typescript@^1.0.0-beta.2":
   version "1.0.0-beta.2"
   resolved "https://registry.yarnpkg.com/@webpack-blocks/typescript/-/typescript-1.0.0-beta.2.tgz#500a298efb5f7fe59641b1cd8aedbd7b9f967bac"
+  dependencies:
+    awesome-typescript-loader "^3.2.2"
+    typescript "^2.4.2"
+
+"@webpack-blocks/typescript@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/typescript/-/typescript-1.0.0-rc.tgz#8ce56d347024fd69bf2126c828d1401f37a9c211"
   dependencies:
     awesome-typescript-loader "^3.2.2"
     typescript "^2.4.2"
@@ -300,6 +360,13 @@
   resolved "https://registry.yarnpkg.com/@webpack-blocks/webpack/-/webpack-1.0.0-beta.3.tgz#b3b6062db102de5cbf86bfe6e91156dc0aecbe11"
   dependencies:
     "@webpack-blocks/core" "^1.0.0-beta"
+    webpack-merge "^4.1.0"
+
+"@webpack-blocks/webpack@^1.0.0-rc":
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/@webpack-blocks/webpack/-/webpack-1.0.0-rc.tgz#14611375d412163334e3f115af51cb432e300be7"
+  dependencies:
+    "@webpack-blocks/core" "^1.0.0-rc"
     webpack-merge "^4.1.0"
 
 JSONStream@^1.0.4:
@@ -3590,6 +3657,15 @@ extract-text-webpack-plugin@^2.1.2:
   dependencies:
     async "^2.1.2"
     loader-utils "^1.0.2"
+    schema-utils "^0.3.0"
+    webpack-sources "^1.0.1"
+
+extract-text-webpack-plugin@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/extract-text-webpack-plugin/-/extract-text-webpack-plugin-3.0.1.tgz#605a8893faca1dd49bb0d2ca87493f33fd43d102"
+  dependencies:
+    async "^2.4.1"
+    loader-utils "^1.1.0"
     schema-utils "^0.3.0"
     webpack-sources "^1.0.1"
 
@@ -9791,6 +9867,20 @@ webpack-blocks@^1.0.0-beta.4:
     "@webpack-blocks/uglify" "^1.0.0"
     "@webpack-blocks/webpack" "^1.0.0-beta.3"
 
+webpack-blocks@^1.0.0-rc:
+  version "1.0.0-rc"
+  resolved "https://registry.yarnpkg.com/webpack-blocks/-/webpack-blocks-1.0.0-rc.tgz#6995a203e3ecaf2a60c90a2e2519a7776f467eb3"
+  dependencies:
+    "@webpack-blocks/assets" "^1.0.0-rc"
+    "@webpack-blocks/babel" "^1.0.0-rc"
+    "@webpack-blocks/dev-server" "^1.0.0-rc"
+    "@webpack-blocks/extract-text" "^1.0.0-rc"
+    "@webpack-blocks/postcss" "^1.0.0-rc"
+    "@webpack-blocks/sass" "^1.0.0-rc"
+    "@webpack-blocks/typescript" "^1.0.0-rc"
+    "@webpack-blocks/uglify" "^1.0.0"
+    "@webpack-blocks/webpack" "^1.0.0-rc"
+
 webpack-dev-middleware@1.12.0, webpack-dev-middleware@^1.10.2, webpack-dev-middleware@^1.11.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/webpack-dev-middleware/-/webpack-dev-middleware-1.12.0.tgz#d34efefb2edda7e1d3b5dbe07289513219651709"
@@ -9829,7 +9919,7 @@ webpack-dev-server@2.7.1:
     webpack-dev-middleware "^1.11.0"
     yargs "^6.0.0"
 
-webpack-dev-server@^2.6.1:
+webpack-dev-server@^2.6.1, webpack-dev-server@^2.9.1:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/webpack-dev-server/-/webpack-dev-server-2.9.1.tgz#7ac9320b61b00eb65b2109f15c82747fc5b93585"
   dependencies:
