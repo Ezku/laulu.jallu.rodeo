@@ -5,5 +5,5 @@
     "jsx": "react",
     "allowJs": true
   },
-  "include": ["./pages", "./node_modules/@laulu.jallu.rodeo/src", "./typings"]
+  "include": ["./pages", "./typings"]
 }
