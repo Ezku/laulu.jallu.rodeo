@@ -1,5 +1,5 @@
 const RATIO = Math.sqrt(Math.sqrt(Math.E));
-const BASE = 32;
+const BASE = 16;
 
 export default function scale(s: number) {
   return nearestRoundNumber(BASE * Math.pow(RATIO, s));
