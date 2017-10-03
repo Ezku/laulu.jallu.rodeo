@@ -1,8 +1,21 @@
-const RATIO = Math.sqrt(Math.sqrt(Math.E));
+const RATIO = Math.E;
 const BASE = 16;
+const STEP = 1 / 4;
+const ZERO = 0;
 
-export default function scale(s: number) {
-  return nearestRoundNumber(BASE * Math.pow(RATIO, s));
+export default makeScale({});
+
+type ScaleParams = {
+  base?: number;
+  ratio?: number;
+  step?: number;
+  zero?: number;
+};
+
+export function makeScale({ base = BASE, ratio = RATIO, step = STEP, zero = ZERO }: ScaleParams) {
+  return function scale(s: number) {
+    return nearestRoundNumber(base * Math.pow(ratio, (s - zero) * step));
+  };
 }
 
 function nearestRoundNumber(i: number) {
