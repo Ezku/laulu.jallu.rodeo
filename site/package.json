@@ -4,17 +4,11 @@
   "private": true,
   "dependencies": {
     "@types/next": "^2.4.3",
-    "cssnano": "^3.10.0",
     "next": "^4.0.3",
     "npm-run-all": "^4.1.1",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-modules": "^0.8.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "skeleton-loader": "^1.1.4",
-    "trash": "^4.1.0",
-    "typescript": "^2.5.3",
-    "webpack-blocks": "^1.0.0-rc"
+    "typescript": "^2.5.3"
   },
   "scripts": {
     "dev": "npm-run-all -p dev:next dev:ts",
