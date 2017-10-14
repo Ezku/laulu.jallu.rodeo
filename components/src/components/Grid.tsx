@@ -12,3 +12,19 @@ export const Container = glamorous.div(
     }
   }
 );
+
+export const VerticallyCenteredColumns = glamorous.div({
+  display: 'flex',
+  alignItems: 'center',
+  marginLeft: '-0.75rem',
+  marginTop: '-0.75rem',
+  marginRight: '-0.75rem',
+  '& .column': {
+    flex: 'none',
+    display: 'block',
+    padding: '0.75rem'
+  },
+  '&:last-child': {
+    marginBottom: '-0.75rem'
+  }
+});

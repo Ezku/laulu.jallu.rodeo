@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import { Hero, HeroBody, Columns } from 'bloomer';
+import { Hero, HeroBody } from 'bloomer';
 
 import glamorous from 'glamorous';
 
-import { Container } from './Grid';
+import { Container, VerticallyCenteredColumns } from './Grid';
 
 const AwesomeHero = glamorous(Hero)({
   backgroundColor: '#FFF'
@@ -18,7 +18,7 @@ export default ({ children }: Props) => (
   <AwesomeHero>
     <HeroBody>
       <Container>
-        <Columns isVCentered>{children}</Columns>
+        <VerticallyCenteredColumns>{children}</VerticallyCenteredColumns>
       </Container>
     </HeroBody>
   </AwesomeHero>
