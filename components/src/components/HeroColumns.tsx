@@ -1,13 +1,20 @@
 import * as React from 'react';
-
-import { Hero, HeroBody } from 'bloomer';
-
 import glamorous from 'glamorous';
 
-import { Container, Columns } from './Grid';
+import { Box, Container, Columns } from './Grid';
 
-const AwesomeHero = glamorous(Hero)({
+const Hero = glamorous(Box)({
+  alignItems: 'stretch',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'space-between',
   backgroundColor: '#FFF'
+});
+
+const HeroBody = glamorous(Box)({
+  padding: '3rem 1.5rem',
+  flexGrow: 1,
+  flexShrink: 0
 });
 
 type Props = {
@@ -15,11 +22,11 @@ type Props = {
 };
 
 export default ({ children }: Props) => (
-  <AwesomeHero>
+  <Hero>
     <HeroBody>
       <Container>
         <Columns verticallyCentered>{children}</Columns>
       </Container>
     </HeroBody>
-  </AwesomeHero>
+  </Hero>
 );
