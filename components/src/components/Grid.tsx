@@ -1,6 +1,10 @@
 import glamorous from 'glamorous';
 
-export const Container = glamorous.div(
+const Box = glamorous.div({
+  boxSizing: 'border-box'
+});
+
+export const Container = glamorous(Box)(
   {
     margin: '0 auto',
     position: 'relative'
@@ -17,7 +21,7 @@ export const Container = glamorous.div(
   }
 );
 
-export const VerticallyCenteredColumns = glamorous.div({
+export const VerticallyCenteredColumns = glamorous(Box)({
   display: 'flex',
   alignItems: 'center',
   marginLeft: '-0.75rem',
