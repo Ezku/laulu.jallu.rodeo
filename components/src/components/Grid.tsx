@@ -9,6 +9,10 @@ export const Container = glamorous.div(
     '@media screen and (min-width: 1024px)': {
       maxWidth: '960px',
       width: '960px'
+    },
+    '@media screen and (min-width: 1216px)': {
+      maxWidth: '1152px',
+      width: '1152px'
     }
   }
 );
