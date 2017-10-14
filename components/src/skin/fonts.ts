@@ -28,10 +28,17 @@ export const sansSerifFamily = [
 export const serifFamily = 'Adelle, serif';
 export const monospaceFamily = 'Overpass Mono, monospace';
 
-export const sansSerif: StyleAttribute = css({
+const readability = {
+  '-moz-osx-font-smoothing': 'grayscale',
+  '-webkit-font-smoothing': 'antialiased',
+  'text-rendering': 'optimizeLegibility',
+  'text-size-adjust': '100%'
+};
+
+export const sansSerif: StyleAttribute = css(readability, {
   fontFamily: sansSerifFamily
 });
 
-export const serif: StyleAttribute = css({ fontFamily: serifFamily });
+export const serif: StyleAttribute = css(readability, { fontFamily: serifFamily });
 
-export const monospace: StyleAttribute = css({ fontFamily: monospaceFamily });
+export const monospace: StyleAttribute = css(readability, { fontFamily: monospaceFamily });
