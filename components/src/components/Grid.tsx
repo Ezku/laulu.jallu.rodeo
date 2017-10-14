@@ -1,6 +1,6 @@
 import glamorous from 'glamorous';
 
-const Box = glamorous.div({
+export const Box = glamorous.div({
   boxSizing: 'border-box'
 });
 

@@ -3,8 +3,9 @@ import glamorous from 'glamorous';
 import { css } from 'glamor';
 
 import { sansSerif } from '../skin/fonts';
+import { Box } from './Grid';
 
-const Card = glamorous.div({
+const Card = glamorous(Box)({
   borderRadius: '2px',
   marginBottom: '32px',
   backgroundColor: '#fff',
@@ -14,7 +15,7 @@ const Card = glamorous.div({
   position: 'relative'
 });
 
-const Content = glamorous.div(
+const Content = glamorous(Box)(
   css(sansSerif, {
     whiteSpace: 'pre-wrap',
     fontSize: '16px',
