@@ -16,8 +16,6 @@
     "font-awesome": "^4.7.0",
     "glamor": "^2.20.40",
     "glamorous": "^4.9.7",
-    "node-sass-chokidar": "^0.0.3",
-    "npm-run-all": "^4.1.1",
     "parsimmon": "^1.6.2",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
@@ -27,25 +25,13 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "start": "npm-run-all -p watch-css start-ts",
-    "start-ts": "react-scripts-ts start",
-    "build": "npm run build-css && react-scripts-ts build",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
     "eject": "react-scripts-ts eject",
-    "build-css":
-      "node-sass-chokidar src/ -o src/ --include-path ./src --include-path ./node_modules",
-    "watch-css":
-      "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive --include-path ./src --include-path ./node_modules",
-    "storybook": "npm-run-all -p watch-css watch-storybook",
-    "watch-storybook": "start-storybook -p 6006",
-    "dist": "npm-run-all -p dist-tsc dist-css",
-    "dist:watch": "npm-run-all -p dist-tsc:watch dist-css:watch",
-    "dist-tsc": "tsc -p tsconfig.dist.json",
-    "dist-tsc:watch": "tsc -p tsconfig.dist.json --watch",
-    "dist-css":
-      "node-sass-chokidar src/ -o dist/ --include-path ./src --include-path ./node_modules",
-    "dist-css:watch":
-      "npm run dist-css && node-sass-chokidar src/ -o dist/ --watch --recursive --include-path ./src --include-path ./node_modules"
+    "storybook": "start-storybook -p 6006",
+    "dist": "tsc -p tsconfig.dist.json",
+    "dist:watch": "tsc -p tsconfig.dist.json --watch"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.11"
