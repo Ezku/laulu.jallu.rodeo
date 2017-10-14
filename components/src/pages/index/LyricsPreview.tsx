@@ -1,10 +1,10 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
-import { Card, CardContent } from 'bloomer';
 
-import { serif, sansSerif } from 'app/skin/fonts';
+import { serif } from 'app/skin/fonts';
 import { Song } from 'app/data/types';
+import Card from 'app/components/Card';
 
 const Name = glamorous.h2(
   css(serif, {
@@ -33,25 +33,11 @@ const Description = glamorous.h3(
   })
 );
 
-const Lyrics = glamorous(CardContent)(
-  css(sansSerif, {
-    whiteSpace: 'pre-wrap',
-    fontSize: '16px',
-    lineHeight: '1.618rem',
-    fontWeight: 400
-  })
-);
-
 const Verse = glamorous.p({
   marginBottom: '2rem',
   ':last-child': {
     marginBottom: 0
   }
-});
-
-const AwesomeCard = glamorous(Card)({
-  borderRadius: '2px',
-  marginBottom: '32px'
 });
 
 const Line = glamorous.div({
@@ -72,19 +58,17 @@ export type Props = {
 };
 
 export default (props: Props) => (
-  <AwesomeCard>
-    <Lyrics>
-      <Header>
-        <Name>
-          {props.song.ordinal}. {props.song.name}
-        </Name>
-        {props.song.description ? <Description>{props.song.description}</Description> : null}
-      </Header>
-      {props.song.verses.map((verse, verseNumber) => (
-        <Verse key={verseNumber}>
-          {verse.verse.map((line, lineNumber) => <Line key={lineNumber}>{line}</Line>)}
-        </Verse>
-      ))}
-    </Lyrics>
-  </AwesomeCard>
+  <Card>
+    <Header>
+      <Name>
+        {props.song.ordinal}. {props.song.name}
+      </Name>
+      {props.song.description ? <Description>{props.song.description}</Description> : null}
+    </Header>
+    {props.song.verses.map((verse, verseNumber) => (
+      <Verse key={verseNumber}>
+        {verse.verse.map((line, lineNumber) => <Line key={lineNumber}>{line}</Line>)}
+      </Verse>
+    ))}
+  </Card>
 );
