@@ -1,8 +1,10 @@
 import * as React from 'react';
 
-import { Hero, HeroBody, Columns, Container } from 'bloomer';
+import { Hero, HeroBody, Columns } from 'bloomer';
 
 import glamorous from 'glamorous';
+
+import { Container } from './Grid';
 
 const AwesomeHero = glamorous(Hero)({
   backgroundColor: '#FFF'
