@@ -1,9 +1,8 @@
 {
-	"files.exclude": {
-		".yarn-offline-mirror": true,
-		".vscode": true,
-		"components/build": true,
-		"components/dist": true
-		"site/pages/**/*.js": true
-	}
+  "files.exclude": {
+    ".yarn-offline-mirror": true,
+    ".vscode": true,
+    "components/build": true,
+    "components/dist": true
+  }
 }
