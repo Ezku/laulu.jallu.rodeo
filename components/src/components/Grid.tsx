@@ -21,17 +21,30 @@ export const Container = glamorous(Box)(
   }
 );
 
+export const Column = glamorous(Box)(
+  {
+    display: 'block',
+    flexBasis: 0,
+    flexGrow: 1,
+    flexShrink: 1,
+    padding: '0.75rem'
+  },
+  {
+    '@media print, screen and (min-width: 769px)': {
+      flex: 'none'
+    }
+  },
+  ({ size }: { size: number }) => ({
+    width: `${100 * (size / 12)}%`
+  })
+);
+
 export const VerticallyCenteredColumns = glamorous(Box)({
   display: 'flex',
   alignItems: 'center',
   marginLeft: '-0.75rem',
   marginTop: '-0.75rem',
   marginRight: '-0.75rem',
-  '& .column': {
-    flex: 'none',
-    display: 'block',
-    padding: '0.75rem'
-  },
   '&:last-child': {
     marginBottom: '-0.75rem'
   }
