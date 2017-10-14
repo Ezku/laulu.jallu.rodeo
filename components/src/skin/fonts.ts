@@ -1,19 +1,19 @@
-import * as WebFontLoader from "webfontloader";
-import { css, StyleAttribute } from "glamor";
+import * as WebFontLoader from 'webfontloader';
+import { css, StyleAttribute } from 'glamor';
 
 WebFontLoader.load({
   google: {
-    families: ["Overpass Mono:300,700", "Overpass:400"]
+    families: ['Overpass Mono:300,700', 'Overpass:400']
   },
   typekit: {
-    id: "cae3ngq"
+    id: 'cae3ngq'
   }
 });
 
 export const sansSerifFamily = [
-  "Overpass",
-  "BlinkMacSystemFont",
-  "-apple-system",
+  'Overpass',
+  'BlinkMacSystemFont',
+  '-apple-system',
   '"Segoe UI"',
   '"Oxygen"',
   '"Ubuntu"',
@@ -23,10 +23,10 @@ export const sansSerifFamily = [
   '"Helvetica Neue"',
   '"Helvetica"',
   '"Arial"',
-  "sans-serif"
-].join(", ");
-export const serifFamily = "Adelle, serif";
-export const monospaceFamily = "Overpass Mono, monospace";
+  'sans-serif'
+].join(', ');
+export const serifFamily = 'Adelle, serif';
+export const monospaceFamily = 'Overpass Mono, monospace';
 
 export const sansSerif: StyleAttribute = css({
   fontFamily: sansSerifFamily
