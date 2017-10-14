@@ -2,7 +2,7 @@ import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 
-import { sansSerif } from 'app/skin/fonts';
+import { sansSerif } from '../skin/fonts';
 
 const Card = glamorous.div({
   borderRadius: '2px',

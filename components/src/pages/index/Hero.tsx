@@ -5,10 +5,10 @@ import glamorous from 'glamorous';
 import { Column, Input, Control } from 'bloomer';
 import * as Bloomer from 'bloomer';
 
-import hasShadow from 'app/skin/hasShadow';
-import { serif } from 'app/skin/fonts';
+import hasShadow from '../../skin/hasShadow';
+import { serif } from '../../skin/fonts';
 
-import HeroColumns from 'app/components/HeroColumns';
+import HeroColumns from '../../components/HeroColumns';
 
 const Title = glamorous(Bloomer.Title)(
   css(serif, {

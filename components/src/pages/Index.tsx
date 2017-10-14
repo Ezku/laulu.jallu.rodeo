@@ -4,13 +4,13 @@ import glamorous from 'glamorous';
 import { css } from 'glamor';
 import slugify from 'slugify';
 
-import Layout from 'app/components/Layout';
-import { monospace } from 'app/skin/fonts';
+import Layout from '../components/Layout';
+import { monospace } from '../skin/fonts';
 
 import Hero from './index/Hero';
 import LyricsPreview from './index/LyricsPreview';
 
-import songbook from 'app/data/songbook';
+import songbook from '../data/songbook';
 
 const Ol = glamorous.ol(
   css(monospace, {

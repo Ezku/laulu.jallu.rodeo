@@ -1,6 +1,6 @@
 import { css, StyleAttribute } from 'glamor';
 
-import scale from 'app/utils/scale';
+import scale from '../utils/scale';
 
 export default function fontScale(s: number): StyleAttribute {
   return css({
