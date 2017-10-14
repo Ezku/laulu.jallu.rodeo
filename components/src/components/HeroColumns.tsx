@@ -17,15 +17,11 @@ const HeroBody = glamorous(Box)({
   flexShrink: 0
 });
 
-type Props = {
-  children: React.ReactElement<{}>[];
-};
-
-export default ({ children }: Props) => (
+export default (props: { children: React.ReactNode }) => (
   <Hero>
     <HeroBody>
       <Container>
-        <Columns verticallyCentered>{children}</Columns>
+        <Columns verticallyCentered>{props.children}</Columns>
       </Container>
     </HeroBody>
   </Hero>
