@@ -1,4 +1,3 @@
-.PHONY: storybook build serve cleanup deploy now
 
 storybook:
 	(cd components && yarn storybook)
