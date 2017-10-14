@@ -1,21 +1,26 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
-import * as Bloomer from 'bloomer';
 
 import { sansSerif } from 'app/skin/fonts';
 
-const Card = glamorous(Bloomer.Card)({
+const Card = glamorous.div({
   borderRadius: '2px',
-  marginBottom: '32px'
+  marginBottom: '32px',
+  backgroundColor: '#fff',
+  boxShadow: '0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1)',
+  color: '#4a4a4a',
+  maxWidth: '100%',
+  position: 'relative'
 });
 
-const Content = glamorous(Bloomer.CardContent)(
+const Content = glamorous.div(
   css(sansSerif, {
     whiteSpace: 'pre-wrap',
     fontSize: '16px',
     lineHeight: '1.618rem',
-    fontWeight: 400
+    fontWeight: 400,
+    padding: '1.5rem'
   })
 );
 
