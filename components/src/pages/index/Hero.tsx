@@ -2,8 +2,6 @@ import * as React from 'react';
 import { css } from 'glamor';
 import glamorous from 'glamorous';
 
-import { Input, Control } from 'bloomer';
-
 import hasShadow from '../../skin/hasShadow';
 import { serif } from '../../skin/fonts';
 
@@ -40,20 +38,10 @@ const HeroLogoColumn = () => (
   </Column>
 );
 
-const HeroSearchColumn = () => (
-  <Column size={7}>
-    <Control hasIcons="right" {...css({ display: 'none' })}>
-      <Input isSize="large" isColor="primary" placeholder="Etsi sanoitusta" />
-      {/* <AwesomeIcon isSize="large" isAlign="right" icon="search" /> */}
-    </Control>
-  </Column>
-);
-
 const Hero = () => (
   <div {...hasShadow}>
     <HeroColumns>
       <HeroLogoColumn />
-      <HeroSearchColumn />
     </HeroColumns>
   </div>
 );
