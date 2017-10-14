@@ -39,13 +39,23 @@ export const Column = glamorous(Box)(
   })
 );
 
-export const VerticallyCenteredColumns = glamorous(Box)({
-  display: 'flex',
-  alignItems: 'center',
-  marginLeft: '-0.75rem',
-  marginTop: '-0.75rem',
-  marginRight: '-0.75rem',
-  '&:last-child': {
-    marginBottom: '-0.75rem'
-  }
-});
+type ColumnProps = {
+  verticallyCentered: boolean;
+  fullheight: boolean;
+};
+
+export const Columns = glamorous(Box)(
+  {
+    display: 'flex',
+    marginLeft: '-0.75rem',
+    marginTop: '-0.75rem',
+    marginRight: '-0.75rem',
+    '&:last-child': {
+      marginBottom: '-0.75rem'
+    }
+  },
+  (props: ColumnProps = { verticallyCentered: false, fullheight: false }) => ({
+    minHeight: props.fullheight ? '100vh' : 'inherit',
+    'align-items': props.verticallyCentered ? 'center' : 'inherit'
+  })
+);

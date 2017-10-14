@@ -3,17 +3,24 @@ import * as React from 'react';
 import { storiesOf } from '@storybook/react';
 
 import Card from './Card';
-import { Container, VerticallyCenteredColumns, Column } from './Grid';
+import { Container, Columns, Column } from './Grid';
 
 storiesOf('Card', module)
   .addDecorator(story => (
     <Container>
-      <VerticallyCenteredColumns style={{ minHeight: '100vh' }}>
+      <Columns fullheight verticallyCentered>
+        <Column size={3}>
+          {story()}
+          {story()}
+        </Column>
         <Column size={3}>{story()}</Column>
+        <Column size={3}>
+          {story()}
+          {story()}
+          {story()}
+        </Column>
         <Column size={3}>{story()}</Column>
-        <Column size={3}>{story()}</Column>
-        <Column size={3}>{story()}</Column>
-      </VerticallyCenteredColumns>
+      </Columns>
     </Container>
   ))
   .add('with a paragraph', () => (
