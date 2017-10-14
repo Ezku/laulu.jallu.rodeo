@@ -1,4 +1,7 @@
 
+prettier:
+	prettier components/src/**/*.* --write
+
 storybook:
 	(cd components && yarn storybook)
 
