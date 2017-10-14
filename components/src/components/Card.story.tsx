@@ -8,7 +8,9 @@ import { Container, VerticallyCenteredColumns } from './Grid';
 storiesOf('Card', module)
   .addDecorator(story => (
     <Container>
-      <VerticallyCenteredColumns>{story()}</VerticallyCenteredColumns>
+      <VerticallyCenteredColumns style={{ minHeight: '100vh' }}>
+        {story()}
+      </VerticallyCenteredColumns>
     </Container>
   ))
   .add('with a paragraph', () => (
