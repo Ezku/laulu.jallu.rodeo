@@ -17,7 +17,9 @@
     "webpack-blocks": "^1.0.0-rc"
   },
   "scripts": {
-    "dev": "next",
+    "dev": "npm-run-all -p dev:next dev:ts",
+    "dev:next": "next",
+    "dev:ts": "tsc -p tsconfig.json --watch",
     "build": "next build",
     "start": "next start"
   }
