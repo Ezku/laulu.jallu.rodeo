@@ -17,14 +17,5 @@
     "typeRoots": ["./node_modules/@types", "./typings"]
   },
   "include": ["./src", "./node_modules/app", "./typings"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts",
-    "**/*/*.story.tsx"
-  ]
+  "exclude": ["node_modules", "build", "scripts", "acceptance-tests", "webpack", "jest"]
 }

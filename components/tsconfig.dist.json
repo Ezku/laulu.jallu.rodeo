@@ -7,5 +7,6 @@
     "module": "commonjs",
     "target": "es2015",
     "forceConsistentCasingInFileNames": false
-  }
+  },
+  "exclude": ["**/*/*.test.ts", "**/*/*.test.tsx", "**/*/*.story.tsx"]
 }
