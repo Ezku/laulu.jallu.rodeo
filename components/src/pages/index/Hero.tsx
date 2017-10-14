@@ -8,7 +8,6 @@ import * as Bloomer from 'bloomer';
 import hasShadow from 'app/skin/hasShadow';
 import { serif } from 'app/skin/fonts';
 
-import AwesomeIcon from 'app/components/AwesomeIcon';
 import HeroColumns from 'app/components/HeroColumns';
 
 const Title = glamorous(Bloomer.Title)(
@@ -36,7 +35,7 @@ const HeroSearchColumn = () => (
   <Column isSize={7}>
     <Control hasIcons="right" {...css({ display: 'none' })}>
       <Input isSize="large" isColor="primary" placeholder="Etsi sanoitusta" />
-      <AwesomeIcon isSize="large" isAlign="right" icon="search" />
+      {/* <AwesomeIcon isSize="large" isAlign="right" icon="search" /> */}
     </Control>
   </Column>
 );
