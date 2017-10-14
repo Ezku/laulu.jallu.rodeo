@@ -1,3 +1,7 @@
 
 # next.js build output
 /.next
+
+# Typescript build output
+/pages/*.js
+/pages/**/*.js
