@@ -18,7 +18,6 @@ if (typeof window !== 'undefined') {
 
 export default () => (
   <Container>
-    <Head />
     <Title>Hello</Title>
     <Subtitle>
       {Array(12)
