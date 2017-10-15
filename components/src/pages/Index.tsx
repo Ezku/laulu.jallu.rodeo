@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 import { monospace } from '../skin/fonts';
 
 import Hero from './index/Hero';
-import LyricsPreview from './index/LyricsPreview';
+import LyricsCard from './index/LyricsCard';
 
 import songbook from '../data/songbook';
 
@@ -68,7 +68,7 @@ export default () => (
           {songbook.songs.map((s, index) => (
             <div key={index}>
               {s.name ? <a id={slugify(s.name)} /> : null}
-              <LyricsPreview song={s} />
+              <LyricsCard song={s} />
             </div>
           ))}
         </Column>
