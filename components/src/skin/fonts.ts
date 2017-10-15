@@ -1,14 +1,17 @@
-import * as WebFontLoader from 'webfontloader';
 import { css, StyleAttribute } from 'glamor';
 
-WebFontLoader.load({
-  google: {
-    families: ['Overpass Mono:300,700', 'Overpass:400']
-  },
-  typekit: {
-    id: 'cae3ngq'
-  }
-});
+if (typeof window !== undefined) {
+  import('webfontloader').then(WebFontLoader => {
+    WebFontLoader.load({
+      google: {
+        families: ['Overpass Mono:300,700', 'Overpass:400']
+      },
+      typekit: {
+        id: 'cae3ngq'
+      }
+    });
+  });
+}
 
 export const sansSerifFamily = [
   'Overpass',
