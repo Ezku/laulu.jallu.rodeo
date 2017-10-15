@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Container, Columns, Column } from 'bloomer';
+import { Container, Columns, Column } from './Grid';
 
 import { storiesOf } from '@storybook/react';
 
@@ -13,9 +13,9 @@ function oneOf<V>(values: V[]): V {
 
 storiesOf('LyricsCard', module)
   .addDecorator(story => (
-    <Container style={{ minHeight: '100vh' }}>
-      <Columns isCentered isVCentered style={{ minHeight: '100vh' }}>
-        <Column isSize={6}>{story()}</Column>
+    <Container>
+      <Columns centered verticallyCentered fullheight>
+        <Column size={6}>{story()}</Column>
       </Columns>
     </Container>
   ))
