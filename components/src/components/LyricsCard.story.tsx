@@ -5,7 +5,7 @@ import { Container, Columns, Column } from 'bloomer';
 import { storiesOf } from '@storybook/react';
 
 import LyricsCard from './LyricsCard';
-import songbook from '../../data/songbook';
+import songbook from '../data/songbook';
 
 function oneOf<V>(values: V[]): V {
   return values[Math.floor(Math.random() * values.length)];

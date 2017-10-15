@@ -7,8 +7,8 @@ import slugify from 'slugify';
 import Layout from '../components/Layout';
 import { monospace } from '../skin/fonts';
 
-import Hero from './index/Hero';
-import LyricsCard from './index/LyricsCard';
+import Hero from '../components/Hero';
+import LyricsCard from '../components/LyricsCard';
 
 import songbook from '../data/songbook';
 

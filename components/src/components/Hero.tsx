@@ -1,10 +1,10 @@
 import * as React from 'react';
 
-import hasShadow from '../../skin/hasShadow';
-import { Title, Subtitle } from '../../skin/titles';
+import hasShadow from '../skin/hasShadow';
+import { Title, Subtitle } from '../skin/titles';
 
-import { Column } from '../../components/Grid';
-import HeroColumns from '../../components/HeroColumns';
+import { Column } from './Grid';
+import HeroColumns from './HeroColumns';
 
 const Hero = () => (
   <div {...hasShadow}>
