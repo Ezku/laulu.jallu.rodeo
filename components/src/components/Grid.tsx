@@ -22,7 +22,8 @@ export const Container = glamorous(Box)(
 );
 
 type ColumnProps = {
-  size: number | null;
+  size?: number;
+  children: React.ReactNode;
 };
 
 export const Column = glamorous(Box)(
@@ -33,14 +34,15 @@ export const Column = glamorous(Box)(
     flexShrink: 1,
     padding: '0.75rem'
   },
-  {
-    '@media print, screen and (min-width: 769px)': {
-      flex: 'none'
-    }
-  },
-  (props: ColumnProps = { size: null }) => ({
-    width: props.size === null ? 'auto' : `${100 * (props.size / 12)}%`
-  })
+  (props: ColumnProps) =>
+    !props.size
+      ? {}
+      : {
+          width: `${100 * (props.size / 12)}%`,
+          '@media print, screen and (min-width: 769px)': {
+            flex: 'none'
+          }
+        }
 );
 
 type ColumnsProps = {

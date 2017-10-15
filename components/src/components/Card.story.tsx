@@ -9,17 +9,17 @@ storiesOf('Card', module)
   .addDecorator(story => (
     <Container>
       <Columns fullheight verticallyCentered>
-        <Column size={3}>
+        <Column>
           {story()}
           {story()}
         </Column>
-        <Column size={3}>{story()}</Column>
-        <Column size={3}>
+        <Column>{story()}</Column>
+        <Column>
           {story()}
           {story()}
           {story()}
         </Column>
-        <Column size={3}>{story()}</Column>
+        <Column>{story()}</Column>
       </Columns>
     </Container>
   ))
