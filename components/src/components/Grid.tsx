@@ -61,7 +61,7 @@ type ColumnsProps = {
 };
 
 export const Columns = glamorous(Box)(
-  {
+  narrow(bp => ({
     display: 'flex',
     marginLeft: '-0.75rem',
     marginTop: '-0.75rem',
@@ -69,7 +69,7 @@ export const Columns = glamorous(Box)(
     '&:last-child': {
       marginBottom: '-0.75rem'
     }
-  },
+  })),
   (props: ColumnsProps) => ({
     minHeight: props.fullheight ? '100vh' : 'inherit',
     'align-items': props.verticallyCentered ? 'center' : 'inherit',
