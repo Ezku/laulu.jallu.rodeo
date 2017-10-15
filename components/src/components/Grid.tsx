@@ -1,5 +1,7 @@
 import glamorous from 'glamorous';
 
+import { wide, extrawide } from '../skin/breakpoints';
+
 export const Box = glamorous.div({
   boxSizing: 'border-box'
 });
@@ -9,16 +11,14 @@ export const Container = glamorous(Box)(
     margin: '0 auto',
     position: 'relative'
   },
-  {
-    '@media screen and (min-width: 1024px)': {
-      maxWidth: '960px',
-      width: '960px'
-    },
-    '@media screen and (min-width: 1216px)': {
-      maxWidth: '1152px',
-      width: '1152px'
-    }
-  }
+  wide(bp => ({
+    maxWidth: bp.withGutter,
+    width: bp.withGutter
+  })),
+  extrawide(bp => ({
+    maxWidth: bp.withGutter,
+    width: bp.withGutter
+  }))
 );
 
 type ColumnProps = {
