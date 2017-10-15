@@ -2,11 +2,13 @@ import { CSSProperties } from 'glamorous';
 
 type Breakpoint = {
   contentWidth: number;
+  gutterWidth: number;
   withGutter: number;
 };
 
 const makeBreakpoint = (contentWidth: number, gutterWidth: number = 32): Breakpoint => ({
   contentWidth,
+  gutterWidth,
   withGutter: contentWidth + gutterWidth * 2
 });
 
