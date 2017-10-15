@@ -49,10 +49,7 @@ export const Column = glamorous(Box)(
     !props.size
       ? {}
       : {
-          width: `${100 * (props.size / 12)}%`,
-          '@media print, screen and (min-width: 769px)': {
-            flex: 'none'
-          }
+          width: `${100 * (props.size / 12)}%`
         }
 );
 
