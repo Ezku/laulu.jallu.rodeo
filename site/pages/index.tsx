@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import scale from '@laulu.jallu.rodeo/components/dist/utils/scale';
 
-import { Container } from '@laulu.jallu.rodeo/components/dist/components/Grid';
+import { Container, Columns, Column } from '@laulu.jallu.rodeo/components/dist/components/Grid';
 import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';
 
 import { rehydrate, css } from 'glamor';
@@ -25,7 +25,11 @@ const scales = Array(12)
 
 export default () => (
   <Container>
-    <Title>Hello</Title>
-    <Subtitle>{scales}</Subtitle>
+    <Columns fullheight centered verticallyCentered>
+      <Column size={6}>
+        <Title>Hello</Title>
+        <Subtitle>{scales}</Subtitle>
+      </Column>
+    </Columns>
   </Container>
 );
