@@ -35,19 +35,23 @@ export type ColumnProps = {
 };
 
 export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
-  {
+  extranarrow(bp => ({
     display: 'block',
     flexBasis: 0,
     flexGrow: 1,
     flexShrink: 1,
     padding: '0.75rem'
-  },
-  (props: ColumnProps) =>
-    !props.size
-      ? {}
-      : {
-          width: `${100 * (props.size / 12)}%`
-        }
+  })),
+  (props: ColumnProps) => {
+    const size = props.size;
+    if (size === undefined) {
+      return {};
+    }
+
+    return narrow(bp => ({
+      flexBasis: `${100 * (size / 12)}%`
+    }));
+  }
 );
 
 export type ColumnsProps = {
