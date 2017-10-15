@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Column, Columns } from 'bloomer';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 import slugify from 'slugify';
@@ -7,10 +6,15 @@ import slugify from 'slugify';
 import Layout from '../components/Layout';
 import { monospace } from '../skin/fonts';
 
-import Hero from '../components/Hero';
 import LyricsCard from '../components/LyricsCard';
 
 import songbook from '../data/songbook';
+
+import hasShadow from '../skin/hasShadow';
+import { Title, Subtitle } from '../skin/titles';
+
+import { Column, Columns } from '../components/Grid';
+import HeroColumns from '../components/HeroColumns';
 
 const Ol = glamorous.ol(
   css(monospace, {
@@ -52,10 +56,19 @@ const A = glamorous.a({
 
 export default () => (
   <Layout
-    header={<Hero />}
+    header={
+      <div {...hasShadow}>
+        <HeroColumns>
+          <Column size={12}>
+            <Title>laulu.jallu.rodeo</Title>
+            <Subtitle>Salattujen laulujen kirja</Subtitle>
+          </Column>
+        </HeroColumns>
+      </div>
+    }
     content={
       <Columns>
-        <Column isSize={5}>
+        <Column size={5}>
           <Ol>
             {songbook.tableOfContents.map(item => (
               <li key={item.ordinal}>
@@ -64,13 +77,15 @@ export default () => (
             ))}
           </Ol>
         </Column>
-        <Column isSize={7}>
-          {songbook.songs.map((s, index) => (
-            <div key={index}>
-              {s.name ? <a id={slugify(s.name)} /> : null}
-              <LyricsCard song={s} />
-            </div>
-          ))}
+        <Column size={7}>
+          <div>
+            {songbook.songs.map((s, index) => (
+              <div key={index}>
+                {s.name ? <a id={slugify(s.name)} /> : null}
+                <LyricsCard song={s} />
+              </div>
+            ))}
+          </div>
         </Column>
       </Columns>
     }
