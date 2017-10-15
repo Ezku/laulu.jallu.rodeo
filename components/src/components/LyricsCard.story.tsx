@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import { Container, Columns, Column } from './Grid';
+import { Section } from './Layout';
 
 import { storiesOf } from '@storybook/react';
 
@@ -13,10 +14,12 @@ function oneOf<V>(values: V[]): V {
 
 storiesOf('LyricsCard', module)
   .addDecorator(story => (
-    <Container>
-      <Columns centered verticallyCentered fullheight>
-        <Column size={6}>{story()}</Column>
-      </Columns>
-    </Container>
+    <Section>
+      <Container>
+        <Columns centered verticallyCentered fullheight>
+          <Column size={6}>{story()}</Column>
+        </Columns>
+      </Container>
+    </Section>
   ))
   .add('random song from the book', () => <LyricsCard song={oneOf(songbook.songs)} />);

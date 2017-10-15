@@ -3,7 +3,7 @@ import glamorous from 'glamorous';
 
 import { Box, Container } from './Grid';
 
-const Section = glamorous(Box)({
+export const Section = glamorous(Box)({
   padding: '3rem 1.5rem'
 });
 
