@@ -54,6 +54,27 @@ const A = glamorous.a({
   }
 });
 
+const SongIndex = () => (
+  <Ol>
+    {songbook.tableOfContents.map(item => (
+      <li key={item.ordinal}>
+        {item.name ? <A href={'#' + slugify(item.name)}>{item.name}</A> : null}
+      </li>
+    ))}
+  </Ol>
+);
+
+const CompleteSongList = () => (
+  <div>
+    {songbook.songs.map((s, index) => (
+      <div key={index}>
+        {s.name ? <a id={slugify(s.name)} /> : null}
+        <LyricsCard song={s} />
+      </div>
+    ))}
+  </div>
+);
+
 export default () => (
   <Layout
     header={
@@ -69,23 +90,10 @@ export default () => (
     content={
       <Columns>
         <Column size={5}>
-          <Ol>
-            {songbook.tableOfContents.map(item => (
-              <li key={item.ordinal}>
-                {item.name ? <A href={'#' + slugify(item.name)}>{item.name}</A> : null}
-              </li>
-            ))}
-          </Ol>
+          <SongIndex />
         </Column>
         <Column size={7}>
-          <div>
-            {songbook.songs.map((s, index) => (
-              <div key={index}>
-                {s.name ? <a id={slugify(s.name)} /> : null}
-                <LyricsCard song={s} />
-              </div>
-            ))}
-          </div>
+          <CompleteSongList />
         </Column>
       </Columns>
     }
