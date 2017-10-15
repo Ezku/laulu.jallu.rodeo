@@ -16,15 +16,16 @@ if (typeof window !== 'undefined') {
   rehydrate((window as any).__NEXT_DATA__.ids);
 }
 
+const scales = Array(12)
+  .fill(null)
+  .map((v, i) => {
+    return `${scale(i - 5)}`;
+  })
+  .join(', ');
+
 export default () => (
   <Container>
     <Title>Hello</Title>
-    <Subtitle>
-      {Array(12)
-        .fill(null)
-        .map((v, i) => i - 5)
-        .map(scale)
-        .join(', ')}
-    </Subtitle>
+    <Subtitle>{scales}</Subtitle>
   </Container>
 );
