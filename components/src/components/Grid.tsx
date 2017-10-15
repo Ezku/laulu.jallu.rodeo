@@ -21,6 +21,10 @@ export const Container = glamorous(Box)(
   }
 );
 
+type ColumnProps = {
+  size: number;
+};
+
 export const Column = glamorous(Box)(
   {
     display: 'block',
@@ -34,8 +38,8 @@ export const Column = glamorous(Box)(
       flex: 'none'
     }
   },
-  ({ size }: { size: number }) => ({
-    width: `${100 * (size / 12)}%`
+  (props: ColumnProps = { size: 12 }) => ({
+    width: `${100 * (props.size / 12)}%`
   })
 );
 
