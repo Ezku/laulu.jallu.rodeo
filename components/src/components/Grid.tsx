@@ -46,9 +46,10 @@ export const Column = glamorous(Box)(
 );
 
 type ColumnsProps = {
-  centered: boolean;
-  verticallyCentered: boolean;
-  fullheight: boolean;
+  centered?: boolean;
+  verticallyCentered?: boolean;
+  fullheight?: boolean;
+  children: React.ReactNode;
 };
 
 export const Columns = glamorous(Box)(
@@ -61,7 +62,7 @@ export const Columns = glamorous(Box)(
       marginBottom: '-0.75rem'
     }
   },
-  (props: ColumnsProps = { centered: false, verticallyCentered: false, fullheight: false }) => ({
+  (props: ColumnsProps) => ({
     minHeight: props.fullheight ? '100vh' : 'inherit',
     'align-items': props.verticallyCentered ? 'center' : 'inherit',
     'justify-content': props.centered ? 'center' : 'inherit'
