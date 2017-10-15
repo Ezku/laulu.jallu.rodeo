@@ -16,14 +16,17 @@ export const Container: GlamorousComponent<{}, {}> = glamorous(Box)(
     maxWidth: bp.viewportWidth
   })),
   normal(bp => ({
-    maxWidth: bp.contentWidth,
-    width: bp.contentWidth
+    maxWidth: bp.viewportWidth,
+    width: bp.viewportWidth
   })),
   wide(bp => ({
-    maxWidth: bp.contentWidth,
-    width: bp.contentWidth
+    maxWidth: bp.viewportWidth,
+    width: bp.viewportWidth
   })),
-  extrawide(bp => ({ maxWidth: bp.contentWidth, width: bp.contentWidth }))
+  extrawide(bp => ({
+    maxWidth: bp.viewportWidth,
+    width: bp.viewportWidth
+  }))
 );
 
 export type ColumnProps = {
