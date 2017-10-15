@@ -35,7 +35,7 @@ export type ColumnProps = {
 };
 
 export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
-  extranarrow(bp => ({
+  extranarrow(() => ({
     display: 'block',
     flexBasis: 0,
     flexGrow: 1,
@@ -48,7 +48,7 @@ export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
       return {};
     }
 
-    return narrow(bp => ({
+    return narrow(() => ({
       flexBasis: `${100 * (size / 12)}%`
     }));
   }
