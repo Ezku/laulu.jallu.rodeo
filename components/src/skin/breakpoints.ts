@@ -1,18 +1,19 @@
 import { CSSProperties } from 'glamorous';
 
-export const gutterWidth = 32;
-
 type Breakpoint = {
   content: number;
   withGutter: number;
 };
 
-const makeBreakpoint = (contentWidth: number): Breakpoint => ({
+const makeBreakpoint = (contentWidth: number, gutterWidth: number = 32): Breakpoint => ({
   content: contentWidth,
   withGutter: contentWidth + gutterWidth * 2
 });
 
 const breakpoints = {
+  extranarrow: makeBreakpoint(300, 10),
+  narrow: makeBreakpoint(576),
+  normal: makeBreakpoint(768),
   wide: makeBreakpoint(960),
   extrawide: makeBreakpoint(1152)
 };
@@ -21,10 +22,12 @@ export default breakpoints;
 
 const minWidthQuery = (pixels: number) => `@media screen and (min-width: ${pixels}px)`;
 
-export const wide = (styles: (bp: Breakpoint) => CSSProperties) => ({
-  [minWidthQuery(breakpoints.wide.withGutter)]: styles(breakpoints.wide)
+const makeBreakpointSelector = (bp: Breakpoint) => (styles: (bp: Breakpoint) => CSSProperties) => ({
+  [minWidthQuery(bp.withGutter)]: styles(bp)
 });
 
-export const extrawide = (styles: (bp: Breakpoint) => CSSProperties) => ({
-  [minWidthQuery(breakpoints.extrawide.withGutter)]: styles(breakpoints.wide)
-});
+export const extranarrow = makeBreakpointSelector(breakpoints.extranarrow);
+export const narrow = makeBreakpointSelector(breakpoints.narrow);
+export const normal = makeBreakpointSelector(breakpoints.normal);
+export const wide = makeBreakpointSelector(breakpoints.wide);
+export const extrawide = makeBreakpointSelector(breakpoints.extrawide);
