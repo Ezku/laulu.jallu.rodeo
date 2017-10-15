@@ -1,16 +1,13 @@
-import glamorous from 'glamorous';
+import glamorous, { GlamorousComponent } from 'glamorous';
 
 import { extranarrow, narrow, normal, wide, extrawide } from '../skin/breakpoints';
 
-export const Box = glamorous.div({
+export const Box: GlamorousComponent<{}, {}> = glamorous.div({
   boxSizing: 'border-box'
 });
 
-export const Container = glamorous(Box)(
-  {
-    margin: '0 auto',
-    position: 'relative'
-  },
+export const Container: GlamorousComponent<{}, {}> = glamorous(Box)(
+  { margin: '0 auto', position: 'relative' },
   extranarrow(bp => ({
     padding: `0 ${bp.gutterWidth}px`
   })),
@@ -26,18 +23,15 @@ export const Container = glamorous(Box)(
     maxWidth: bp.contentWidth,
     width: bp.contentWidth
   })),
-  extrawide(bp => ({
-    maxWidth: bp.contentWidth,
-    width: bp.contentWidth
-  }))
+  extrawide(bp => ({ maxWidth: bp.contentWidth, width: bp.contentWidth }))
 );
 
-type ColumnProps = {
+export type ColumnProps = {
   size?: number;
   children: React.ReactNode;
 };
 
-export const Column = glamorous(Box)(
+export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
   {
     display: 'block',
     flexBasis: 0,
@@ -53,14 +47,14 @@ export const Column = glamorous(Box)(
         }
 );
 
-type ColumnsProps = {
+export type ColumnsProps = {
   centered?: boolean;
   verticallyCentered?: boolean;
   fullheight?: boolean;
   children: React.ReactNode;
 };
 
-export const Columns = glamorous(Box)(
+export const Columns: GlamorousComponent<ColumnsProps, {}> = glamorous(Box)(
   narrow(bp => ({
     display: 'flex',
     marginLeft: '-0.75rem',

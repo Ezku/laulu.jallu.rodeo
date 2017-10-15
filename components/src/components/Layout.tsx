@@ -1,9 +1,9 @@
 import * as React from 'react';
-import glamorous from 'glamorous';
+import glamorous, { GlamorousComponent } from 'glamorous';
 
 import { Box, Container } from './Grid';
 
-export const Section = glamorous(Box)({
+export const Section: GlamorousComponent<{}, {}> = glamorous(Box)({
   padding: '3rem 1.5rem'
 });
 
@@ -13,10 +13,8 @@ export interface Props {
 }
 
 export default ({ header, content }: Props) => (
-  <div>
+  <Container>
     {header}
-    <Section>
-      <Container>{content}</Container>
-    </Section>
-  </div>
+    <Section>{content}</Section>
+  </Container>
 );

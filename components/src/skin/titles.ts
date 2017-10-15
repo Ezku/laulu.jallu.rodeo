@@ -1,9 +1,9 @@
 import { css } from 'glamor';
 
 import { serif } from './fonts';
-import glamorous from 'glamorous';
+import glamorous, { GlamorousComponent } from 'glamorous';
 
-export const Title = glamorous.h1(
+export const Title: GlamorousComponent<{}, {}> = glamorous.h1(
   css(serif, {
     margin: 0,
     fontWeight: 900,
@@ -14,7 +14,7 @@ export const Title = glamorous.h1(
   })
 );
 
-export const Subtitle = glamorous.h2(
+export const Subtitle: GlamorousComponent<{}, {}> = glamorous.h2(
   css(serif, {
     margin: 0,
     fontWeight: 300,

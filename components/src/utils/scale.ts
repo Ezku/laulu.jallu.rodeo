@@ -5,7 +5,7 @@ const ZERO = 0;
 
 export default makeScale({});
 
-type ScaleParams = {
+export type ScaleParams = {
   base?: number;
   ratio?: number;
   step?: number;
