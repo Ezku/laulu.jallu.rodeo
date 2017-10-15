@@ -22,7 +22,7 @@ export const Container = glamorous(Box)(
 );
 
 type ColumnProps = {
-  size: number;
+  size: number | null;
 };
 
 export const Column = glamorous(Box)(
@@ -38,8 +38,8 @@ export const Column = glamorous(Box)(
       flex: 'none'
     }
   },
-  (props: ColumnProps = { size: 12 }) => ({
-    width: `${100 * (props.size / 12)}%`
+  (props: ColumnProps = { size: null }) => ({
+    width: props.size === null ? 'auto' : `${100 * (props.size / 12)}%`
   })
 );
 
