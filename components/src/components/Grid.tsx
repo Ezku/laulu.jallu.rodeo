@@ -65,8 +65,8 @@ export const Columns: GlamorousComponent<ColumnsProps, {}> = glamorous(Box)(
     }
   })),
   (props: ColumnsProps) => ({
-    minHeight: props.fullheight ? '100vh' : 'inherit',
-    'align-items': props.verticallyCentered ? 'center' : 'inherit',
-    'justify-content': props.centered ? 'center' : 'inherit'
+    minHeight: props.fullheight === true ? '100vh' : 'inherit',
+    'align-items': props.verticallyCentered === true ? 'center' : 'inherit',
+    'justify-content': props.centered === true ? 'center' : 'inherit'
   })
 );
