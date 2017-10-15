@@ -3,13 +3,13 @@ import { CSSProperties } from 'glamorous';
 type Breakpoint = {
   contentWidth: number;
   gutterWidth: number;
-  withGutter: number;
+  viewportWidth: number;
 };
 
 const makeBreakpoint = (contentWidth: number, gutterWidth: number = 32): Breakpoint => ({
   contentWidth,
   gutterWidth,
-  withGutter: contentWidth + gutterWidth * 2
+  viewportWidth: contentWidth + gutterWidth * 2
 });
 
 const breakpoints = {
@@ -25,7 +25,7 @@ export default breakpoints;
 const minWidthQuery = (pixels: number) => `@media screen and (min-width: ${pixels}px)`;
 
 const makeBreakpointSelector = (bp: Breakpoint) => (styles: (bp: Breakpoint) => CSSProperties) => ({
-  [minWidthQuery(bp.withGutter)]: styles(bp)
+  [minWidthQuery(bp.viewportWidth)]: styles(bp)
 });
 
 export const extranarrow = makeBreakpointSelector(breakpoints.extranarrow);
