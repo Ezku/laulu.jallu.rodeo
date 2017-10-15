@@ -49,7 +49,9 @@ export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
     }
 
     return narrow(() => ({
-      flexBasis: `${100 * (size / 12)}%`
+      flexBasis: `${100 * (size / 12)}%`,
+      flexGrow: 0,
+      flexShrink: 0
     }));
   }
 );
