@@ -7,15 +7,14 @@ type Breakpoint = {
   withGutter: number;
 };
 
+const makeBreakpoint = (contentWidth: number): Breakpoint => ({
+  content: contentWidth,
+  withGutter: contentWidth + gutterWidth * 2
+});
+
 const breakpoints = {
-  wide: {
-    content: 960,
-    withGutter: 960 + gutterWidth * 2
-  },
-  extrawide: {
-    content: 1152,
-    withGutter: 1152 + gutterWidth * 2
-  }
+  wide: makeBreakpoint(960),
+  extrawide: makeBreakpoint(1152)
 };
 
 export default breakpoints;
