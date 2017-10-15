@@ -1,6 +1,6 @@
 import glamorous from 'glamorous';
 
-import { wide, extrawide } from '../skin/breakpoints';
+import { extranarrow, narrow, normal, wide, extrawide } from '../skin/breakpoints';
 
 export const Box = glamorous.div({
   boxSizing: 'border-box'
@@ -11,13 +11,24 @@ export const Container = glamorous(Box)(
     margin: '0 auto',
     position: 'relative'
   },
+  extranarrow(bp => ({
+    padding: `0 ${bp.gutterWidth}px`
+  })),
+  narrow(bp => ({
+    padding: `0 ${bp.gutterWidth}px`,
+    maxWidth: bp.viewportWidth
+  })),
+  normal(bp => ({
+    maxWidth: bp.contentWidth,
+    width: bp.contentWidth
+  })),
   wide(bp => ({
-    maxWidth: bp.withGutter,
-    width: bp.withGutter
+    maxWidth: bp.contentWidth,
+    width: bp.contentWidth
   })),
   extrawide(bp => ({
-    maxWidth: bp.withGutter,
-    width: bp.withGutter
+    maxWidth: bp.contentWidth,
+    width: bp.contentWidth
   }))
 );
 
