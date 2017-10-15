@@ -8,8 +8,8 @@ const Section = glamorous(Box)({
 });
 
 export interface Props {
-  header: React.ReactElement<{}>;
-  content: React.ReactElement<{}>;
+  header: React.ReactNode;
+  content: React.ReactNode;
 }
 
 export default ({ header, content }: Props) => (
