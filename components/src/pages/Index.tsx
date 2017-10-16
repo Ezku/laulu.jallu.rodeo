@@ -22,8 +22,7 @@ const Ol = glamorous.ol(
     lineHeight: '1.618rem',
     fontWeight: 700,
     listStylePosition: 'outside',
-    marginLeft: '3rem',
-    marginRight: '1rem'
+    margin: 0
   })
 );
 
