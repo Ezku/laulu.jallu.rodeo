@@ -3,7 +3,7 @@ import glamorous from 'glamorous';
 import { css } from 'glamor';
 import slugify from 'slugify';
 
-import Layout from '../components/Layout';
+import { Container, Section } from '../components/Layout';
 import { monospace } from '../skin/fonts';
 
 import LyricsCard from '../components/LyricsCard';
@@ -75,27 +75,32 @@ const CompleteSongList = () => (
   </div>
 );
 
+export interface Props {
+  header: React.ReactNode;
+  content: React.ReactNode;
+}
+
 export default () => (
-  <Layout
-    header={
-      <div {...hasShadow}>
-        <HeroColumns>
-          <Column size={12}>
-            <Title>laulu.jallu.rodeo</Title>
-            <Subtitle>Salattujen laulujen kirja</Subtitle>
+  <div>
+    <div {...hasShadow}>
+      <HeroColumns>
+        <Column size={12}>
+          <Title>laulu.jallu.rodeo</Title>
+          <Subtitle>Salattujen laulujen kirja</Subtitle>
+        </Column>
+      </HeroColumns>
+    </div>
+    <Container>
+      <Section>
+        <Columns>
+          <Column size={5}>
+            <SongIndex />
           </Column>
-        </HeroColumns>
-      </div>
-    }
-    content={
-      <Columns>
-        <Column size={5}>
-          <SongIndex />
-        </Column>
-        <Column size={7}>
-          <CompleteSongList />
-        </Column>
-      </Columns>
-    }
-  />
+          <Column size={7}>
+            <CompleteSongList />
+          </Column>
+        </Columns>
+      </Section>
+    </Container>
+  </div>
 );
