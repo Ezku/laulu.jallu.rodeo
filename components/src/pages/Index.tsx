@@ -32,6 +32,7 @@ const A = glamorous.a({
   zIndex: 1,
   position: 'relative',
   borderBottom: '1px solid transparent',
+  color: '#262626',
   ':hover': {
     borderBottomColor: 'inherit',
     ':after': {
