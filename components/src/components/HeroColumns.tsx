@@ -1,7 +1,8 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
 
-import { Box, Container, Columns } from './Grid';
+import { Columns } from './Grid';
+import { Box, Container } from './Layout';
 
 const Hero = glamorous(Box)({
   alignItems: 'stretch',

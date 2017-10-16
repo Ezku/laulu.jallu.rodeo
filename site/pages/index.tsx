@@ -3,7 +3,8 @@ import Head from 'next/head';
 
 import scale from '@laulu.jallu.rodeo/components/dist/utils/scale';
 
-import { Container, Columns, Column } from '@laulu.jallu.rodeo/components/dist/components/Grid';
+import { Container } from '@laulu.jallu.rodeo/components/dist/components/Layout';
+import { Columns, Column } from '@laulu.jallu.rodeo/components/dist/components/Grid';
 import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';
 
 import { rehydrate, css } from 'glamor';

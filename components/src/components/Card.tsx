@@ -3,7 +3,7 @@ import glamorous from 'glamorous';
 import { css } from 'glamor';
 
 import { sansSerif } from '../skin/fonts';
-import { Box } from './Grid';
+import { Box } from './Layout';
 
 const Card = glamorous(Box)({
   borderRadius: '2px',

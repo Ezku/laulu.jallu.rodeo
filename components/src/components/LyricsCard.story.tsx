@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { Container, Columns, Column } from './Grid';
-import { Section } from './Layout';
+import { Columns, Column } from './Grid';
+import { Container, Section } from './Layout';
 
 import { storiesOf } from '@storybook/react';
 
