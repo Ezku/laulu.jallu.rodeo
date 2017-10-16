@@ -1,14 +1,5 @@
 import * as React from 'react';
-import Head from 'next/head';
-
-import scale from '@laulu.jallu.rodeo/components/dist/utils/scale';
-
-import { Container } from '@laulu.jallu.rodeo/components/dist/components/Layout';
-import { Columns, Column } from '@laulu.jallu.rodeo/components/dist/components/Grid';
-import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';
-
-import { rehydrate, css } from 'glamor';
-import glamorous from 'glamorous';
+import { rehydrate } from 'glamor';
 
 // Adds server generated styles to glamor cache.
 // Has to run before any `style()` calls
@@ -17,20 +8,39 @@ if (typeof window !== 'undefined') {
   rehydrate((window as any).__NEXT_DATA__.ids);
 }
 
-const scales = Array(12)
-  .fill(null)
-  .map((v, i) => {
-    return `${scale(i - 5)}`;
-  })
-  .join(', ');
+import { Container, Section } from '@laulu.jallu.rodeo/components/dist/components/Layout';
+
+import songbook from '@laulu.jallu.rodeo/components/dist/data/songbook';
+
+import hasShadow from '@laulu.jallu.rodeo/components/dist/skin/hasShadow';
+import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';
+
+import { Column, Columns } from '@laulu.jallu.rodeo/components/dist/components/Grid';
+import HeroColumns from '@laulu.jallu.rodeo/components/dist/components/HeroColumns';
+import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
+import LyricsCardList from '@laulu.jallu.rodeo/components/dist/components/LyricsCardList';
 
 export default () => (
-  <Container>
-    <Columns fullheight centered verticallyCentered>
-      <Column size={6}>
-        <Title>Hello</Title>
-        <Subtitle>{scales}</Subtitle>
-      </Column>
-    </Columns>
-  </Container>
+  <div>
+    <div {...hasShadow}>
+      <HeroColumns>
+        <Column size={12}>
+          <Title>laulu.jallu.rodeo</Title>
+          <Subtitle>Salattujen laulujen kirja</Subtitle>
+        </Column>
+      </HeroColumns>
+    </div>
+    <Container>
+      <Section>
+        <Columns>
+          <Column size={5}>
+            <SongIndex songs={songbook.tableOfContents} />
+          </Column>
+          <Column size={7}>
+            <LyricsCardList songs={songbook.songs} />
+          </Column>
+        </Columns>
+      </Section>
+    </Container>
+  </div>
 );
