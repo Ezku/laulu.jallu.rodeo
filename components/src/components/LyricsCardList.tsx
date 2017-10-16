@@ -1,7 +1,6 @@
 import * as React from 'react';
 
-import slugify from 'slugify';
-
+import slugify from '../utils/slugify';
 import LyricsCard from '../components/LyricsCard';
 import { Song } from '../data/types';
 

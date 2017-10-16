@@ -1,8 +1,8 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
-import slugify from 'slugify';
 
+import slugify from '../utils/slugify';
 import { monospace } from '../skin/fonts';
 
 const Ol = glamorous.ol(
