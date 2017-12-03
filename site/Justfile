@@ -10,3 +10,6 @@ build:
 
 start:
   yarn start
+
+cleanup:
+  rm -rf .next

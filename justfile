@@ -1,28 +1,30 @@
 
 default:
-	@just -l
+  @just -l
 
 install:
-	npm install -g yarn prettier now
+  npm install -g yarn prettier now
 
 prettier:
-	prettier components/src/**/*.* --write
+  prettier components/src/**/*.* --write
 
 storybook:
-	(cd components && yarn storybook)
-
-build:
-	(cd components && yarn build)
-
-serve: build
-	serve components/build
+  just components/storybook
 
 cleanup:
-	find components/build -type f -name '*.js.map' -delete
+  just data/cleanup
+  just components/cleanup
+  just site/cleanup
 
-deploy: build cleanup
-	(cd components/build && now --name laulu.jallu.rodeo --public)
+build: cleanup
+  just data/build
+  just components/build
+  just site/build
+
+# FIXME
+# deploy: build
+#   (cd site && now --name laulu.jallu.rodeo --public)
 
 now: deploy
-	now alias
+  now alias
 
