@@ -1,6 +1,8 @@
 import * as React from 'react';
 import glamorous from 'glamorous';
 
+import { narrow } from '../skin/breakpoints';
+
 import { Columns } from './Grid';
 import { Box, Container } from './Layout';
 
@@ -12,11 +14,16 @@ const Hero = glamorous(Box)({
   backgroundColor: '#FFF'
 });
 
-const HeroBody = glamorous(Box)({
-  padding: '3rem 1.5rem',
-  flexGrow: 1,
-  flexShrink: 0
-});
+const HeroBody = glamorous(Box)(
+  {
+    flexGrow: 1,
+    flexShrink: 0,
+    padding: '1.5rem 0.5rem'
+  },
+  narrow(() => ({
+    padding: '3rem 1.5rem'
+  }))
+);
 
 export default (props: { children: React.ReactNode }) => (
   <Hero>
