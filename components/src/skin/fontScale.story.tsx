@@ -1,9 +1,10 @@
 import * as React from 'react';
-
-import { Container, Columns, Column } from 'bloomer';
 import glamorous from 'glamorous';
-
+import { css } from 'glamor';
 import { storiesOf } from '@storybook/react';
+
+import { Container } from '../components/Layout';
+import { Columns, Column } from '../components/Grid';
 
 import fontScale from './fontScale';
 
@@ -12,11 +13,15 @@ const S = glamorous.div({
   backgroundColor: 'rgba(23, 23, 23, 0.1)'
 });
 
+const fullscreen = css({
+  minHeight: '100vh'
+})
+
 storiesOf('fontScale', module)
   .addDecorator(story => (
-    <Container style={{ minHeight: '100vh' }}>
-      <Columns isCentered isVCentered style={{ minHeight: '100vh' }}>
-        <Column isSize={6}>{story()}</Column>
+    <Container {...fullscreen}>
+      <Columns centered verticallyCentered {...fullscreen}>
+        <Column size={6}>{story()}</Column>
       </Columns>
     </Container>
   ))
