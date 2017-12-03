@@ -1,6 +1,3 @@
 
 # typescript build output
 /dist
-
-# db
-src/db.ts
