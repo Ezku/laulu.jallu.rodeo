@@ -10,36 +10,18 @@ const Ol = glamorous.ol(
     fontSize: '1rem',
     lineHeight: '1.618rem',
     fontWeight: 700,
-    listStylePosition: 'outside',
-    margin: 0
+    listStylePosition: 'inside',
+    margin: 0,
+    marginRight: '1rem'
   })
 );
 
 const A = glamorous.a({
-  display: 'inline-block',
   textDecoration: 'none',
-  zIndex: 1,
-  position: 'relative',
   borderBottom: '1px solid transparent',
   color: '#262626',
   ':hover': {
-    borderBottomColor: 'inherit',
-    ':after': {
-      top: 0
-    }
-  },
-  ':after': {
-    zIndex: -1,
-    content: ' ',
-    backgroundColor: '#fff882',
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    bottom: 0,
-    top: '100%',
-    transitionProperty: 'top',
-    transitionDuration: '0.160s',
-    transitionTimingFunction: 'ease-in'
+    borderBottomColor: 'inherit'
   }
 });
 
