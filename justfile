@@ -1,4 +1,7 @@
 
+default:
+	@just -l
+
 prettier:
 	prettier components/src/**/*.* --write
 
