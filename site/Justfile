@@ -3,7 +3,7 @@ default:
   @just -l
 
 dev:
-  yarn dev
+  yarn develop
 
 build:
   yarn build
