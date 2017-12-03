@@ -25,10 +25,7 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "start": "react-scripts-ts start",
-    "build": "react-scripts-ts build",
     "test": "react-scripts-ts test --env=jsdom",
-    "eject": "react-scripts-ts eject",
     "storybook": "start-storybook -p 6006",
     "dist": "tsc -p tsconfig.dist.json",
     "dist:watch": "tsc -p tsconfig.dist.json --watch"
