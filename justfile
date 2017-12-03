@@ -2,6 +2,9 @@
 default:
 	@just -l
 
+install:
+	npm install -g yarn prettier now
+
 prettier:
 	prettier components/src/**/*.* --write
 
