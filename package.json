@@ -1,5 +1,8 @@
 {
   "name": "laulu.jallu.rodeo",
   "private": true,
-  "workspaces": ["*"]
+  "workspaces": ["*"],
+  "scripts": {
+    "build": "(cd data && yarn dist) && (cd components && yarn dist) && (cd site && yarn build)"
+  }
 }
