@@ -10,7 +10,6 @@
     "@types/webfontloader": "^1.6.29",
     "awesome-typescript-loader": "^3.2.3",
     "bloomer": "^0.6.2",
-    "bulma": "^0.5.3",
     "font-awesome": "^4.7.0",
     "glamor": "^2.20.40",
     "glamorous": "^4.9.7",
