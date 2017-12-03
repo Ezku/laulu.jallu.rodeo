@@ -2,8 +2,9 @@ import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 
+import { Song } from '@laulu.jallu.rodeo/data/dist/types';
+
 import { serif } from '../skin/fonts';
-import { Song } from '../data/types';
 import Card from '../components/Card';
 
 const Name = glamorous.h2(

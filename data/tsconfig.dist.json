@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "declaration": true,
+    "module": "commonjs",
+    "target": "es5",
+    "forceConsistentCasingInFileNames": false
+  },
+  "exclude": ["**/*/*.test.ts", "**/*/*.test.tsx", "**/*/*.story.tsx"]
+}

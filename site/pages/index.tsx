@@ -10,7 +10,7 @@ if (typeof window !== 'undefined') {
 
 import { Container, Section } from '@laulu.jallu.rodeo/components/dist/components/Layout';
 
-import songbook from '@laulu.jallu.rodeo/components/dist/data/songbook';
+import songbook from '@laulu.jallu.rodeo/data/dist/songbook';
 
 import hasShadow from '@laulu.jallu.rodeo/components/dist/skin/hasShadow';
 import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';

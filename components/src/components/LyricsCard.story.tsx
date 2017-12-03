@@ -6,7 +6,7 @@ import { Container, Section } from './Layout';
 import { storiesOf } from '@storybook/react';
 
 import LyricsCard from './LyricsCard';
-import songbook from '../data/songbook';
+import songbook from '@laulu.jallu.rodeo/data/dist/songbook';
 
 function oneOf<V>(values: V[]): V {
   return values[Math.floor(Math.random() * values.length)];
