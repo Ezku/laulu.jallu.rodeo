@@ -1,0 +1,15 @@
+
+default:
+  @just -l
+
+dev:
+  yarn storybook
+
+test:
+  yarn test
+
+build:
+  yarn dist
+
+build-watch:
+  yarn dist:watch
