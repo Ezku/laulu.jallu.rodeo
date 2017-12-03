@@ -3,7 +3,7 @@ default:
   @just -l
 
 install:
-  npm install -g yarn prettier now
+  npm install -g yarn prettier
 
 prettier:
   prettier components/src/**/*.* --write
@@ -20,11 +20,3 @@ build: cleanup
   just data/build
   just components/build
   just site/build
-
-# FIXME
-# deploy: build
-#   (cd site && now --name laulu.jallu.rodeo --public)
-
-now: deploy
-  now alias
-
