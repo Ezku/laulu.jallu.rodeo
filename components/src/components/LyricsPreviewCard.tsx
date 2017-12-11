@@ -20,17 +20,18 @@ const Header = glamorous.header({
   marginBottom: '16px'
 });
 
-const Verse = glamorous.p({
-  marginBottom: '2rem',
-  ':last-child': {
-    marginBottom: 0
-  }
-});
+const Verse = glamorous.p();
 
 const Line = glamorous.div({
   paddingLeft: '1rem',
   textIndent: '-1rem'
 });
+
+const More = glamorous.span(
+  css(serif, {
+    fontSize: '24px'
+  })
+);
 
 export type Props = {
   song: Song;
@@ -56,7 +57,7 @@ export default (props: Props) => (
         </Verse>
       ))}
     {(props.song.verses.length > MAX_VERSES || props.song.verses[0].verse.length > MAX_LINES) && (
-      <span>&hellip;</span>
+      <More>&hellip;</More>
     )}
   </Card>
 );
