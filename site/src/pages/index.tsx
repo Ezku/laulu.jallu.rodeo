@@ -1,8 +1,10 @@
 import * as React from 'react';
+import { navigateTo } from 'gatsby-link';
 
 import { Container, Section } from '@laulu.jallu.rodeo/components/dist/components/Layout';
 
 import songbook from '@laulu.jallu.rodeo/data/dist/songbook';
+import { Song } from '@laulu.jallu.rodeo/data/dist/types';
 
 import hasShadow from '@laulu.jallu.rodeo/components/dist/skin/hasShadow';
 import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';
@@ -12,6 +14,7 @@ import HeroColumns from '@laulu.jallu.rodeo/components/dist/components/HeroColum
 import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
 import SongsWithAnchors from '@laulu.jallu.rodeo/components/dist/components/SongsWithAnchors';
 import LyricsPreviewCard from '@laulu.jallu.rodeo/components/dist/components/LyricsPreviewCard';
+import BlockGatsbyLink from '@laulu.jallu.rodeo/components/dist/components/BlockGatsbyLink';
 
 export default () => (
   <div>
@@ -32,7 +35,11 @@ export default () => (
           <Column size={7}>
             <SongsWithAnchors
               songs={songbook.songs}
-              render={song => <LyricsPreviewCard song={song} />}
+              render={(song: Song, slug: string) => (
+                <BlockGatsbyLink to={`/${slug}`}>
+                  <LyricsPreviewCard song={song} />
+                </BlockGatsbyLink>
+              )}
             />
           </Column>
         </Columns>

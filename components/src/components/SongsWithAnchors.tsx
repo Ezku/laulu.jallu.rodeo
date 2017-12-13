@@ -6,7 +6,7 @@ import slugify from '../utils/slugify';
 
 export type Props = {
   songs: Song[];
-  render: (s: Song) => React.ReactNode;
+  render: (song: Song, slug: string) => React.ReactNode;
 };
 const SongsWithAnchors = (props: Props) => (
   <div>
@@ -14,8 +14,8 @@ const SongsWithAnchors = (props: Props) => (
       const slug = slugify(s.name || '');
       return (
         <div key={slug}>
-          {slug ? <a id={slug} /> : null}
-          {props.render(s)}
+          {!!slug ? <a id={slug} /> : null}
+          {props.render(s, slug)}
         </div>
       );
     })}
