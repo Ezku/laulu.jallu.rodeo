@@ -11,6 +11,7 @@ import { Column, Columns } from '@laulu.jallu.rodeo/components/dist/components/G
 import HeroColumns from '@laulu.jallu.rodeo/components/dist/components/HeroColumns';
 import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
 import LyricsCardList from '@laulu.jallu.rodeo/components/dist/components/LyricsCardList';
+import LyricsCard from '@laulu.jallu.rodeo/components/dist/components/LyricsCard';
 
 export default () => (
   <div>
@@ -29,7 +30,7 @@ export default () => (
             <SongIndex songs={songbook.tableOfContents} />
           </Column>
           <Column size={7}>
-            <LyricsCardList songs={songbook.songs} />
+            <LyricsCardList songs={songbook.songs} render={song => <LyricsCard song={song} />} />
           </Column>
         </Columns>
       </Section>
