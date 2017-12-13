@@ -8,7 +8,7 @@ export type Props = {
   songs: Song[];
   render: (s: Song) => React.ReactNode;
 };
-const LyricsCardList = (props: Props) => (
+const SongsWithAnchors = (props: Props) => (
   <div>
     {props.songs.map(s => {
       const slug = slugify(s.name || '');
@@ -22,4 +22,4 @@ const LyricsCardList = (props: Props) => (
   </div>
 );
 
-export default LyricsCardList;
+export default SongsWithAnchors;

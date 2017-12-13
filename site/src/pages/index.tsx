@@ -10,7 +10,7 @@ import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles'
 import { Column, Columns } from '@laulu.jallu.rodeo/components/dist/components/Grid';
 import HeroColumns from '@laulu.jallu.rodeo/components/dist/components/HeroColumns';
 import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
-import LyricsCardList from '@laulu.jallu.rodeo/components/dist/components/LyricsCardList';
+import SongsWithAnchors from '@laulu.jallu.rodeo/components/dist/components/SongsWithAnchors';
 import LyricsCard from '@laulu.jallu.rodeo/components/dist/components/LyricsCard';
 
 export default () => (
@@ -30,7 +30,7 @@ export default () => (
             <SongIndex songs={songbook.tableOfContents} />
           </Column>
           <Column size={7}>
-            <LyricsCardList songs={songbook.songs} render={song => <LyricsCard song={song} />} />
+            <SongsWithAnchors songs={songbook.songs} render={song => <LyricsCard song={song} />} />
           </Column>
         </Columns>
       </Section>
