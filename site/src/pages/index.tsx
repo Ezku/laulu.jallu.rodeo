@@ -1,5 +1,6 @@
 import * as React from 'react';
-import { navigateTo } from 'gatsby-link';
+import Link from 'gatsby-link';
+import glamorous from 'glamorous';
 
 import { Container, Section } from '@laulu.jallu.rodeo/components/dist/components/Layout';
 
@@ -14,7 +15,10 @@ import HeroColumns from '@laulu.jallu.rodeo/components/dist/components/HeroColum
 import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
 import SongsWithAnchors from '@laulu.jallu.rodeo/components/dist/components/SongsWithAnchors';
 import LyricsPreviewCard from '@laulu.jallu.rodeo/components/dist/components/LyricsPreviewCard';
-import BlockGatsbyLink from '@laulu.jallu.rodeo/components/dist/components/BlockGatsbyLink';
+
+const BlockLink = glamorous(Link)({
+  textDecoration: 'inherit'
+});
 
 export default () => (
   <div>
@@ -36,9 +40,9 @@ export default () => (
             <SongsWithAnchors
               songs={songbook.songs}
               render={(song: Song, slug: string) => (
-                <BlockGatsbyLink to={`/${slug}`}>
+                <BlockLink to={`/${slug}`}>
                   <LyricsPreviewCard song={song} />
-                </BlockGatsbyLink>
+                </BlockLink>
               )}
             />
           </Column>
