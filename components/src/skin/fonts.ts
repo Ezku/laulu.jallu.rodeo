@@ -7,7 +7,7 @@ if (typeof window !== 'undefined') {
         families: ['Overpass Mono:300,700', 'Overpass:400']
       },
       typekit: {
-        id: 'cae3ngq'
+        id: 'tjr4axo'
       }
     });
   });
