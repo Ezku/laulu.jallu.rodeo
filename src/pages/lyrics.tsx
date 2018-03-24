@@ -13,7 +13,8 @@ import { Column, Columns } from '../common/components/Grid';
 import HeroColumns from '../common/components/HeroColumns';
 import LyricsCard from '../common/components/LyricsCard';
 
-export default function Lyrics(props: { slug: string }) {
+export default function Lyrics(props: { location: { search: string } }) {
+  const slug = new URLSearchParams(props.location.search).get('song');
   return (
     <div>
       <div {...hasShadow}>
@@ -30,7 +31,7 @@ export default function Lyrics(props: { slug: string }) {
             <Column size={7}>
               <SongBySlug
                 songs={songbook.songs}
-                slug={props.slug}
+                slug={slug}
                 whenFound={(song: Song) => <LyricsCard song={song} />}
               />
             </Column>
