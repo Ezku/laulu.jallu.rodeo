@@ -2,7 +2,7 @@ import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 
-import slugify from '@laulu.jallu.rodeo/data/dist/types/utils/slugify';
+import slugify from '../../data/utils/slugify';
 
 import { sansSerif } from '../skin/fonts';
 

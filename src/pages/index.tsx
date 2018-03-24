@@ -2,19 +2,19 @@ import * as React from 'react';
 import Link from 'gatsby-link';
 import glamorous from 'glamorous';
 
-import { Container, Section } from '@laulu.jallu.rodeo/components/dist/components/Layout';
+import { Container, Section } from '../common/components/Layout';
 
-import songbook from '@laulu.jallu.rodeo/data/dist/songbook';
-import { Song } from '@laulu.jallu.rodeo/data/dist/types';
+import songbook from '../data/songbook';
+import { Song } from '../data/types';
 
-import hasShadow from '@laulu.jallu.rodeo/components/dist/skin/hasShadow';
-import { Title, Subtitle } from '@laulu.jallu.rodeo/components/dist/skin/titles';
+import hasShadow from '../common/skin/hasShadow';
+import { Title, Subtitle } from '../common/skin/titles';
 
-import { Column, Columns } from '@laulu.jallu.rodeo/components/dist/components/Grid';
-import HeroColumns from '@laulu.jallu.rodeo/components/dist/components/HeroColumns';
-import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
-import SongsWithAnchors from '@laulu.jallu.rodeo/components/dist/components/SongsWithAnchors';
-import LyricsPreviewCard from '@laulu.jallu.rodeo/components/dist/components/LyricsPreviewCard';
+import { Column, Columns } from '../common/components/Grid';
+import HeroColumns from '../common/components/HeroColumns';
+import SongIndex from '../common/components/SongIndex';
+import SongsWithAnchors from '../common/components/SongsWithAnchors';
+import LyricsPreviewCard from '../common/components/LyricsPreviewCard';
 
 import { pathToLyrics } from './lyrics';
 

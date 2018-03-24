@@ -7,7 +7,7 @@ import { Columns, Column } from './Grid';
 import { Container, Section } from './Layout';
 import LyricsCard from './LyricsCard';
 
-import songbook from '@laulu.jallu.rodeo/data/dist/songbook';
+import songbook from '../../data/songbook';
 
 function oneOf<V>(values: V[]): V {
   return values[Math.floor(Math.random() * values.length)];
