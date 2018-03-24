@@ -4,7 +4,7 @@ if (typeof window !== 'undefined') {
   import('webfontloader').then(WebFontLoader => {
     WebFontLoader.load({
       google: {
-        families: ['Overpass Mono:300,700', 'Overpass:400']
+        families: ['Overpass Mono:300,700']
       },
       typekit: {
         id: 'tjr4axo'
@@ -14,7 +14,7 @@ if (typeof window !== 'undefined') {
 }
 
 export const sansSerifFamily = [
-  'Overpass',
+  'lft-etica',
   'BlinkMacSystemFont',
   '-apple-system',
   '"Segoe UI"',
