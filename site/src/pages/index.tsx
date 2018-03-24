@@ -16,6 +16,8 @@ import SongIndex from '@laulu.jallu.rodeo/components/dist/components/SongIndex';
 import SongsWithAnchors from '@laulu.jallu.rodeo/components/dist/components/SongsWithAnchors';
 import LyricsPreviewCard from '@laulu.jallu.rodeo/components/dist/components/LyricsPreviewCard';
 
+import { pathToLyrics } from './lyrics';
+
 const BlockLink = glamorous(Link)({
   textDecoration: 'inherit'
 });
@@ -40,7 +42,7 @@ export default () => (
             <SongsWithAnchors
               songs={songbook.songs}
               render={(song: Song, slug: string) => (
-                <BlockLink to={`/${slug}`}>
+                <BlockLink to={pathToLyrics(slug)}>
                   <LyricsPreviewCard song={song} />
                 </BlockLink>
               )}
