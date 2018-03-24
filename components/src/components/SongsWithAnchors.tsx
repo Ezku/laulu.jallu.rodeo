@@ -1,8 +1,7 @@
 import * as React from 'react';
 
 import { Song } from '@laulu.jallu.rodeo/data/dist/types';
-
-import slugify from '../utils/slugify';
+import slugify from '@laulu.jallu.rodeo/data/dist/types/utils/slugify';
 
 export type Props = {
   songs: Song[];

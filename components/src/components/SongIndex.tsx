@@ -2,7 +2,8 @@ import * as React from 'react';
 import glamorous from 'glamorous';
 import { css } from 'glamor';
 
-import slugify from '../utils/slugify';
+import slugify from '@laulu.jallu.rodeo/data/dist/types/utils/slugify';
+
 import { sansSerif } from '../skin/fonts';
 
 const Ol = glamorous.ol(
