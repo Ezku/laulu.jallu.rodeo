@@ -3,16 +3,18 @@ import glamorous from 'glamorous';
 import { css } from 'glamor';
 
 import slugify from '../utils/slugify';
-import { monospace } from '../skin/fonts';
+import { sansSerif } from '../skin/fonts';
 
 const Ol = glamorous.ol(
-  css(monospace, {
-    fontSize: '1rem',
+  css(sansSerif, {
+    fontSize: '1.271rem',
     lineHeight: '1.618rem',
     fontWeight: 700,
     listStylePosition: 'inside',
     margin: 0,
-    marginRight: '1rem'
+    marginRight: '1rem',
+    fontVariantCaps: 'all-petite-caps',
+    letterSpacing: '0.01em'
   })
 );
 

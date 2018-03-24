@@ -3,9 +3,6 @@ import { css, StyleAttribute } from 'glamor';
 if (typeof window !== 'undefined') {
   import('webfontloader').then(WebFontLoader => {
     WebFontLoader.load({
-      google: {
-        families: ['Overpass Mono:300,700']
-      },
       typekit: {
         id: 'tjr4axo'
       }
@@ -29,7 +26,6 @@ export const sansSerifFamily = [
   'sans-serif'
 ].join(', ');
 export const serifFamily = 'Adelle, serif';
-export const monospaceFamily = 'Overpass Mono, monospace';
 
 const readability = {
   '-moz-osx-font-smoothing': 'grayscale',
@@ -43,5 +39,3 @@ export const sansSerif: StyleAttribute = css(readability, {
 });
 
 export const serif: StyleAttribute = css(readability, { fontFamily: serifFamily });
-
-export const monospace: StyleAttribute = css(readability, { fontFamily: monospaceFamily });
