@@ -2,16 +2,13 @@ import * as React from 'react'
 import Link from 'gatsby-link'
 import glamorous from 'glamorous'
 
+import Heading from '../common/components/Heading'
 import { Container, Section } from '../common/components/Layout'
 
 import songbook from '../data/songbook'
 import { Song } from '../data/types'
 
-import hasShadow from '../common/skin/hasShadow'
-import { Title, Subtitle } from '../common/skin/titles'
-
 import { Column, Columns } from '../common/components/Grid'
-import HeroColumns from '../common/components/HeroColumns'
 import SongIndex from '../common/components/SongIndex'
 import SongsWithAnchors from '../common/components/SongsWithAnchors'
 import LyricsPreviewCard from '../common/components/LyricsPreviewCard'
@@ -24,14 +21,7 @@ const BlockLink = glamorous(Link)({
 
 export default () => (
   <div>
-    <div {...hasShadow}>
-      <HeroColumns>
-        <Column size={12}>
-          <Title>laulu.jallu.rodeo</Title>
-          <Subtitle>Salattujen laulujen kirja</Subtitle>
-        </Column>
-      </HeroColumns>
-    </div>
+    <Heading />
     <Container>
       <Section>
         <Columns>
