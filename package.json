@@ -24,6 +24,7 @@
     "glamor": "^2.20.40",
     "glamorous": "^4.9.7",
     "minireset.css": "^0.0.3",
+    "npm-run-all": "^4.1.2",
     "parsimmon": "^1.6.2",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",

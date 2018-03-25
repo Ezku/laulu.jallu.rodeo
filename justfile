@@ -11,3 +11,6 @@ lint:
 
 storybook:
   yarn storybook
+
+dev:
+  yarn run-p storybook develop
