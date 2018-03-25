@@ -43,7 +43,7 @@
     "test": "react-scripts-ts test --env=jsdom",
     "develop": "gatsby develop",
     "eslint": "eslint './*.js' 'src/**/*.js'",
-    "tslint": "tslint --project 'tsconfig.json' 'src/**/*.{ts, tsx}'"
+    "tslint": "tslint --project 'tsconfig.json' 'src/**/*.ts' 'src/**/*.tsx'"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.16",
