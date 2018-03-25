@@ -1,15 +1,5 @@
 import { css, StyleAttribute } from 'glamor'
 
-if (typeof window !== 'undefined') {
-  import('webfontloader').then(WebFontLoader => {
-    WebFontLoader.load({
-      typekit: {
-        id: 'tjr4axo'
-      }
-    })
-  })
-}
-
 export const sansSerifFamily = [
   'lft-etica',
   'BlinkMacSystemFont',

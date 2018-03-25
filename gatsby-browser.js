@@ -5,9 +5,16 @@
  */
 
 import { rehydrate } from 'glamor'
+import WebFontLoader from 'webfontloader'
 
 exports.onClientEntry = () => {
   if (window._glamor) {
     rehydrate(window._glamor)
   }
+
+  WebFontLoader.load({
+    typekit: {
+      id: 'tjr4axo'
+    }
+  })
 }
