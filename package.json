@@ -28,8 +28,8 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "dist": "tsc -p tsconfig.dist.json",
-    "dist:watch": "tsc -p tsconfig.dist.json --watch",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch",
     "test": "react-scripts-ts test --env=jsdom",
     "build": "gatsby build",
     "develop": "gatsby develop"
