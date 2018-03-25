@@ -1,5 +1,6 @@
 {
-  "extends": "standard",
+  "extends": ["standard", "plugin:react/recommended"],
+  "plugins": ["react"],
   "rules": {
     "space-before-function-paren": 0
   }
