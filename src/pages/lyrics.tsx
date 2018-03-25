@@ -12,9 +12,10 @@ import { Title, Subtitle } from '../common/skin/titles';
 import { Column, Columns } from '../common/components/Grid';
 import HeroColumns from '../common/components/HeroColumns';
 import LyricsCard from '../common/components/LyricsCard';
+import getSearchParam from '../common/utils/getSearchParam';
 
 export default function Lyrics(props: { location: { search: string } }) {
-  const slug = new URLSearchParams(props.location.search).get('song');
+  const slug = getSearchParam(props.location.search, 'song');
   return (
     <div>
       <div {...hasShadow}>
