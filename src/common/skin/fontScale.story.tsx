@@ -1,17 +1,17 @@
-import * as React from 'react';
-import glamorous from 'glamorous';
-import { css } from 'glamor';
-import { storiesOf } from '@storybook/react';
+import * as React from 'react'
+import glamorous from 'glamorous'
+import { css } from 'glamor'
+import { storiesOf } from '@storybook/react'
 
-import { Container } from '../components/Layout';
-import { Columns, Column } from '../components/Grid';
+import { Container } from '../components/Layout'
+import { Columns, Column } from '../components/Grid'
 
-import fontScale from './fontScale';
+import fontScale from './fontScale'
 
 const S = glamorous.div({
   padding: 0,
   backgroundColor: 'rgba(23, 23, 23, 0.1)'
-});
+})
 
 const fullscreen = css({
   minHeight: '100vh'
@@ -37,4 +37,4 @@ storiesOf('fontScale', module)
       <S {...fontScale(-1)}>Scale -1</S>
       <S {...fontScale(-2)}>Scale -2</S>
     </div>
-  ));
+  ))

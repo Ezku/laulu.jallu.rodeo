@@ -1,9 +1,9 @@
-import * as React from 'react';
-import glamorous from 'glamorous';
-import { css } from 'glamor';
+import * as React from 'react'
+import glamorous from 'glamorous'
+import { css } from 'glamor'
 
-import { sansSerif } from '../skin/fonts';
-import { Box } from './Layout';
+import { sansSerif } from '../skin/fonts'
+import { Box } from './Layout'
 
 const Card = glamorous(Box)({
   borderRadius: '2px',
@@ -13,7 +13,7 @@ const Card = glamorous(Box)({
   color: '#4a4a4a',
   maxWidth: '100%',
   position: 'relative'
-});
+})
 
 const Content = glamorous(Box)(
   css(sansSerif, {
@@ -23,12 +23,12 @@ const Content = glamorous(Box)(
     fontWeight: 400,
     padding: '1.5rem'
   })
-);
+)
 
 export default function(props: { children: React.ReactNode }) {
   return (
     <Card>
       <Content>{props.children}</Content>
     </Card>
-  );
+  )
 }

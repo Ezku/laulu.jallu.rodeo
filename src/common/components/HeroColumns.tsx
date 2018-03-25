@@ -1,10 +1,10 @@
-import * as React from 'react';
-import glamorous from 'glamorous';
+import * as React from 'react'
+import glamorous from 'glamorous'
 
-import { narrow } from '../skin/breakpoints';
+import { narrow } from '../skin/breakpoints'
 
-import { Columns } from './Grid';
-import { Box, Container } from './Layout';
+import { Columns } from './Grid'
+import { Box, Container } from './Layout'
 
 const Hero = glamorous(Box)({
   alignItems: 'stretch',
@@ -12,7 +12,7 @@ const Hero = glamorous(Box)({
   flexDirection: 'column',
   justifyContent: 'space-between',
   backgroundColor: '#FFF'
-});
+})
 
 const HeroBody = glamorous(Box)(
   {
@@ -23,7 +23,7 @@ const HeroBody = glamorous(Box)(
   narrow(() => ({
     padding: '3rem 1.5rem'
   }))
-);
+)
 
 export default (props: { children: React.ReactNode }) => (
   <Hero>
@@ -33,4 +33,4 @@ export default (props: { children: React.ReactNode }) => (
       </Container>
     </HeroBody>
   </Hero>
-);
+)

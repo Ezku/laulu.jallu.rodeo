@@ -1,21 +1,21 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { Container, Section } from '../common/components/Layout';
+import { Container, Section } from '../common/components/Layout'
 
-import songbook from '../data/songbook';
-import SongBySlug from '../data/SongBySlug';
-import { Song } from '../data/types';
+import songbook from '../data/songbook'
+import SongBySlug from '../data/SongBySlug'
+import { Song } from '../data/types'
 
-import hasShadow from '../common/skin/hasShadow';
-import { Title, Subtitle } from '../common/skin/titles';
+import hasShadow from '../common/skin/hasShadow'
+import { Title, Subtitle } from '../common/skin/titles'
 
-import { Column, Columns } from '../common/components/Grid';
-import HeroColumns from '../common/components/HeroColumns';
-import LyricsCard from '../common/components/LyricsCard';
-import getSearchParam from '../common/utils/getSearchParam';
+import { Column, Columns } from '../common/components/Grid'
+import HeroColumns from '../common/components/HeroColumns'
+import LyricsCard from '../common/components/LyricsCard'
+import getSearchParam from '../common/utils/getSearchParam'
 
 export default function Lyrics(props: { location: { search: string } }) {
-  const slug = getSearchParam(props.location.search, 'song');
+  const slug = getSearchParam(props.location.search, 'song')
   return (
     <div>
       <div {...hasShadow}>
@@ -40,9 +40,9 @@ export default function Lyrics(props: { location: { search: string } }) {
         </Section>
       </Container>
     </div>
-  );
+  )
 }
 
 export function pathToLyrics(slug: string) {
-  return `/lyrics/?song=${slug}`;
+  return `/lyrics/?song=${slug}`
 }

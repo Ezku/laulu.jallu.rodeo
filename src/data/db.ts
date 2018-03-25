@@ -3002,4 +3002,4 @@ I’m fun, dapper and funky
 And I’m not throwing away my shot	 
 
 It’s time to take a shot!
-`;
+`

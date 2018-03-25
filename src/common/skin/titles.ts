@@ -1,7 +1,7 @@
-import { css } from 'glamor';
+import { css } from 'glamor'
 
-import { serif } from './fonts';
-import glamorous, { GlamorousComponent } from 'glamorous';
+import { serif } from './fonts'
+import glamorous, { GlamorousComponent } from 'glamorous'
 
 export const Title: GlamorousComponent<{}, {}> = glamorous.h1(
   css(serif, {
@@ -12,7 +12,7 @@ export const Title: GlamorousComponent<{}, {}> = glamorous.h1(
     lineHeight: 1.125,
     wordBreak: 'break-word'
   })
-);
+)
 
 export const Subtitle: GlamorousComponent<{}, {}> = glamorous.h2(
   css(serif, {
@@ -24,4 +24,4 @@ export const Subtitle: GlamorousComponent<{}, {}> = glamorous.h2(
     fontSize: '1.25rem',
     lineHeight: 1.25
   })
-);
+)

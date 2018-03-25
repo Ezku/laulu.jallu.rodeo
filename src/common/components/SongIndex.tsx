@@ -1,10 +1,10 @@
-import * as React from 'react';
-import glamorous from 'glamorous';
-import { css } from 'glamor';
+import * as React from 'react'
+import glamorous from 'glamorous'
+import { css } from 'glamor'
 
-import slugify from '../../data/utils/slugify';
+import slugify from '../../data/utils/slugify'
 
-import { sansSerif } from '../skin/fonts';
+import { sansSerif } from '../skin/fonts'
 
 const Ol = glamorous.ol(
   css(sansSerif, {
@@ -17,7 +17,7 @@ const Ol = glamorous.ol(
     fontVariantCaps: 'all-petite-caps',
     letterSpacing: '0.01em'
   })
-);
+)
 
 const A = glamorous.a({
   textDecoration: 'none',
@@ -26,14 +26,14 @@ const A = glamorous.a({
   ':hover': {
     borderBottomColor: 'inherit'
   }
-});
+})
 
 export type Props = {
   songs: Array<{
-    ordinal: string;
-    name?: string;
-  }>;
-};
+    ordinal: string
+    name?: string
+  }>
+}
 
 const SongIndex = (props: Props) => (
   <Ol>
@@ -43,6 +43,6 @@ const SongIndex = (props: Props) => (
       </li>
     ))}
   </Ol>
-);
+)
 
-export default SongIndex;
+export default SongIndex

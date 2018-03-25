@@ -1,10 +1,10 @@
-import * as React from 'react';
+import * as React from 'react'
 
-import { storiesOf } from '@storybook/react';
+import { storiesOf } from '@storybook/react'
 
-import Card from './Card';
-import { Columns, Column } from './Grid';
-import { Container } from './Layout';
+import Card from './Card'
+import { Columns, Column } from './Grid'
+import { Container } from './Layout'
 
 storiesOf('Card', module)
   .addDecorator(story => (
@@ -28,4 +28,4 @@ storiesOf('Card', module)
     <Card>
       <p>Hello World</p>
     </Card>
-  ));
+  ))

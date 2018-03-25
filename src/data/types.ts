@@ -1,38 +1,38 @@
-export type TableOfContents = TableOfContentsLine[];
+export type TableOfContents = TableOfContentsLine[]
 
 export type TableOfContentsLine = {
-  ordinal: string;
-  name?: string;
-};
+  ordinal: string
+  name?: string
+}
 
 export type SongHeading = {
-  ordinal: string;
-  name?: string;
-};
+  ordinal: string
+  name?: string
+}
 
 export type SongDescription = {
-  description?: string;
-};
+  description?: string
+}
 
 export type SongVerse = {
-  verse: string[];
-};
+  verse: string[]
+}
 
 export type SongVerses = {
-  verses: SongVerse[];
-};
+  verses: SongVerse[]
+}
 
 export type Song = {
-  ordinal: string;
-  name?: string;
-  description?: string;
-  verses: SongVerse[];
-};
+  ordinal: string
+  name?: string
+  description?: string
+  verses: SongVerse[]
+}
 
 export type Songbook = {
-  tableOfContents: TableOfContents;
-  songs: Song[];
-};
+  tableOfContents: TableOfContents
+  songs: Song[]
+}
 
 const types = {
   tableOfContents: {
@@ -65,6 +65,6 @@ const types = {
       verses: verses.verses
     })
   }
-};
+}
 
-export default types;
+export default types

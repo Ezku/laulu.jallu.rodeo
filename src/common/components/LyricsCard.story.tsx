@@ -1,16 +1,16 @@
-import * as React from 'react';
-import { storiesOf } from '@storybook/react';
+import * as React from 'react'
+import { storiesOf } from '@storybook/react'
 
-import Reset from '../utils/Reset';
+import Reset from '../utils/Reset'
 
-import { Columns, Column } from './Grid';
-import { Container, Section } from './Layout';
-import LyricsCard from './LyricsCard';
+import { Columns, Column } from './Grid'
+import { Container, Section } from './Layout'
+import LyricsCard from './LyricsCard'
 
-import songbook from '../../data/songbook';
+import songbook from '../../data/songbook'
 
 function oneOf<V>(values: V[]): V {
-  return values[Math.floor(Math.random() * values.length)];
+  return values[Math.floor(Math.random() * values.length)]
 }
 
 storiesOf('LyricsCard', module)
@@ -25,4 +25,4 @@ storiesOf('LyricsCard', module)
       </Section>
     </Reset>
   ))
-  .add('random song from the book', () => <LyricsCard song={oneOf(songbook.songs)} />);
+  .add('random song from the book', () => <LyricsCard song={oneOf(songbook.songs)} />)

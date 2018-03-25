@@ -1,4 +1,4 @@
-import readDb from './readDb';
+import readDb from './readDb'
 
 const mockDb = `
 1. Tumman Virran Taa
@@ -61,10 +61,10 @@ Olen paistanut paistin siinä toivossa
 että syömään tulisi <nimi 2> tai mukava leski
 
 Ei tärpännyt tällä kertaa... (pöytää kiertäen)
-`;
+`
 
 it('successfully parses songbook db with actual whitespacing', () => {
-  const result = readDb(mockDb);
-  expect(result.tableOfContents.length).toBe(4);
-  expect(result.songs.length).toBe(3);
-});
+  const result = readDb(mockDb)
+  expect(result.tableOfContents.length).toBe(4)
+  expect(result.songs.length).toBe(3)
+})

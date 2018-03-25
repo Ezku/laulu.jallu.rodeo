@@ -1,10 +1,10 @@
-import glamorous, { GlamorousComponent } from 'glamorous';
+import glamorous, { GlamorousComponent } from 'glamorous'
 
-import { extranarrow, narrow, normal, wide, extrawide } from '../skin/breakpoints';
+import { extranarrow, narrow, normal, wide, extrawide } from '../skin/breakpoints'
 
 export const Box: GlamorousComponent<{}, {}> = glamorous.div({
   boxSizing: 'border-box'
-});
+})
 
 export const Container: GlamorousComponent<{}, {}> = glamorous(Box)(
   { margin: '0 auto', position: 'relative' },
@@ -27,8 +27,8 @@ export const Container: GlamorousComponent<{}, {}> = glamorous(Box)(
     maxWidth: bp.viewportWidth,
     width: bp.viewportWidth
   }))
-);
+)
 
 export const Section: GlamorousComponent<{}, {}> = glamorous(Box)({
   padding: '3rem 0'
-});
+})

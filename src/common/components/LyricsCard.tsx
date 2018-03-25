@@ -1,11 +1,11 @@
-import * as React from 'react';
-import glamorous from 'glamorous';
-import { css } from 'glamor';
+import * as React from 'react'
+import glamorous from 'glamorous'
+import { css } from 'glamor'
 
-import { Song } from '../../data/types';
+import { Song } from '../../data/types'
 
-import { serif } from '../skin/fonts';
-import Card from '../components/Card';
+import { serif } from '../skin/fonts'
+import Card from '../components/Card'
 
 const Name = glamorous.h2(
   css(serif, {
@@ -14,11 +14,11 @@ const Name = glamorous.h2(
     lineHeight: '1em',
     marginBottom: '0.618rem'
   })
-);
+)
 
 const Header = glamorous.header({
   marginBottom: '16px'
-});
+})
 
 const Description = glamorous.h3(
   css(serif, {
@@ -32,14 +32,14 @@ const Description = glamorous.h3(
       content: ')'
     }
   })
-);
+)
 
 const Verse = glamorous.p({
   marginBottom: '2rem',
   ':last-child': {
     marginBottom: 0
   }
-});
+})
 
 const Line = glamorous.div({
   paddingLeft: '1rem',
@@ -52,11 +52,11 @@ const Line = glamorous.div({
   ':last-child:after': {
     display: 'none'
   }
-});
+})
 
 export type Props = {
-  song: Song;
-};
+  song: Song
+}
 
 export default (props: Props) => (
   <Card>
@@ -72,4 +72,4 @@ export default (props: Props) => (
       </Verse>
     ))}
   </Card>
-);
+)

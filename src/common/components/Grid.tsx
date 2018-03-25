@@ -1,14 +1,14 @@
-import * as React from 'react';
-import glamorous, { GlamorousComponent } from 'glamorous';
+import * as React from 'react'
+import glamorous, { GlamorousComponent } from 'glamorous'
 
-import { extranarrow, narrow } from '../skin/breakpoints';
+import { extranarrow, narrow } from '../skin/breakpoints'
 
-import { Box } from './Layout';
+import { Box } from './Layout'
 
 export type ColumnProps = {
-  size?: number;
-  children: React.ReactNode;
-};
+  size?: number
+  children: React.ReactNode
+}
 
 export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
   extranarrow(() => ({
@@ -19,25 +19,25 @@ export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
     padding: '0.75rem'
   })),
   (props: ColumnProps) => {
-    const size = props.size;
+    const size = props.size
     if (size === undefined) {
-      return {};
+      return {}
     }
 
     return narrow(() => ({
       flexBasis: `${100 * (size / 12)}%`,
       flexGrow: 0,
       flexShrink: 0
-    }));
+    }))
   }
-);
+)
 
 export type ColumnsProps = {
-  centered?: boolean;
-  verticallyCentered?: boolean;
-  fullheight?: boolean;
-  children: React.ReactNode;
-};
+  centered?: boolean
+  verticallyCentered?: boolean
+  fullheight?: boolean
+  children: React.ReactNode
+}
 
 export const Columns: GlamorousComponent<ColumnsProps, {}> = glamorous(Box)(
   narrow(bp => ({
@@ -54,4 +54,4 @@ export const Columns: GlamorousComponent<ColumnsProps, {}> = glamorous(Box)(
     'align-items': props.verticallyCentered === true ? 'center' : 'inherit',
     'justify-content': props.centered === true ? 'center' : 'inherit'
   })
-);
+)

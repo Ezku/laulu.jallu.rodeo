@@ -1,11 +1,11 @@
-import * as React from 'react';
-import glamorous from 'glamorous';
-import { css } from 'glamor';
+import * as React from 'react'
+import glamorous from 'glamorous'
+import { css } from 'glamor'
 
-import { Song } from '../../data/types';
+import { Song } from '../../data/types'
 
-import { serif } from '../skin/fonts';
-import Card from '../components/Card';
+import { serif } from '../skin/fonts'
+import Card from '../components/Card'
 
 const Name = glamorous.h2(
   css(serif, {
@@ -14,31 +14,31 @@ const Name = glamorous.h2(
     lineHeight: '1em',
     marginBottom: '0.618rem'
   })
-);
+)
 
 const Header = glamorous.header({
   marginBottom: '16px'
-});
+})
 
-const Verse = glamorous.p();
+const Verse = glamorous.p()
 
 const Line = glamorous.div({
   paddingLeft: '1rem',
   textIndent: '-1rem'
-});
+})
 
 const More = glamorous.span(
   css(serif, {
     fontSize: '24px'
   })
-);
+)
 
 export type Props = {
-  song: Song;
-};
+  song: Song
+}
 
-const MAX_VERSES = 1;
-const MAX_LINES = 4;
+const MAX_VERSES = 1
+const MAX_LINES = 4
 
 export default (props: Props) => (
   <Card>
@@ -60,4 +60,4 @@ export default (props: Props) => (
       <More>&hellip;</More>
     )}
   </Card>
-);
+)

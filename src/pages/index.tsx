@@ -1,26 +1,26 @@
-import * as React from 'react';
-import Link from 'gatsby-link';
-import glamorous from 'glamorous';
+import * as React from 'react'
+import Link from 'gatsby-link'
+import glamorous from 'glamorous'
 
-import { Container, Section } from '../common/components/Layout';
+import { Container, Section } from '../common/components/Layout'
 
-import songbook from '../data/songbook';
-import { Song } from '../data/types';
+import songbook from '../data/songbook'
+import { Song } from '../data/types'
 
-import hasShadow from '../common/skin/hasShadow';
-import { Title, Subtitle } from '../common/skin/titles';
+import hasShadow from '../common/skin/hasShadow'
+import { Title, Subtitle } from '../common/skin/titles'
 
-import { Column, Columns } from '../common/components/Grid';
-import HeroColumns from '../common/components/HeroColumns';
-import SongIndex from '../common/components/SongIndex';
-import SongsWithAnchors from '../common/components/SongsWithAnchors';
-import LyricsPreviewCard from '../common/components/LyricsPreviewCard';
+import { Column, Columns } from '../common/components/Grid'
+import HeroColumns from '../common/components/HeroColumns'
+import SongIndex from '../common/components/SongIndex'
+import SongsWithAnchors from '../common/components/SongsWithAnchors'
+import LyricsPreviewCard from '../common/components/LyricsPreviewCard'
 
-import { pathToLyrics } from './lyrics';
+import { pathToLyrics } from './lyrics'
 
 const BlockLink = glamorous(Link)({
   textDecoration: 'inherit'
-});
+})
 
 export default () => (
   <div>
@@ -52,4 +52,4 @@ export default () => (
       </Section>
     </Container>
   </div>
-);
+)
