@@ -1756,7 +1756,7 @@ Kylpyhuoneen lattialle vaatteet riisutaan
 Tää ilta menee putkeen
 Tää ilta menee putkeen
 73. En ryyppää enää ikinä
-(säv. Hercules - I won’t Say (I’m In Love), san. Merituuli Melkko 2015)
+(säv. Hercules - I won’t Say [I’m In Love], san. Merituuli Melkko 2015)
 
 SOOLO:
 En humalaan mä tahdo lainkaan
