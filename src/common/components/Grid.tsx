@@ -1,3 +1,4 @@
+import * as React from 'react';
 import glamorous, { GlamorousComponent } from 'glamorous';
 
 import { extranarrow, narrow } from '../skin/breakpoints';
