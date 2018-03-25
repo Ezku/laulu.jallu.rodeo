@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-import { rehydrate } from "glamor"
+import { rehydrate } from 'glamor'
 
 exports.onClientEntry = () => {
   if (window._glamor) {
