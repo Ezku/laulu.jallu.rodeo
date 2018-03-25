@@ -41,7 +41,9 @@
     "build": "gatsby build",
     "tsc:watch": "tsc -p tsconfig.json --watch",
     "test": "react-scripts-ts test --env=jsdom",
-    "develop": "gatsby develop"
+    "develop": "gatsby develop",
+    "eslint": "eslint './*.js' 'src/**/*.js'",
+    "tslint": "tslint 'src/**/*.{ts, tsx}'"
   },
   "devDependencies": {
     "@storybook/react": "^3.2.16",
