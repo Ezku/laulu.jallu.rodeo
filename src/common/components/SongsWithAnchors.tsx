@@ -13,7 +13,7 @@ const SongsWithAnchors = (props: Props) => (
       const slug = slugify(s.name || '')
       return (
         <div key={slug}>
-          {!!slug ? <a id={slug} /> : null}
+          {slug ? <a id={slug} /> : null}
           {props.render(s, slug)}
         </div>
       )

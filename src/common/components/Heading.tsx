@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import hasShadow from '../skin/hasShadow'
-import { Column, Columns } from './Grid'
+import { Column } from './Grid'
 import HeroColumns from './HeroColumns'
 import { Title, Subtitle } from '../skin/titles'
 
