@@ -9,7 +9,6 @@ import songbook from '../data/songbook'
 import { Song } from '../data/types'
 
 import { Column, Columns } from '../common/components/Grid'
-import SongIndex from '../common/components/SongIndex'
 import SongsWithAnchors from '../common/components/SongsWithAnchors'
 import LyricsPreviewCard from '../common/components/LyricsPreviewCard'
 
@@ -24,11 +23,8 @@ export default () => (
     <Heading />
     <Container>
       <Section>
-        <Columns>
-          <Column size={5}>
-            <SongIndex songs={songbook.tableOfContents} />
-          </Column>
-          <Column size={7}>
+        <Columns centered>
+          <Column size={6}>
             <SongsWithAnchors
               songs={songbook.songs}
               render={(song: Song, slug: string) => (
