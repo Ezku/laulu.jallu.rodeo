@@ -30,5 +30,5 @@ export const Container: GlamorousComponent<{}, {}> = glamorous(Box)(
 )
 
 export const Section: GlamorousComponent<{}, {}> = glamorous(Box)({
-  padding: '3rem 0'
+  margin: '3rem 0'
 })

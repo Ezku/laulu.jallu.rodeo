@@ -11,7 +11,13 @@ export type Props = {
 export default function SingleColumnLayout(props: Props) {
   return (
     <div>
-      <Container>{props.head}</Container>
+      <Container>
+        <Section>
+          <Columns centered>
+            <Column size={6}>{props.head}</Column>
+          </Columns>
+        </Section>
+      </Container>
       <Container>
         <Section>
           <Columns centered>

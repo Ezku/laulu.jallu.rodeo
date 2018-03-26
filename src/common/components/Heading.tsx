@@ -3,9 +3,8 @@ import glamorous from 'glamorous'
 import { css } from 'glamor'
 
 import { Title, Subtitle, Link } from '../skin/typography'
-import { Container, Section } from './Layout'
 
-const CenteredSection = glamorous(Section)({
+const Centered = glamorous.div({
   textAlign: 'center'
 })
 
@@ -15,13 +14,11 @@ const whiteTextShadow = {
 
 export default function Heading() {
   return (
-    <Container>
-      <CenteredSection {...css(whiteTextShadow)}>
-        <Title>
-          <Link to="/">laulu.jallu.rodeo</Link>
-        </Title>
-        <Subtitle>Löydä just se teekkaribiisi</Subtitle>
-      </CenteredSection>
-    </Container>
+    <Centered {...css(whiteTextShadow)}>
+      <Title>
+        <Link to="/">laulu.jallu.rodeo</Link>
+      </Title>
+      <Subtitle>Löydä just se teekkaribiisi</Subtitle>
+    </Centered>
   )
 }
