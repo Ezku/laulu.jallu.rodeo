@@ -13,7 +13,7 @@ export default function Heading() {
     <Container>
       <CenteredSection>
         <Title>laulu.jallu.rodeo</Title>
-        <Subtitle>Salattujen laulujen kirja</Subtitle>
+        <Subtitle>Löydä just se teekkaribiisi</Subtitle>
       </CenteredSection>
     </Container>
   )
