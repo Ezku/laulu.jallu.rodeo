@@ -33,6 +33,6 @@ export const Link: GlamorousComponent<GatsbyLinkProps, {}> = glamorous(GatsbyLin
     color: 'inherit'
   },
   ':active': {
-    color: 'inherit'
+    color: '#00a8ff'
   }
 })
