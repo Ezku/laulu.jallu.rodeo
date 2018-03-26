@@ -2,6 +2,7 @@ import { css } from 'glamor'
 
 import { serif } from './fonts'
 import glamorous, { GlamorousComponent } from 'glamorous'
+import GatsbyLink, { GatsbyLinkProps } from 'gatsby-link'
 
 export const Title: GlamorousComponent<{}, {}> = glamorous.h1(
   css(serif, {
@@ -25,3 +26,13 @@ export const Subtitle: GlamorousComponent<{}, {}> = glamorous.h2(
     lineHeight: 1.25
   })
 )
+
+export const Link: GlamorousComponent<GatsbyLinkProps, {}> = glamorous(GatsbyLink)({
+  color: 'inherit',
+  ':hover': {
+    color: 'inherit'
+  },
+  ':active': {
+    color: 'inherit'
+  }
+})

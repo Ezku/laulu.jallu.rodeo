@@ -1,9 +1,8 @@
 import * as React from 'react'
 import glamorous from 'glamorous'
 import { css } from 'glamor'
-import Link from 'gatsby-link'
 
-import { Title, Subtitle } from '../skin/titles'
+import { Title, Subtitle, Link } from '../skin/typography'
 import { Container, Section } from './Layout'
 
 const CenteredSection = glamorous(Section)({
