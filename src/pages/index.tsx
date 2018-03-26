@@ -3,12 +3,11 @@ import Link from 'gatsby-link'
 import glamorous from 'glamorous'
 
 import Heading from '../common/components/Heading'
-import { Container, Section } from '../common/components/Layout'
+import SingleColumnLayout from '../common/components/SingleColumnLayout'
 
 import songbook from '../data/songbook'
 import { Song } from '../data/types'
 
-import { Column, Columns } from '../common/components/Grid'
 import SongsWithAnchors from '../common/components/SongsWithAnchors'
 import LyricsPreviewCard from '../common/components/LyricsPreviewCard'
 
@@ -19,23 +18,17 @@ const BlockLink = glamorous(Link)({
 })
 
 export default () => (
-  <div>
-    <Heading />
-    <Container>
-      <Section>
-        <Columns centered>
-          <Column size={6}>
-            <SongsWithAnchors
-              songs={songbook.songs}
-              render={(song: Song, slug: string) => (
-                <BlockLink to={pathToLyrics(slug)}>
-                  <LyricsPreviewCard song={song} />
-                </BlockLink>
-              )}
-            />
-          </Column>
-        </Columns>
-      </Section>
-    </Container>
-  </div>
+  <SingleColumnLayout
+    head={<Heading />}
+    body={
+      <SongsWithAnchors
+        songs={songbook.songs}
+        render={(song: Song, slug: string) => (
+          <BlockLink to={pathToLyrics(slug)}>
+            <LyricsPreviewCard song={song} />
+          </BlockLink>
+        )}
+      />
+    }
+  />
 )
