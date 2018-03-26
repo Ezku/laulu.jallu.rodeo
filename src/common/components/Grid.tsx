@@ -5,8 +5,12 @@ import { extranarrow, narrow } from '../skin/breakpoints'
 
 import { Box } from './Layout'
 
+export type Sizes = {
+  narrow: number
+}
+
 export type ColumnProps = {
-  size?: number
+  size?: number | Sizes
   children: React.ReactNode
 }
 
@@ -23,9 +27,10 @@ export const Column: GlamorousComponent<ColumnProps, {}> = glamorous(Box)(
     if (size === undefined) {
       return {}
     }
+    const sizes = typeof size === 'number' ? { narrow: size } : size
 
     return narrow(() => ({
-      flexBasis: `${100 * (size / 12)}%`,
+      flexBasis: `${100 * (sizes.narrow / 12)}%`,
       flexGrow: 0,
       flexShrink: 0
     }))
