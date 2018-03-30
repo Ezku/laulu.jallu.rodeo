@@ -9,6 +9,7 @@ import { Column, Columns } from './Grid'
 export type Props = {
   head: React.ReactNode
   body: React.ReactNode
+  footer?: React.ReactNode
 }
 
 const minimumColumnWidth = narrow(() => ({
@@ -34,6 +35,17 @@ export default function SingleColumnLayout(props: Props) {
           </Columns>
         </Section>
       </Container>
+      {props.footer && (
+        <Container>
+          <Section>
+            <Columns centered>
+              <Column size={6} {...css(minimumColumnWidth)}>
+                {props.footer}
+              </Column>
+            </Columns>
+          </Section>
+        </Container>
+      )}
     </div>
   )
 }
