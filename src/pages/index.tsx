@@ -16,9 +16,18 @@ import { pathToLyrics } from './lyrics'
 const popup = {
   transform: 'translateY(-3px)',
   boxShadow: [
-    '0 3px 3px rgba(0,0,0,0.03)',
-    '0 3px 6px rgba(0,0,0,0.05)',
-    '0 3px 12px rgba(0,0,0,0.08)'
+    '0 3px 3px 1px rgba(0,0,0,0.03)',
+    '0 3px 6px 1px rgba(0,0,0,0.05)',
+    '0 3px 12px 0px rgba(0,0,0,0.08)'
+  ].join(', ')
+}
+
+const popdown = {
+  transform: 'translateY(1px)',
+  boxShadow: [
+    '0 1px 1px rgba(0,0,0,0.03)',
+    '0 2px 2px rgba(0,0,0,0.05)',
+    '0 3px 3px rgba(0,0,0,0.08)'
   ].join(', ')
 }
 
@@ -31,7 +40,7 @@ const BlockLink = glamorous(Link)({
   transform: 'translateY(0)',
   ':hover': popup,
   ':focus': popup,
-  ':active': popup
+  ':active': popdown
 })
 
 export default () => (
