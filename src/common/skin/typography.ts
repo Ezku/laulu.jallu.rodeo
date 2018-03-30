@@ -4,6 +4,8 @@ import { serif } from './fonts'
 import glamorous, { GlamorousComponent } from 'glamorous'
 import GatsbyLink, { GatsbyLinkProps } from 'gatsby-link'
 
+import * as colors from './colors'
+
 export const Title: GlamorousComponent<{}, {}> = glamorous.h1(
   css(serif, {
     margin: 0,
@@ -21,7 +23,7 @@ export const Subtitle: GlamorousComponent<{}, {}> = glamorous.h2(
     fontWeight: 300,
     letterSpacing: '-0.01em',
     wordSpacing: '0.01em',
-    color: '#4a4a4a',
+    color: colors.plaintext,
     fontSize: '1.25rem',
     lineHeight: 1.25
   })
