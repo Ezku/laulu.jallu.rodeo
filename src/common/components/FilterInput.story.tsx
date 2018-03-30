@@ -17,3 +17,9 @@ storiesOf('FilterInput', module)
     </Container>
   ))
   .add('empty value', () => <FilterInput value="" onValue={action('onValue')} />)
+  .add('with value', () => (
+    <FilterInput
+      value="Realigned equestrian fez bewilders picky monarch"
+      onValue={action('onValue')}
+    />
+  ))
