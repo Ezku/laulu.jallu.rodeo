@@ -25,8 +25,6 @@ export default function SingleColumnLayout(props: Props) {
             <Column size={6}>{props.head}</Column>
           </Columns>
         </Section>
-      </Container>
-      <Container>
         <Section>
           <Columns centered>
             <Column size={6} {...css(minimumColumnWidth)}>
@@ -34,9 +32,7 @@ export default function SingleColumnLayout(props: Props) {
             </Column>
           </Columns>
         </Section>
-      </Container>
-      {props.footer && (
-        <Container>
+        {props.footer && (
           <Section>
             <Columns centered>
               <Column size={6} {...css(minimumColumnWidth)}>
@@ -44,8 +40,8 @@ export default function SingleColumnLayout(props: Props) {
               </Column>
             </Columns>
           </Section>
-        </Container>
-      )}
+        )}
+      </Container>
     </div>
   )
 }
