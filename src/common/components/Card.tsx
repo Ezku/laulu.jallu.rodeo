@@ -3,6 +3,8 @@ import glamorous from 'glamorous'
 import { css } from 'glamor'
 
 import { sansSerif } from '../skin/fonts'
+import * as colors from '../skin/colors'
+
 import { Box } from './Layout'
 
 const Card = glamorous(Box)({
@@ -10,7 +12,7 @@ const Card = glamorous(Box)({
   marginBottom: '32px',
   backgroundColor: '#fff',
   boxShadow: '0 2px 3px hsla(0,0%,4%,.1), 0 0 0 1px hsla(0,0%,4%,.1)',
-  color: '#4a4a4a',
+  color: colors.plaintext,
   maxWidth: '100%',
   position: 'relative'
 })

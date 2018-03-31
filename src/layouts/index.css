@@ -1,4 +1,8 @@
 html,
 body {
   background-color: #f5f6fa;
+  min-height: 100%;
+}
+body {
+  padding-bottom: 3rem;
 }

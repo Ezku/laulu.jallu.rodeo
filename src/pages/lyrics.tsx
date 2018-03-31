@@ -8,6 +8,7 @@ import SongBySlug from '../data/SongBySlug'
 import { Song } from '../data/types'
 
 import LyricsCard from '../common/components/LyricsCard'
+import BackToRoot from '../common/components/BackToRoot'
 import getSearchParam from '../common/utils/getSearchParam'
 
 export default function Lyrics(props: { location: { search: string } }) {
@@ -22,6 +23,7 @@ export default function Lyrics(props: { location: { search: string } }) {
           whenFound={(song: Song) => <LyricsCard song={song} />}
         />
       }
+      footer={<BackToRoot />}
     />
   )
 }

@@ -13,8 +13,34 @@ import LyricsPreviewCard from '../common/components/LyricsPreviewCard'
 
 import { pathToLyrics } from './lyrics'
 
+const popup = {
+  transform: 'translateY(-3px)',
+  boxShadow: [
+    '0 3px 3px 1px rgba(0,0,0,0.03)',
+    '0 3px 6px 1px rgba(0,0,0,0.05)',
+    '0 3px 12px 0px rgba(0,0,0,0.08)'
+  ].join(', ')
+}
+
+const popdown = {
+  transform: 'translateY(1px)',
+  boxShadow: [
+    '0 1px 1px rgba(0,0,0,0.03)',
+    '0 2px 2px rgba(0,0,0,0.05)',
+    '0 3px 3px rgba(0,0,0,0.08)'
+  ].join(', ')
+}
+
 const BlockLink = glamorous(Link)({
-  textDecoration: 'inherit'
+  display: 'block',
+  textDecoration: 'inherit',
+  transition: 'transform 100ms ease-out, box-shadow 100ms ease-out',
+  boxShadow: 'none',
+  borderRadius: '2px',
+  transform: 'translateY(0)',
+  ':hover': popup,
+  ':focus': popup,
+  ':active': popdown
 })
 
 export default () => (
