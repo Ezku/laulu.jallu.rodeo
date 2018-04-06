@@ -8113,9 +8113,9 @@ parseurl@~1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/parseurl/-/parseurl-1.3.2.tgz#fc289d4ed8993119460c156253262cdc8de65bf3"
 
-parsimmon@^1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/parsimmon/-/parsimmon-1.6.2.tgz#28fbe6b8caa38ab89f52b77f8c7743563c7d9aff"
+parsimmon@^1.7.2:
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/parsimmon/-/parsimmon-1.7.2.tgz#e0c8aa132bfec54cc0d5d312d171ddd8f446c539"
 
 pascalcase@^0.1.1:
   version "0.1.1"
