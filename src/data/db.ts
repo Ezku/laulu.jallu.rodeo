@@ -82,7 +82,7 @@ export default `
 80. DI on irti
 81. Skumpalle ja shamppanjalle
 82. Viinin kaipuu
-83. Cult of Dionysus
+83. Cult of Dionys.us
 84. Kansaanvälinen seikkaalusankari
 85. Tenttipäivän vala
 86. Snapsi-polkka
@@ -108,26 +108,32 @@ export default `
 106. Rairai
 107. Je suis Veikko
 108. My Shot
+109. Jatkoavec
+110. Tämähän on vettä!
+111. Mimosa
+112. Todo otsikko
+113. Minkäslaista viinaa toi absintti on?
+113. Ihan rehelliset ryyppäjäiset
 
 1. Tumman Virran Taa
-Yllä harmaan korven korpit laulaa,  
-Hurme tämän kansan roudan sulattaa,  
-Katso kuinka hohkaa kansi taivaan,  
-Kutsuu se meitä tumman virran taa.  
-  
-Heikot vaipuu kuohuun sysimustaan,  
-Sankarit kun astuu joen rantaan,  
-Halki iäisyyden laulu raikaa,  
-Kutsuu se Veikkoja tumman virran taa.  
-  
-Nostakaamme malja, Koskenkorvaa on,  
-väljähtyköön kalja, mallas kelvoton.  
-Kalja voimallansa meitä innostaa,  
-Koskenkorvan kanssa mielet nostattaa.  
+Yllä harmaan korven korpit laulaa,
+Hurme tämän kansan roudan sulattaa,
+Katso kuinka hohkaa kansi taivaan,
+Kutsuu se meitä tumman virran taa.
+
+Heikot vaipuu kuohuun sysimustaan,
+Sankarit kun astuu joen rantaan,
+Halki iäisyyden laulu raikaa,
+Kutsuu se Veikkoja tumman virran taa.
+
+Nostakaamme malja, Koskenkorvaa on,
+väljähtyköön kalja, mallas kelvoton.
+Kalja voimallansa meitä innostaa,
+Koskenkorvan kanssa mielet nostattaa.
 2. Ylioppilasriemua
 On elomme häipyvä muistoista pois
 ken mennyttä kauankaan muistella vois?
-:,: Mutt’ riemu kattoon Veikot, 
+:,: Mutt’ riemu kattoon Veikot,
 ja sarkka pohjaan, hei!
 Laulun mahti murehet jo unholaan vei. :,:
 
@@ -266,96 +272,96 @@ On mennyt mies
 Tuo veikko iloinen
 <kaikki>
 Ja valmis tuomiooooon
-6. Loiventava aamu  
+6. Loiventava aamu
 (säv. Pepe Willberg - Aamu)
-Kun viinipullon auki saan  
-ja punaviini virtaa minun lasissain,  
-niin hyvänolon hiipivän mä tunnen suonissain.  
-Siihen mä jään, sä viet mun pullon hiljaa varoen.  
+Kun viinipullon auki saan
+ja punaviini virtaa minun lasissain,
+niin hyvänolon hiipivän mä tunnen suonissain.
+Siihen mä jään, sä viet mun pullon hiljaa varoen.
 Sanot, kultasein, nyt on sunnuntai.
 7. Krapulapäivälaulu
 (säv. Krokotiili Genan syntymäpäivälaulu)
-Kerrossiivoojat juoskoot,  
-astukoot oksennuksiin,  
-täyttyköön lavuaari valkoinen.  
-Eihän tietää voi kansa,  
-joka selvänä kulkee  
-miksi oon tänään niin äkäinen.  
-Minä tänään puhun norjaa,  
-ihmiset on kummissaan.  
+Kerrossiivoojat juoskoot,
+astukoot oksennuksiin,
+täyttyköön lavuaari valkoinen.
+Eihän tietää voi kansa,
+joka selvänä kulkee
+miksi oon tänään niin äkäinen.
+Minä tänään puhun norjaa,
+ihmiset on kummissaan.
 
-:,: Voisin viettää   
-krapulapäivää  
-jälleen huomenna. :,:  
+:,: Voisin viettää
+krapulapäivää
+jälleen huomenna. :,:
 
-Särkylääke lentää,  
-siinä helpotus saapuu,  
-koko päivän katson seksifilmejä.  
-Hyvää krapulapäivää  
-mulle toivottaa tuo  
-ja pyytää uutta alkavaa nousua.  
+Särkylääke lentää,
+siinä helpotus saapuu,
+koko päivän katson seksifilmejä.
+Hyvää krapulapäivää
+mulle toivottaa tuo
+ja pyytää uutta alkavaa nousua.
 
 :,: Minä tänään ...
-8. Athenen poika  
+8. Athenen poika
 (säv. Lentäjän poika, san. Eevert Saukkokoski 2011)
-Minä istuin palaveripöytään  
-jäin ihmettä katselemaan  
-Konsultti kallis kuin kullasta tehty  
-se pyöritti ranteitaan  
+Minä istuin palaveripöytään
+jäin ihmettä katselemaan
+Konsultti kallis kuin kullasta tehty
+se pyöritti ranteitaan
 
-Ihailin Web 2.0:aa  
-minä projektiryhmästä nuorin  
-ja kun johtajat ampuivat konsultin matkaan  
-jäin speksiä odottamaan  
+Ihailin Web 2.0:aa
+minä projektiryhmästä nuorin
+ja kun johtajat ampuivat konsultin matkaan
+jäin speksiä odottamaan
 
-Minä olin Athenen poika,  
-lähes konsultti siis itsekin  
-Vielä koodaisin korkeammalle kuin muut  
-vielä ISOonikin paremmin  
+Minä olin Athenen poika,
+lähes konsultti siis itsekin
+Vielä koodaisin korkeammalle kuin muut
+vielä ISOonikin paremmin
 
-Minä nukahdin olkkarin sohvaan,  
-unen eclipsenkatkuisen näin  
-Minä näin pilvipalvelun huiman ja varman  
-syntyvän hyppysissäin  
+Minä nukahdin olkkarin sohvaan,
+unen eclipsenkatkuisen näin
+Minä näin pilvipalvelun huiman ja varman
+syntyvän hyppysissäin
 
-Heitin kaikki powerpoint-kalvot  
-kohti enkelisijoittajaa  
-ja lasissa kuohui skumppa laidoista yli  
-kun se erkani rahoistaan  
-
-Minä olin Athenen poika...  
-
-IT-konsulttialalla pärjää  
-kun vain käsiä heiluttaa taitaa  
-On konsultille luvassa taivaassa paikka  
-vaan siellä ei koodata saa  
+Heitin kaikki powerpoint-kalvot
+kohti enkelisijoittajaa
+ja lasissa kuohui skumppa laidoista yli
+kun se erkani rahoistaan
 
 Minä olin Athenen poika...
-9. Viljaviinaa  
+
+IT-konsulttialalla pärjää
+kun vain käsiä heiluttaa taitaa
+On konsultille luvassa taivaassa paikka
+vaan siellä ei koodata saa
+
+Minä olin Athenen poika...
+9. Viljaviinaa
 (säv. Indiana Jones - Raider’s March)
 Viljaviinaa, maistetaan,
 Viljaviinaa, siitä ryypyn saa!
 Viljaviinaa, lauletaan,
 Sillä kaukaiset aarteet me aukaistaan.
-  
+
 Viljaviinaa, maistetaan,
 Viljaviinaa, siitä ryypyn saa!
 Viljaviinaa, trallalaa,
 Sillä kaukaiset aarteet me aukaistaan.
-  
-Leijonaa toiset meille haluaa suosittaa,  
-Koskenkorvaa, Vaakuna-viinaa.  
-Kuinka on, jos Wyborova sitsimme juhlistaa?  
-Onko Tasavalta, Alku-viina,  
-Metsästäjän, Kalastajan,  
-Perinne, Tyrnävä, Smirnoff parempaa?  
-  
-Viljaviinaa?  
-  
-Viljaviinaa, maistetaan,  
-Viljaviinaa, siitä ryypyn saa!  
-Viljaviinaa, trallalaa,  
-Sillä äänemme myös me aukaistaan.  
+
+Leijonaa toiset meille haluaa suosittaa,
+Koskenkorvaa, Vaakuna-viinaa.
+Kuinka on, jos Wyborova sitsimme juhlistaa?
+Onko Tasavalta, Alku-viina,
+Metsästäjän, Kalastajan,
+Perinne, Tyrnävä, Smirnoff parempaa?
+
+Viljaviinaa?
+
+Viljaviinaa, maistetaan,
+Viljaviinaa, siitä ryypyn saa!
+Viljaviinaa, trallalaa,
+Sillä äänemme myös me aukaistaan.
 Absolut!
 10. Skumppaa taikka kuole
 (Säv. Humppaa tai kuole, san. Juho Salmi, kertosäe trad.)
@@ -421,22 +427,22 @@ KERTO x 2
 13.
 Epäonnen numero jätetään laulamatta.
 14. Erokirje
-Sain sulta erokirjeen  
-ja hatullisen paskaa.  
-Sua hetkeksi mä  
-muistelemaan jäin.  
-  
-Vaan en tuntenut mä  
-pettymystä, tuskaa,  
-siispä hyvästiksi sulle  
-tässä laulan näin:  
-  
-Siitä poikki vaan,  
-lähden muita nussimaan,  
-trallallaalla lallalloro,  
-perseeskin on aivan horo.  
-Sanon sulle hyvää yötä,  
-riittää mulkulleni työtä:  
+Sain sulta erokirjeen
+ja hatullisen paskaa.
+Sua hetkeksi mä
+muistelemaan jäin.
+
+Vaan en tuntenut mä
+pettymystä, tuskaa,
+siispä hyvästiksi sulle
+tässä laulan näin:
+
+Siitä poikki vaan,
+lähden muita nussimaan,
+trallallaalla lallalloro,
+perseeskin on aivan horo.
+Sanon sulle hyvää yötä,
+riittää mulkulleni työtä:
 Kato, maailma on ehtaakin tulvillaan.
 15. Se kolmas vesilaulu
 Vettä kun juoda saa
@@ -458,21 +464,21 @@ laitan pellin kii,
 pellin laitan
 mä pysyvästi :,:
 17. Oi Cthulhu katso
-Oi Cthulhu, katso, sinun yösi koittaa  
-Mieleni terveys mennyt on jo pois  
+Oi Cthulhu, katso, sinun yösi koittaa
+Mieleni terveys mennyt on jo pois
 Ja “Ia! Ia! Cthulhu fhtagn” taas yössä raikaa
-kuin itse taivahan kansi sois  
-Yön vallat aamun valkeuden jo voittaa  
-Sun yösi koittaa  
-Oi Muinainen  
-  
-Oi, nouse, Cthulhu, nosta korkealle  
-pääs ympäröimä monen lonkeron  
-Oi, nouse, Cthulhu,   
-näytä maailmalle,   
-sa että aloitat orjuuden  
-ja ettet vaipunut sa merten alle  
-On yösi koittanut,  
+kuin itse taivahan kansi sois
+Yön vallat aamun valkeuden jo voittaa
+Sun yösi koittaa
+Oi Muinainen
+
+Oi, nouse, Cthulhu, nosta korkealle
+pääs ympäröimä monen lonkeron
+Oi, nouse, Cthulhu,
+näytä maailmalle,
+sa että aloitat orjuuden
+ja ettet vaipunut sa merten alle
+On yösi koittanut,
 oi Muinainen.
 18. Muinaisten valssi
 Saimaan saaressa pikkuinen torppa,
@@ -624,45 +630,45 @@ olet armaani päällä maan
 vaikka pohjaan asti sut kumoan
 pian nähdään me uudestaan
 27. Luolassa lukin (Dance Macabre)
-(säv. Trad., san. Juha Vainio 
-Alunperin ruots. kansanlaulu "Vårvindar Friskar". 
-San. Julia Kristina Nyberg s. Svärdström 17.11.1784 - 16.4.1854) 
+(säv. Trad., san. Juha Vainio
+Alunperin ruots. kansanlaulu "Vårvindar Friskar".
+San. Julia Kristina Nyberg s. Svärdström 17.11.1784 - 16.4.1854)
 
-Luolassa lukin 
-peikkojen, pukin 
-sorkkien soma sipsutus käy. 
-Hyytävä viima, 
-karkelon kiima. 
-Sorkat ja sarvet, muuta ei näy. 
-Veikkonen kuule kauhistu, oi. 
-Hiisien himohirnunta soi. 
-Ruumiita tuodaan, 
-saavista juodaan. 
-Hornassa hurrataan. 
-
-Luolassa lukin 
-saa itse kukin 
-käydä, kun aamu ankea on. 
-Kaamea korsu. 
-Nurkassa norsu 
-hiipii ja se on horjumaton. 
-Veikkonen kuule kauhistu, oi. 
+Luolassa lukin
+peikkojen, pukin
+sorkkien soma sipsutus käy.
+Hyytävä viima,
+karkelon kiima.
+Sorkat ja sarvet, muuta ei näy.
+Veikkonen kuule kauhistu, oi.
 Hiisien himohirnunta soi.
-Ruumiita tuodaan, 
-saavista juodaan. 
-Hornassa hurrataan. 
+Ruumiita tuodaan,
+saavista juodaan.
+Hornassa hurrataan.
 
-Luolassa lukin 
-uhrina pukin, 
-aamulla moni vapista saa. 
+Luolassa lukin
+saa itse kukin
+käydä, kun aamu ankea on.
+Kaamea korsu.
+Nurkassa norsu
+hiipii ja se on horjumaton.
+Veikkonen kuule kauhistu, oi.
+Hiisien himohirnunta soi.
+Ruumiita tuodaan,
+saavista juodaan.
+Hornassa hurrataan.
+
+Luolassa lukin
+uhrina pukin,
+aamulla moni vapista saa.
 Kankkunen iski.
-Ote on riski, 
-eikä voi olla kauheampaa. 
-Veikkonen kuule kauhistu, oi. 
+Ote on riski,
+eikä voi olla kauheampaa.
+Veikkonen kuule kauhistu, oi.
 Hiisien himohirnunta soi.
-Ruumiita tuodaan, 
-saavista juodaan. 
-Hornassa hurrataan. 
+Ruumiita tuodaan,
+saavista juodaan.
+Hornassa hurrataan.
 28. Absintti
 (säv. Sopivasti lihava, san. Heini Lehtonen & Iiro Kulvik)
 Minä sinulle juottaa jos saisin,
@@ -670,23 +676,23 @@ sitä mitä silloin en kehdannut ehdottaakaan,
 Absinttia tarjoaisin,
 kun et sä selvänä tahtoisi puhuakaan.
 Sä oisit sopivasti kännissä!
- 
+
 Sinä teekkari olla saat,
 selvin päin olet tylsä nörtti.
 Kännissä kyllä,
 hiton koominen ylläsi vain kukkia.
- 
+
 Se keiju harhoissasi liihottaa,
 Se lähes sadan volan paholainen.
 Ainoa nainen,
 jota sinunlainen jätkä kiinnostaa.
- 
+
 Minä sinulle juottaa jos saisin,
 sitä mitä silloin en kehdannut ehdottaakaan,
 Absinttia tarjoaisin,
 kun et sä selvänä tahtoisi puhuakaan.
 Sä oisit sopivasti kännissä!
- 
+
 Et edes tiedä miksi himottaa,
 pullo absinttia toisen jälkeen.
 Vihreä neste
@@ -812,66 +818,66 @@ muovipullos kannettuna.
 Teekkareiden lempijuoma,
 oma kunnon vanha kuoma.
 35. Reinin viiniä
-Pois huolet, veljyein, 
-ei tääll' oo painajaista! 
-Viiniä maista nyt kimaltavaista 
-mun mieliksein! 
-:,: Veikko tee kuten minä tein; 
-tää antaa vauhdin laulullein! 
-Huomaatko, kuoma, tää Reinin on juoma? 
+Pois huolet, veljyein,
+ei tääll' oo painajaista!
+Viiniä maista nyt kimaltavaista
+mun mieliksein!
+:,: Veikko tee kuten minä tein;
+tää antaa vauhdin laulullein!
+Huomaatko, kuoma, tää Reinin on juoma?
 Niin veikkosein! :,:
 
-Pois huolet veljyein, 
-maallista tää on vainen! 
-Siis samanlainen juo kimaltavainen 
-mun seuraksein! 
-:,: Veikko, tee taas kuin minä tein; 
-tää antaa vauhdin laulullein! 
-Nauti ja maista nyt Malagalaista: 
+Pois huolet veljyein,
+maallista tää on vainen!
+Siis samanlainen juo kimaltavainen
+mun seuraksein!
+:,: Veikko, tee taas kuin minä tein;
+tää antaa vauhdin laulullein!
+Nauti ja maista nyt Malagalaista:
 ei parempaa! :,:
 36. Kilta-ajat
 (Kylterilaulu, pienin muutoksin 2013)
-Mul Otaniemi usein mieleen palaa, 
-jossa istuin illat hämärät 
-Tarvinnut ei siellä juoda salaa, 
+Mul Otaniemi usein mieleen palaa,
+jossa istuin illat hämärät
+Tarvinnut ei siellä juoda salaa,
 siell' kaikki keskenään ol' ystävät!
 
-Oi niitä aikoja, 
-oi kilta-aikoja, 
-ne tahtoisin niin elää uudelleen 
-Tuo aika nuoruuden, tuo aika rakkauden 
+Oi niitä aikoja,
+oi kilta-aikoja,
+ne tahtoisin niin elää uudelleen
+Tuo aika nuoruuden, tuo aika rakkauden
 Sen tahtoisin niin elää uudelleen
 
-Yökaudet joskus valvoimme me silloin, 
-suunnitellen aikaa tulevaa 
-Kylään aina tiemme kävi illoin, 
+Yökaudet joskus valvoimme me silloin,
+suunnitellen aikaa tulevaa
+Kylään aina tiemme kävi illoin,
 saunoihin tai piiloon alle maan
 
-Oi niitä aikoja, 
-oi kilta-aikoja, 
-ne tahtoisin niin elää uudestaan 
-Tuo aika nuoruuden, uusien voimien 
+Oi niitä aikoja,
+oi kilta-aikoja,
+ne tahtoisin niin elää uudestaan
+Tuo aika nuoruuden, uusien voimien
 kun tähtiin saakka saattoi kurkottaa
 
 Lal-lal-lal-lal-la-la...
 
-Mun unelmissa vaan, elimme ainiaan 
-kun voiman antoi nuoruus ikuinen 
-Vuodet vaikka vieri ohitsemme, 
+Mun unelmissa vaan, elimme ainiaan
+kun voiman antoi nuoruus ikuinen
+Vuodet vaikka vieri ohitsemme,
 kilta-aikaa koskaan kadu en
 
 Oi niitä aikoja...
 
-Kerran saavuin luokse tutun kadun, 
-musiikin taas kuulin entisen 
-Edessäni, niin kuin portti sadun, 
+Kerran saavuin luokse tutun kadun,
+musiikin taas kuulin entisen
+Edessäni, niin kuin portti sadun,
 Smökin ovi välkkyi kutsuen
 
 Oi niitä aikoja...
 
 Tuttu laulu kellarista raikaa,
-ystäväni, sinut siellä nään 
-Ei viisautta meillä muille jakaa, 
+ystäväni, sinut siellä nään
+Ei viisautta meillä muille jakaa,
 mutt' unelmamme elää eteenpäin
 
 Oi niitä aikoja...
@@ -879,7 +885,7 @@ Oi niitä aikoja...
 Lal-lal-lal-lal-la-la...
 37. Elephant Love Medley
 (Elokuvasta Moulin Rouge)
-Christian: Love is a many splendored thing, 
+Christian: Love is a many splendored thing,
 Love lifts us up where we belong, all you need is love.
 Satine: Please, don't start that again.
 
@@ -901,7 +907,7 @@ S: There's no way, 'cause you can't pay.
 C: In the name of love, one night in the name of love.
 S: You crazy fool, I won't give in to you.
 
-C: Don't leave me this way, 
+C: Don't leave me this way,
 I can't survive without your sweet love, oh baby
 Don't leave me this way.
 S: You'd think that people would have had enough of silly love songs.
@@ -910,16 +916,16 @@ C: I look around me and I see, it isn't so, oh no.
 S: Some people want to fill the world with silly love songs.
 
 C: Well what's wrong with that? I'd like to know.
-'Cause here I go again! 
-Love lifts us up where we belong, 
+'Cause here I go again!
+Love lifts us up where we belong,
 Where eagles fly, on a mountain high.
-S: Love makes us act like we are fools, 
+S: Love makes us act like we are fools,
 Throw our lives away, for one happy day.
 
 C: We could be heroes! Just for one day.
 S: You, you will be mean.
 
-C: No I won't! 
+C: No I won't!
 S: And I, I'll drink all the time.
 
 C: We should be lovers.
@@ -928,9 +934,9 @@ S: We can't do that.
 C: We should be lovers, and that's a fact.
 S: Though nothing, will keep us together.
 
-C: We could steal time... 
+C: We could steal time...
 Both: Just for one day. We could be heroes, forever and ever.
-We could be heroes, forever and ever. We could be heroes... 
+We could be heroes, forever and ever. We could be heroes...
 C: Just because I will always love you.
 
 S: I
@@ -941,7 +947,7 @@ Both: Now you are in the world
 (säv. Porilaisten marssi, san. Henry Oldhorse. Oululaista teekkarilaulutuotantoa vuodelta 2005.)
 
 Veljet, maljat nostakaa,
-nyt juhlan aika tullut on ja 
+nyt juhlan aika tullut on ja
 viini virtaa suonissamme.
 Koht’ taas lisää otetaan,
 kun ensimmäinen malja pohjaan saatetaan.
@@ -953,12 +959,12 @@ aika juoda on!
 (säv. Oi, kuusipuu, san. tuntematon)
 Nu tar vi den,
 nu tar vi den,
-	nu tar vi den,
-	nu tar vi den.
+  nu tar vi den,
+  nu tar vi den.
 Nu tar vi den,
 nu tar vi den,
-	nu tar vi den,
-	nu tar vi den.
+  nu tar vi den,
+  nu tar vi den.
 Nu tar vi den,
 nu tar vi den,
 nu tar vi den,
@@ -1001,27 +1007,27 @@ Taas huomaan ettei rekisteriin tule kursseja,
 kun kiinnostuksen puute haittaa opiskelua
 Ois motivaatiolle kenties tarve huutava,
 jos tenttiviikon saldo on vain siivous kattava.
- 
+
 On ruotsin kielen lauseet pelkkää muinaishepreaa
 ja javakoodi aina uuden virheen ilmoittaa.
 Taas Kela vaatii laatimaan selvityspaperin.
 No sehän sopii, kun vain löytyis ehjä tulostin.
- 
+
 Hei kyllä se siitä! Anna kaverin auttaa.
 Ja jos ei se riitä, voit kaljan kulauttaa.
 Hei, kyllä se siitä! Älä stressiä kahmi.
 Ja jos ei se riitä, vähän suklaata ahmi.
- 
+
 Nyt hei ihan oikeesti mä tartun läppäriin
 ja väännän edes otsikon harjouturaporttiin.
 Sit toivon pääseväni uuteen flowhun viriiliin,
 mut siihen asti päätäni lyön macin näppäimiin.
- 
+
 :,: Hei kyllä se siitä! Anna kaverin auttaa.
 Ja jos ei se riitä, voit kaljan kulauttaa.
 Hei, kyllä se siitä! Älä stressiä kahmi.
 Ja jos ei se riitä, vähän suklaata ahmi. :,:
- 
+
 Sä pystyt siihen niinkuin sua ennen moni muu.
 Kyllä teekkareista lopulta jokainen valmistuu.
 44. Bacchuksen henki'
@@ -1051,9 +1057,9 @@ ostakaa jäätelö!
 Säästäkää tikku,
 haistakaa... humpappaa, humpappaa...
 
-Ostakaa vodkaa, 
+Ostakaa vodkaa,
 kakskymppii flaska!
-Jos ette osta, 
+Jos ette osta,
 haistakaa... huilu!
 46. Hyökyaalto
 (säv. Varpunen jouluaamuna, san. OPN)
@@ -1062,7 +1068,7 @@ Aalto tuli Espoosta, tulos on nyt tässä
 pursula pienoinen
 päättänyt virkapäivänsä.
 
-Teeri on nyt vallassa 
+Teeri on nyt vallassa
 teekkareiden maassa.
 47. Athenen phuksi
 (säv. Karjalan kunnailla, san. Otso Hannula 2013)
@@ -1133,7 +1139,7 @@ Niemen poika tahdon olla,
 helmas’ yliopiston,
 Tapiolan naapurissa
 jallun kanssa painin öin
-ja dippa Unholaan jääköön. 
+ja dippa Unholaan jääköön.
 50. Sellainen ol’ Polystek
 (säv. Junnu Vainio: Sellainen ol’ Viipuri, san. Asta Länsimies 2013)
 Siihen aikaan näillä mailla
@@ -1178,7 +1184,7 @@ Toinen sanoi heti 'hem till mig'
 Sellanen ol' Polystek
 Sellanen ol' Polystek
 Teekkareiden kaupunki
- 
+
 (vain karjalaiset laulavat)
 Ties hää Knuuti poja passas,
 että syvämes ja vassas
@@ -1430,12 +1436,12 @@ en unohda milloinkaan.
 59. Laulu infosta
 (säv. Locoroco, san. Eevert Saukkokoski killan laulukilpailuun 2014.)
 Killassa infon on olkkari suuri,
-post-it lappuja, joo ja 
+post-it lappuja, joo ja
 sohvalle sammuva phabukin juuri
 viikset crowdsourcaa
 
 Wappuna - oivoivoi - liikaa skumppaa
-korkkaa kirveen kaa, joo ja 
+korkkaa kirveen kaa, joo ja
 aabee-testaa bisnesideaa:
 
 Kurpitsat bussiin ja marathoni
@@ -1449,7 +1455,7 @@ paljukin laulaa Athene am-nam-naam
 
 Killassa...
 60. Viinaralli
-(säv. Onnelliset - Leevi and the Leavings, san: Merituuli Melkko)
+(säv. Onnelliset - Leevi and the Leavings, san: Merituuli Melkko 2014)
 Veikko älä ole onneton
 Meillä melkein kaikki viinat on
 Jotka Virosta on saatu halvalla
@@ -1536,10 +1542,10 @@ Vaik yö tää synkkä lie
 Sä pelkää et
 Ja laulu Dionysuksen soi pöydässäin…
 
-(Neito) 
-Huuma yltyy päässäni, 
+(Neito)
+Huuma yltyy päässäni,
 Estot hälvenee
-(Dionysus) 
+(Dionysus)
 Liitä lauluun äänesi
 Kun yö synkkenee
 
@@ -1547,6 +1553,7 @@ Kun yö synkkenee
 Kun Bakkanaalien
 Syliin sulkeutuu
 Niin laulu Dionysuksen soi pöydässäin…
+
 65. Skumppajunttaus
 (säv: Pumppaa - Portion Boys, san: Kaksi Joutomiestä)
 
@@ -1555,7 +1562,7 @@ Lähde sääkin ullikselle junttaamaan
 Maistaa saa myöskin shampanjaa
 Olen jurrissa, syväjurrissa :,:
 66. Dityrambi
-(säv. Would You Love A Monsterman, san. Otso Hannula, alkup. Mikko Laine) 
+(säv. Would You Love A Monsterman, san. Otso Hannula, alkup. Mikko Laine)
 
 Dityrambas’1, oi Ruhtinas!
 Pimeyden sielunmessuun tarvitaan valoas.
@@ -1570,10 +1577,10 @@ Tulkoon valtakuntasi.
 Tumma konklaavi koolle kutsukaa!
 Hei, veikot, maljat täyttäkää,
 juhlakansa tää viittaan kääritään.
-(modulaatio) 
+(modulaatio)
 Tulkoon loisto varjoineen.
 Kaulaan paljaaseen miekat kääntäkää.
-Maljan pohja häämöttää, 
+Maljan pohja häämöttää,
 pullot räjähtää: Katharsiksen nään!
 
 1 Dityrambit olivat alun perin antiikin kreikkalaisia Dionysos-jumalalle laulettuja hymnejä. (Wikipedia)
@@ -1583,7 +1590,7 @@ In Athens, dithyrambs were sung by a Greek chorus of up to fifty men or boys dan
 A bald, bearded, horse-tailed satyr balances a winecup on his penis. (Wikipedia)
 
 67. Metsämiehen juomalaulu
-(säv. san. Eduard Hermes) 
+(säv. san. Eduard Hermes)
 (Bassot laulavat sulut)
 
 Käy metsolan halki nyt retkemme tie
@@ -1638,7 +1645,7 @@ nyt viime kerran saa.
 Oota hetki niin kertoa saan
 Vihreinkin puu lakastuu
 Vaik’ riitä ei sanat tän tarinaan
-Atheneen kun mä ain rakastun 
+Atheneen kun mä ain rakastun
 
 Nuori mä olin kun loistosi näin
 Vihreinkin puu lakastuu
@@ -1655,9 +1662,9 @@ Vihreinkin puu lakastuu
 Riemun mun mieleeni laulullas saan
 Athene, mun et voi haalistuu
 
-Oota hetki niin kertoa saan 
+Oota hetki niin kertoa saan
 Vihreinkin puu lakastuu
-Vaik’ riitä ei sanat tän tarinaan 
+Vaik’ riitä ei sanat tän tarinaan
 Atheneen kun mä ain rakastun
 
 70. Lisko tahtoisi jäädä
@@ -1756,7 +1763,7 @@ Kylpyhuoneen lattialle vaatteet riisutaan
 Tää ilta menee putkeen
 Tää ilta menee putkeen
 73. En ryyppää enää ikinä
-(säv. Hercules - I won’t Say [I’m In Love], san. Merituuli Melkko 2015)
+(säv. Hercules - I won’t Say (I’m In Love), san. Merituuli Melkko 2015)
 
 SOOLO:
 En humalaan mä tahdo lainkaan
@@ -1801,7 +1808,7 @@ uskon että skumppaa tässä kai-kai-kaivataan
 
 SOOLO:
 Oo-oo
-Sä luulet vain 
+Sä luulet vain
 mä en myönnä!
 En kuule lain
 mä en myönnä!
@@ -1868,7 +1875,7 @@ Kun minulta pettää jalat
 Auta kantamaan
 Paremmin vois nousta askel
 Auta kantamaan
-Ja kun lopulta kaadut 
+Ja kun lopulta kaadut
 Tee se pehmeästi
 
 Näin mua vituttaa matkallani
@@ -2047,28 +2054,28 @@ Humalan hetki
 Veikoille tahdon lauluni laulaa,
 toki vain lauluni laulaa.
 :,: Hei, komeasti koreasti lauluni laulaa,
-Veikkoset lauluni laulaa. :,: 
+Veikkoset lauluni laulaa. :,:
 
 Illan tullen Veikkoset laulaa,
 metsissä laulu raikaa.
 :,: Hei komeasti koreasti laulu raikaa,
-Veikkosten laulu raikaa. :,: 
+Veikkosten laulu raikaa. :,:
 
 Viini on Veikoille viisasten juoma,
 Veikoille viisasten juoma.
 :,: Hei komeasti koreasti viisasten juoma,
-Veikoille maistuupi juoma. :,: 
+Veikoille maistuupi juoma. :,:
 
 Veikkojen viitat yössä ne viuhuu,
 musta ja vihreä viuhuu.
 :,: Hei komeasti koreasti yössä ne viuhuu,
-Veikkoset yössä viuhuu. :,: 
+Veikkoset yössä viuhuu. :,:
 
 (hitaasti)
 Kaikki on hiljaa aamun tullen,
 valoisaa on aamun tullen.
 :,: Hei komeasti koreasti aamun tullen,
-Veikkoset aamun tullen. :,: 
+Veikkoset aamun tullen. :,:
 80. DI on irti
 (säv. Peto on irti, san. DI Otso Hannula, DI Asta Länsimies 2015)
 
@@ -2098,7 +2105,7 @@ DI on irti
 Ja se kesis oli et häh
 ketä luulet olevas täh
 sanoin sille et kato jätkä
-sä oot sä ja vielä teekkari, mut 
+sä oot sä ja vielä teekkari, mut
 on ollu polilla muutki
 vaik olis dippainssi
 ja mä tulin tänne bailaa
@@ -2151,7 +2158,7 @@ Mä tahdonkin, nyt laseihin sen aromin ja värinkin
 Suuni huokaa mulle tuokaa hei
 vaikk' Sorbus -EI!
 vaan Chardonnay.
-83. Cult of Dionysus
+83. Cult of Dionys.us
 (säv. san. The Orion Experience)
 
 Yesterday I heard you say
@@ -2187,6 +2194,8 @@ Let's get mischievous,
 And polyamorous.
 Wine and women and wonderful vices
 Welcome to the cult of Dionysus.
+
+
 84. Kansaanvälinen seikkaalusankari
 (säv. san. Kari Haapala)
 
@@ -2238,7 +2247,7 @@ Puhuusivat eres selvää suomia.
 Kulju, [inaudible]!
 
 :,: Tässä tulee ... :,:
-85. Tenttipäivän vala 
+85. Tenttipäivän vala
 (Säv. “Kuubalainen serenadi”,  San. Kylterit)
 
 Ja me panimme parastamme
@@ -2250,11 +2259,11 @@ ja otimme paperin
 Mut kysymykset vaikeet
 saivat silmämme kyyneliin
 
-Tuli otsalle tuskanhiki, 
+Tuli otsalle tuskanhiki,
 kostui molemmat kainalot
 Ei tainnut mennä läpi
 siihen loppuivat havainnot
-Me sammuimme kynttilöinä, 
+Me sammuimme kynttilöinä,
 vakan alle liekkimme jäi
 Oli vahtimestarin työnä
 meitä raahata ovelle päin
@@ -2388,14 +2397,14 @@ worries’n troubles all be gone
 For the worries‘n troubles are for them sobers
 We’re not carrying earthly burdens
 Jolly, chilly, hippy, tipsy, trashed and
-happily missing notes again 
+happily missing notes again
 
 Kossu the national drink of ours
 entertains us through the night
 much like during the older days it
-soothes and sets our minds to flight  
+soothes and sets our minds to flight
 Oh the lovely spirit Koskenkorva
-Drink it ‘n head for night’s nirvana 
+Drink it ‘n head for night’s nirvana
 cheerin ‘n festin ’n drinkin ‘n joyin
 brothers and sisters, bottoms up!
 92. IT-mies
@@ -2437,13 +2446,13 @@ ottaa ottaa colaa colaa
 sit voidaan ylikellottaa
 
 Mä katon sua…
-93. Seikilos-hymni 
+93. Seikilos-hymni
 (Eng. san. & sov. Hank Green https://www.youtube.com/watch?v=vxlste3JucU. Seikilos-hymni on Antiikin Kreikan aikainen sävelmä. Se on vanhin säilynyt kokonainen sävellys, jonka sanat ja sävel on kirjoitettu muistiin.)
 
-Hóson zêis phaínou	
-mēdén hólōs sy lypoû	
-pros olígon estí to zên	
-to télos ho chrónos apaiteî.	
+Hóson zêis phaínou
+mēdén hólōs sy lypoû
+pros olígon estí to zên
+to télos ho chrónos apaiteî.
 
 While you live, shine on
 be joyous and dance and seize the day
@@ -2489,9 +2498,9 @@ Mennään naimi(siin)
 Naimaan, mennään x4
 95. Fuck it all
 (säv. Frozen - Let It Go)
-The clock ticks by too fast this time 
+The clock ticks by too fast this time
 Not a moment to be lost
-A stack of books around me 
+A stack of books around me
 And it looks like it’s the day
 Finals are coming and we all must try our best
 But I’ve given up, I’ll just swing the test
@@ -2509,7 +2518,7 @@ I won’t take this bullshit anymore
 I don’t give a FUUUUUCK
 My grades never bothered me anyway
 96. Vapaudesta
-(säv. San. Kerkko Koskinen Kollektiivi) 
+(säv. San. Kerkko Koskinen Kollektiivi)
 Minä kaipaan ja himoan vapautta
 vaikken tiedä mitä se on
 sitä ettei ole ketään josta pitää huolta
@@ -2567,7 +2576,7 @@ ja kaikki kaunis katoaa
 phuksit kuolee aikanaan.
 
 Kaunis nörttinainen Laura on
-käytyään fyssalukion 
+käytyään fyssalukion
 päätti tutkijaksi ponnistaa
 lahjattomat tieltään lannistaa.
 
@@ -2584,7 +2593,7 @@ Laura valvoo yönsä nablaten,
 jumalauta, selviä en.
 
 Päivät päättyy krapulaan…
-98. Sata samppanjaa 
+98. Sata samppanjaa
 (säv. Vicky Rosti -  Sata salamaa, san. Matias Pietilä 2016)
 
 Sumenee katseet ja päät
@@ -2594,7 +2603,7 @@ promillet kun nousee.
 Dokataan pelkomme pois,
 kuka vain viedä mut vois.
 Kun huulet pulloon painautuu
-ja maksa laajenee. 
+ja maksa laajenee.
 Kun sata samppanjaa kuohuu auki
 ja koko elämä räjähtää,
 voi katonrajassa käydä hauki –
@@ -2611,10 +2620,10 @@ meille suojas anna.
 Totuuden tuopissas nään
 tulet luo, kuiskaten tään:
 Vain huikka meidän humalaan vie
-arjelta pelastaa. 
-(Kerto) 
+arjelta pelastaa.
+(Kerto)
 On tuolla tuhannet baarit ja
-tää yksi niistä meidän on. 
+tää yksi niistä meidän on.
 Kun sata samppanjaa kuohuu auki
 ja koko elämä räjähtää,
 minä turvaan vien tämän tarjottimen
@@ -2646,7 +2655,7 @@ Kun TKK:lle lähti poikaparka hakemaan
 
 No Maunon tuli aika sivuaine valita
 Vaan vaihtoehdot kaikki oli hyvin outoja
-Ei signaaleja käsitä tai tefyy laisinkaan. 
+Ei signaaleja käsitä tai tefyy laisinkaan.
 Mut oppaast' löytyi viestintää ja talouslaskentaa
 
 Yhtäkkiä hyllyt oli täynnä kirjoja
@@ -2665,38 +2674,7 @@ Liian myöhä oli valintojaan korjata
 Tutkinto siis täytyi ottaa ulos infolta
 100. Herwanta-Tupsula
 
-Kun yhden tähden jaloviinaa Annalassa juodaan
-Viattomat fuksitytöt Hervannasta tuodaan
-Hurahuhhahhei mistä helpoimmalla saadaan
-Sillä niin me tehdään Tupsulassa haureutta
-
-Hävitetään boomarit ja muutkin parasiitit
-Kauppakeskus Duon eessä kerjää humanistit
-Hallelujahei huutaa herraa teologit
-Juhlii sähkötalon kellarissa teekkarit
-
-Koulun katon alla riehuu krapulainen lauma
-Kohmelomme korjaa pizza, salmari ja sauna
-Hurahuhhahhei uuteen nousuun veikkokulta
-Kotiin teleporttaamalla tai ei ollenkaan
-
-Tetapk, titepk, ranska sekä saksa
-Juolahtaapi mieleen ify, statiikka ja raksa
-Hallelujahei turhuuksien luennoilla
-Istuu vuosi toisen jälkeen vanha konkari
-
-Teekkareilla jallupullot, wappu alkaa painaa
-Unohtunut nimi on jo wappuheilan varman 
-Hurahuhhahhei heitä pois ja hanki uusi
-Minna, Marjaliisa, Marjaleena, Marjukka
-
-Ja iltaisin se viiksivallu tulee puhuun säästä
-Happihyppelylle mutta jatkoille ei päästä
-Hallelujahei koulun päihdepolitiikka
-Killat, kerhohuoneet, etunurtsi, Bommari
-
-Yatzy ynnä Pude sekä Vulli että Kurkku
-Padassakin mitattu on näiden suurin auktoriteetti
+(auktoriteetti
 Hurahuhhahhei Keken vanha vessanpönttö
 Suurten seremonioiden kera haudattiin
 
@@ -2713,7 +2691,7 @@ Sillä niin me tehdään Tupsulassa haureutta
 (Mel. Hallelujah, San. Duo Karvattomat)
 
 Palkkakuitti rautaan kii
-Ei tarvii päivittää vuosikausiin 
+Ei tarvii päivittää vuosikausiin
 Bethesdankin pelit pyörii täysii
 No emon kanta on liian vanha
 GPU ei mahdu koppaan
@@ -2736,7 +2714,7 @@ horny-housewives.exe-
 taideleffa asuksen sai solmuun
 Oispa kaljaa…
 
-Foorumeiden partasuut 
+Foorumeiden partasuut
 On käyttiksiä vertaillut
 Kun bioskonffaus pelkältään on tylsää
 No windows tulehtuu liian helposti
@@ -2950,13 +2928,13 @@ I’m fun, dapper and funky
 And I’m not throwing away my shot!
 
 (soolo)
-I’m ‘a bring my a-best-gin to these tonics 
+I’m ‘a bring my a-best-gin to these tonics
 I prob’ly shouldn’t brag, but dag, we amaze and astonish
 the problem is you got a lot of mix no alcoholics
 I gotta holler not to slur words
 Amateur? No Sir! I drop colleagues!
 
-Here’s a diamond in the rough, a shifty spill of gold 
+Here’s a diamond in the rough, a shifty spill of gold
 Out my sleeve I fold my tool of choice: inconceivable.
 Only one star but the taste is older
 These baksu dishes ‘bout to get colder, we shoulder
@@ -2993,13 +2971,126 @@ I am not throwing away
 My shot
 Hey yo, I’m just like my party
 I’m fun, dapper and funky
-And I’m not throwing away my shot	 
+And I’m not throwing away my shot
 
 I am not throwing away my shot
 I am not throwing away my shot
 Hey yo, I’m just like my party
 I’m fun, dapper and funky
-And I’m not throwing away my shot	 
+And I’m not throwing away my shot
 
 It’s time to take a shot!
+109. Jatkoavec
+(San. Eevert Saukkokoski, mel. Sokeripala)
+
+Oi, jos oisit, kuomaseni, jatkoavecci
+Itse juomat tarjoilisin – viinaa, hemmetti!
+Veisin mukaan pöydän alle, että sanois kansa:
+taisi olla jallupullo liian paha ansa
+
+
+<lauletaan avecin lempiviinaoletetulla>
+Jos ei kelpaa, kuomaseni, juoma sheriffin
+Jotain muuta tarjoilisin – jallu helvett’hin!
+Kantaisin sut kotiin asti, että sanois kansa:
+taisi olla <lempi>pullo hälle rakkaimpansa
+110. Tämähän on vettä!
+(San. Emil Virkki, mel. Laura Närhi - Tämä on totta)
+
+Katoamaan
+Tätä lasia en saa
+Jeesuskaan ei voi sitä viiniksi muuttaa
+Tämä on vettä!
+Tämä on vettä!
+Tämä on vettä!
+111. Mimosa
+(San. Emil Virkki, mel. Tuomari Nurmio - Ramona)
+
+Sä olet darrapäivän pelastus, mimosa (mimosa)
+Jumalainen juomasekoitus, mimosa (mimosa)
+On pahoinvointi muisto vain
+Kun sinut, huulille mä sain
+Uuden päivän helppo aloitus, mimosa (mimosa)
+112. Todo otsikko
+(San. Emil Virkki, mel. Robin - Hula Hula)
+
+Mun silmis pyörii jallu-cola, jallu-cola
+Smökissä hirvittävä vola, vola vola
+Maistuisi toinen jallu-cola, jallu-cola
+Mut voisin ottaa ferratoniciiiiin
+Muuten kaadutaaaaaan (ferra cola)
+Aa-aaa-aaaa (ferra cola)
+113. Minkäslaista viinaa toi absintti on?
+(San. Ville Saukko Teekkarispeksiin 2018, mel. Viidakkokirja - Bare Necessities)
+
+A niin kuin absintti
+
+Tää herkku teille jaettu,
+Couvet'sta asti haettu,
+nyt paikkaa näiden häiden shampanjaa.
+Ei kalja, viini, viskikään
+oo malja juhlan vitsikkään.
+Vain absintilla aikaan samban saa.
+
+Vihreää kultaa, drinkki tai kaks
+Keijumaan multaa, suut makiaks
+Kun kurkkuun sintti solahtaa,
+Koiruoho koppaan kolahtaa,
+niin alkaa juhla hulvaton.
+Taattuja hurmatulvat on.
+
+Voi turhat huolet ja murheet unohtaa.
+
+Entä jos vaimo lahna on,
+tylsä kuin maito rasvaton,
+eikä mikään elämässä innosta.
+Mistä sais tylsään arkehen
+ees pienen riemun palasen?
+Siis kysyn kaverini puolesta.
+
+Vihreää kultaa, se yllättää
+Keijumaan multaan saat pyllähtää.
+Absintin saanhan ojentaa?
+Se teidät hurmaan komentaa.
+Se kutsuu uuteen seikkailuun.
+Se kutsuu keijun deittailuun.
+
+Voi oman vaimon kulahtaneen unohtaa.
+Vaimon unohtaa
+Huolet unohtaa
+Voi unohtaa
+
+
+
+113. Ihan rehelliset ryyppäjäiset
+(San. ES2018, mel. Kertosäe kappaleesta Samuli Putro - Tavalliset hautajaiset)
+
+Mä tahdon rehelliset ryyppäjäiset
+Ja jos mahdollista kaksi jallua
+Ei mitään suurta eikä mahtipontista
+Voi suunnitelmiin ehkä jatkot kuulua
+Mä tahdon rehelliset ryyppäjäiset
+Ja niiden jälkeen pikku jatkokekkerit
+Voi kellarissa ehkä ottaa shotteja
+Katharsis aamun tullen tuntuu karmalta
+
+Mä tahdon tavalliset bakkanaalit
+Ja jos mahdollista kolme veikkoa
+Ei mitään suurta eikä mahtipontista
+Voi illan tullen ehkä laulaa saunassa
+Mä tahdon tavalliset bakkanaalit
+Ja niiden jälkeen pikku jatkokekkerit
+Voi jallupöllön lailla hetken huhuilla
+Katharsis aamun tullen tuntuu karmalta
+
+Mä tahdon tavalliset hautajaiset
+mut jos mahdollista mausoleumissa
+Ei mitään suurta eikä mahtipontista
+kunhan siellä sisäl' mahtuu sitsata
+Mä tahdon tavalliset hautajaiset
+Ja niiden jälkeen pikku jatkokekkerit
+Voi taskupullon maun maistaa viitassa
+Katharsis aamun tullen tuntuu karmalta
+
+Mä tahdon tavalliset hautajaiset
 `
