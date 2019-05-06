@@ -45,7 +45,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
-    "build": "gatsby build",
+    "build": "./node_modules/.bin/gatsby build",
     "tsc:watch": "tsc -p tsconfig.json --watch",
     "test": "react-scripts-ts test --env=jsdom",
     "develop": "gatsby develop",
