@@ -391,7 +391,7 @@ pulloittain tarjoiltaessa on
 pulloissa jäljellä olevat
 alkoholijuomat palautettava.
 
-Kuitenkin välittömästi valomerkin antamisen jälkeen saadaan asiakkaalle kaataa perusannos
+Kuitenkin välittömästi valomerkin antamisen jälkeen saadaan asiakkaalle kaataa niin sanottu perusannos
 täyteen.
 
 Valomerkin jälkeen saadaan asiakkaalle
@@ -959,12 +959,12 @@ aika juoda on!
 (säv. Oi, kuusipuu, san. tuntematon)
 Nu tar vi den,
 nu tar vi den,
-  nu tar vi den,
-  nu tar vi den.
+    nu tar vi den,
+    nu tar vi den.
 Nu tar vi den,
 nu tar vi den,
-  nu tar vi den,
-  nu tar vi den.
+    nu tar vi den,
+    nu tar vi den.
 Nu tar vi den,
 nu tar vi den,
 nu tar vi den,
@@ -1019,7 +1019,7 @@ Hei, kyllä se siitä! Älä stressiä kahmi.
 Ja jos ei se riitä, vähän suklaata ahmi.
 
 Nyt hei ihan oikeesti mä tartun läppäriin
-ja väännän edes otsikon harjouturaporttiin.
+ja väännän edes otsikon harjoitusraporttiin.
 Sit toivon pääseväni uuteen flowhun viriiliin,
 mut siihen asti päätäni lyön macin näppäimiin.
 
@@ -1642,6 +1642,7 @@ morsian Ulla olla saa,
 nyt viime kerran saa.
 69. Vihreinkin puu
 (säv. Scarborough Fair, san. Otso Hannula 2014)
+
 Oota hetki niin kertoa saan
 Vihreinkin puu lakastuu
 Vaik’ riitä ei sanat tän tarinaan
@@ -1678,6 +1679,7 @@ totta
 
 71. Athenen pidot (eli tarina pohjolan synkimmästä kandiuudistuksesta)
 (säv. Pohjolan pidot, san. Pietari Keskinen & Piia Kuosmanen, Infoähky XV)
+
 Otaniemes’ kansa ompi opintojen vanki
 Pimeässä koodastellen paljoa ei hanki
 Mutta läpi talven seisoo otsassakin kanki
@@ -1717,7 +1719,8 @@ Siellä sössittiin
 Keväällä tyhjä oli Oodi niin :,:
 72. Tää ilta ja nää ihmiset
 (säv. Retropop - Tää ilta, san. Eevert Saukkokoski, Otso Hannula 2015)
-Kello kuudelta sitsikongi soi
+
+Kello kuudelta sitsigongi soi
 toisen skumppapullon Veikko vielä sapeloi
 Onhan se hienoo kun toiset tajuaa
 mitä juhlapöytäänsä juomaksi haluaa
@@ -1740,7 +1743,7 @@ pöytää kastelee
 Yöllä meno jatkuu vielä hurjemmin,
 viisi viherviittaa valtaa yhden dipolin
 Olohuoneen roskikseen joku oksentaa,
-tooinen viitan bussikuskille ojentaa
+toinen viitan bussikuskille ojentaa
 
 Tää ilta menee putkeen,
 viljaviinat menee viittaan
@@ -1763,7 +1766,7 @@ Kylpyhuoneen lattialle vaatteet riisutaan
 Tää ilta menee putkeen
 Tää ilta menee putkeen
 73. En ryyppää enää ikinä
-(säv. Hercules - I won’t Say (I’m In Love), san. Merituuli Melkko 2015)
+(säv. Hercules - I won’t Say [I’m In Love], san. Merituuli Melkko 2015)
 
 SOOLO:
 En humalaan mä tahdo lainkaan
@@ -2328,6 +2331,7 @@ Vissypullo kouraan ennen kun mä OK-SEN-NAN! OK-SEN-NAN! (Koska –)
 Ois se ihan nasta huomen' olla muistojaki
 88. Punaiset kuohut
 (säv. On hanget korkeat nietokset, san. Otso Hannula 2015)
+
 On kuohut tummat ja punaiset,
 kun viinii lasiini kaadan!
 Kun syksyn illat syvenee
@@ -2341,6 +2345,7 @@ tai Malbec mausteinen voimakas,
 sun luokses hämärään löydän.
 89. Malja Teekkarin
 (säv. trad. - The Parting Glass, san. Merituuli Melkko, Eevert Saukkokoski & Otso Hannula 2015)
+
 Oon seurassanne mä tuhlaillut
 Mut kaik' sen arvoist' on ollut
 Ja kaik' se mitä oon mokannut
@@ -2372,6 +2377,7 @@ Myös kerran poistut seurasta
 siks juo sä, veikko, riemulla
 90. Sankarit
 (säv. J. Karjalainen - Sankarit, san. pöllitty SIK:ltä, muokattu hyvin vähän)
+
 Mitä ne on ne sankarit
 sellaiset sankarikaljat
 joita koko juhlakansa unohtaa?
@@ -2390,6 +2396,7 @@ väljähtyneitä jokainen
 uuden oluen :,:
 91. Koskenkorva Polka
 (säv. Ievan Polkka, san. Pyry Huhtanen, Taneli Härmä & Mikko Latva-Käyrä 2016)
+
 Have you seen this Koskenkorva
 shining in our glasses now
 pure as snow and strong like polka
@@ -2498,6 +2505,7 @@ Mennään naimi(siin)
 Naimaan, mennään x4
 95. Fuck it all
 (säv. Frozen - Let It Go)
+
 The clock ticks by too fast this time
 Not a moment to be lost
 A stack of books around me
@@ -2519,6 +2527,7 @@ I don’t give a FUUUUUCK
 My grades never bothered me anyway
 96. Vapaudesta
 (säv. San. Kerkko Koskinen Kollektiivi)
+
 Minä kaipaan ja himoan vapautta
 vaikken tiedä mitä se on
 sitä ettei ole ketään josta pitää huolta
@@ -2673,20 +2682,52 @@ Ei auttanut nyt muu kuin Mauno-paran vaikertaa
 Liian myöhä oli valintojaan korjata
 Tutkinto siis täytyi ottaa ulos infolta
 100. Herwanta-Tupsula
+(Mel. Paleface: Helsinki - Shangri-La. Lähde: Lauluwiki #495)
 
-(auktoriteetti
-Hurahuhhahhei Keken vanha vessanpönttö
-Suurten seremonioiden kera haudattiin
+Kun yhden tähden jaloviinaa Annalassa juodaan,
+viattomat fuksitytöt Hervannasta tuodaan.
+Hurahuhhahhei! Mistä helpoimmalla saadaan,
+sillä niin me tehdään Tupsulassa haureutta.
 
-Lastentarhan sijoittelu kusee omaan nilkkaan
-Kun ikkunasta saattaa nähdä temmellyksen vilkkaan
-Hallelujahei nyt se kieltolaki voimaan
-Eihän täällä jumalauta pysty nukkumaan
+Hävitetään boomarit ja muutkin parasiitit,
+kauppakeskus Duon eessä kerjää humanistit.
+"Halleluujah hei!" huutaa herra teologit,
+juhlii sähkötalon kellarissa teekkarit.
 
-Kun yhden tähden jaloviinaa Annalassa juodaan
-Viattomat fuksitytöt Hervannasta tuodaan
-Hurahuhhahhei mistä helpoimmalla saadaan
-Sillä niin me tehdään Tupsulassa haureutta
+Koulun katon alla riehuu krapulainen lauma,
+kohmelomme korjaa pitsa salmari ja sauna.
+Hurahuhhahhei! Uuteen nousuun veikkokulta,
+kotiin teleporttaamalla tai ei ollenkaan.
+
+Tetapk, titepk, ranska sekä saksa,
+juolahtaapi mieleen ify, statiikka ja raksa.
+Halleluujah hei! Turhuuksien luennoilla
+istuu vuosi toisen jälkeen vanha konkari.
+
+Teekkareilla jallupullot, wappu alkaa painaa,
+unohtunut nimi on jo wappuheilan varman.
+Hurahuhhahhei! Heitä pois ja hanki uusi
+Minna, Marjaliisa, Marjaleena, Marjukka.
+
+Ja iltaisin se viiksivallu tulee puhuun säästä,
+happihyppelylle mutta jatkoille ei päästä.
+Halleluujah hei! Koulun päihdepolitiikka,
+killat, kerhohuoneet, etunurtsi, bommari.
+
+Yatzy ynnä Pude sekä Vulli että Kurkku,
+padassakin mitattu on näiden suurin auktoriteetti.
+Huhhahhei! Keken vanha vessanpönttö
+suurten seremonioiden kera haudattiin.
+
+Lastentarhan sijoittelu kusee omaan nilkkaan,
+ikkunasta saattaa nähdä temmellyksen vilkkaan.
+Hurahuhhahhei! Nyt se kieltolaki voimaan
+eihän täällä jumalauta pysty nukkumaan.
+
+Kun yhden tähden jaloviinaa Annalassa juodaan,
+viattomat fuksitytöt Hervannasta tuodaan.
+Hurahuhhahhei! Mistä helpoimmalla saadaan
+sillä niin me tehdään Tupsulassa haureutta.
 101. Oispa kaljaa
 (Mel. Hallelujah, San. Duo Karvattomat)
 
@@ -3062,7 +3103,7 @@ Voi unohtaa
 
 
 
-113. Ihan rehelliset ryyppäjäiset
+114. Ihan rehelliset ryyppäjäiset
 (San. ES2018, mel. Kertosäe kappaleesta Samuli Putro - Tavalliset hautajaiset)
 
 Mä tahdon rehelliset ryyppäjäiset
@@ -3093,4 +3134,303 @@ Voi taskupullon maun maistaa viitassa
 Katharsis aamun tullen tuntuu karmalta
 
 Mä tahdon tavalliset hautajaiset
+115. Rakettisnapsi
+(San. Erno Laakso, mel. Astro Boy theme 1980)
+
+Kun juhlamieli on ties’
+pelastaa pieni rakettimies.
+Lasin tän
+täyttää hän,
+kaataa nesteen räjähtävän.
+
+Siispä syöksyyn humalaa päin
+raketin lailla nousemme näin.
+Riemumielen
+saan kun nielen
+polttoaineen päihdyttävän.
+
+116. Aallon kesä
+(mel. Lapin Kesä, AMS:n vujulauluvihkosta 2018 poimittu)
+
+Niemessä kaikki juodaan nopeasti
+Niin viinit, olut, jallukolatkin
+Tuon usein tuntenut oon raskahasti
+Kun katson kansan Aallon vaiheisiin
+
+Miks miestä täällä kaikkialla sammuu
+Kuin lyhtyy, miestä, toiveen tosiaan
+Miest’ KY:n, killan miestä, kaikki kaatuu
+Tai kesken laulujensa nukahtaa
+
+Harmaina säihkyy mursuviiksen hapset
+Sedissä hehkuu hengen aurinko
+Tääl ukkoina jo saapuu fuksilapset
+On nuori tupsu dippaan valmis jo
+
+Ja minä itse, miksi näitä mietin?
+Se merkki varhaisen on vanhuuden
+Miks seuraaa käskyä en veren vietin
+Vaan tartun lasiin uuteen huokaillen
+
+On vastaus vain yksi: Aallon suvi
+Sit’ aatellessa mieli apeutuu
+On lyhyt fuksin kevät, laulu, huvi
+Ja nuorten kukoistus ja riemu muu
+
+Oi nuoret uudet vieraat Aallon kesän
+Te fuksit, mursut, teitä tervehdän
+Oi, tänne jääkää, tänne tehden pesän
+Jos muutattekin maihin etelän
+
+Oi oppi ottakaatte vanhuksista
+Ne kevääl lähtee, palaa syksyisin
+On meidän rannoillamme rauhallista
+Ja turvaisa on rinne Smökinkin
+
+Pöhisten halki ilman lentäkäätte
+Tekoja luokaa, maita valaiskaa
+Mut kesän poistuneen kun täältä näätte
+Ma rukoilen, ma pyydän, palatkaa
+
+
+117. Kuinka saisin teekkarista ystävän?
+mel. Kuinka saisin rikki kookospähkinän, AMS:n vujulauluvihkosta 2018 poimittu
+
+Kuinka saisin teekkarista ystävän?
+Minä ryhdyin jäätä särkemään
+Kaljaa annoin, aloin kellottaa
+Maksani hajos ja kuntoni vajos ja päädyin sairaalaan.
+
+Kuinka saisin teekkarista ystävän?
+Ei mimosat ei skumppa auta lain
+Mut sitten jatkoilla, mä annoin jallua
+Sillä teekkarista ystävän mä sain.
+
+Teekkarista vihdoin ystävän mä saa-aa-ain
+Nyt mä illat vietän kellareissa vain (Kellareissa!)
+On olo hatara, ja maksa hajalla
+mutta teekkarista ystävän mä sain.
+
+Kuinka saisin kylteristä ystävän?
+Tuumin ”juhlimaan sen Viroon lennätän!”
+Vaikka koetin kaiken tarjota
+Kylteri nuori oli kuin vuori, lisää vaati hän.
+
+Kuinka saisin kylteristä ystävän?
+Samppanjaa sit hakea mä sain.
+Nyt kansa naapurin ei kuulu ystäviin
+mut vihdoin kylteristä ystävän mä sain.
+
+Kylteristä vihdoin ystävän mä saa-aa-ain
+Nyt mä illat vietän yläkertsil’ ain (Yläkertsillä!)
+On tili tyhjänä ja isä ylpeä
+Koska kylteristä ystävän mä sain.
+
+Kuinka saisin ARTSilaisen ystävän?
+Päätin uudet keinot käyttöön ottaa vain
+Ostin fetsin, poltin pilveä
+kumisi pääni, kähisi ääni, ARTSifiilist’ hain.
+
+Kuinka saisin ARTSilaisen ystävän?
+Pettikö mun tyylitekniikkain?
+Mut olin coolina ja vähän pihalla
+Silloin ARTSilaisen ystävän mä sain.
+
+Silloin ARTSilaisen ystävän mä saa-aa-ain
+Vegesafkat nautin Arabias vain (Vegesafkat!)
+En tajuu taidetta, mut pidän ARTSista
+Viimein ARTSilaisen ystävän mä sain.
+
+118. Puuttuva palanen
+(san. Anastasia Lipiäinen, Otso Hannula 2014)
+
+Katot muhun
+ja mä hajoon suhun
+duuni koneen näytön edessä.
+Heti tajuun,
+ettei sua lue
+edes työni ohjaaja.
+Tää tuntuu vaikeelta,
+just niinku en osaa kirjoittaa.
+
+Mun mo-ti-vaatiosta
+puuttuu palanen
+ja uu se
+on dipan näköinen.
+Mun mo-ti-vaatiosta
+puuttuu palanen
+ja uu uu
+voi viina täyttää sen.
+
+Oot mun puuttuva inspiksein,
+mun puuttuva inspiksein.
+
+Turhatkin artsut
+zoteroin, en tajuu,
+kun sanakirja tähän auta ei.
+Yritän kelaa
+illalla vois relaa
+silti läppärini kotiin vein.
+Tää tuntuu turhalta,
+just niin kuin oisin kirjoittaa aina.
+
+Mun mo-ti-vaatiosta…
+
+119. Tempooon!
+(san. Otso Hannula 2018, mel. BESS - Tempo)
+
+Jos lauluu hidastetaan, mä huudan lisää tempoo
+Tempoon tempoon tempoon
+Tempoon tempoon tempoon
+Tempoon tempoon tempoon
+Tempoon tempoon
+
+Gongista jälkiruokaan, se menee tähän tempoon
+Tempoon tempoon tempoon
+Ja jos me hidastutaan, ne huutaa lisää tempoo:
+"tempoon tempoon tempoon"
+(Niinku)
+Dam dam dam dadam dadam dam dam
+Dam dam dam dadam
+Tähän tempoon
+Dam dam dam dadam dadam dam dam
+Dam dam dam dadam
+Tähän tempoon
+
+Hei tenttu-ukot hyppii, tähän tempoon
+Kun viinipullon auki, tähän tempoon
+Lyökäämme lasit pojat tähän tempoon
+Tahtoisin konjakinkin, tai jalluu pöytään
+
+Gongista jälkiruokaan, se menee tähän tempoon
+Tempoon tempoon tempoon
+Ja jos me hidastutaan, ne huutaa lisää tempoo:
+"tempoon tempoon tempoon"
+(Niinku)
+Dam dam dam dadam dadam dam dam
+Dam dam dam dadam
+Tähän tempoon!
+Dam dam dam dadam dadam dam dam
+Dam dam dam dadam
+Tähän tempoon!
+
+Ko-ko-koskenkorvaa, tähän tempoon
+Tänään otetaan me tähän tempoon
+Jos eukkos' kieltää sua tähän tempoon
+Sata kaljaa iskee, ja kaikki räjähtää
+
+Mut jos se hidastuu taas…
+Tempoon tempoon tempoon
+Mä huudan lisää samaa!
+Tempoon tempoon tempoon
+
+(Niinku)
+Dam dam dam dadam….
+
+120. Saisinpa skumppaa
+(San. Erno Laakso, mel. Besame Mucho)
+
+Saisinpa -
+saisinpa skumppaa.
+Oloni pikaisen korjauksen tarpeessa on.
+
+Saisinko -
+saisinko skumppaa?
+Uudessa nousussa mieleni on vallaton!
+121. Votkaa
+(San. Eevert Saukkokoski 2018, mel. Korpiklaani – Vodka)
+
+KAIKKI: Votkaa! Votkaa! Votkaa! Votkaa!
+
+KAIKKI: Votkaa
+SOOLO: ja kova meno
+KAIKKI: Votkaa
+SOOLO: ja etukeno
+KAIKKI: Votkaa
+SOOLO: ja silmät kiiluu
+KAIKKI: Votkaa
+SOOLO: hivelee sieluu
+
+KAIKKI: Votkaa
+SOOLO: maistuu vielä
+KAIKKI: Votkaa
+SOOLO: liikkuu silmät
+KAIKKI: Votkaa
+SOOLO: voispa ottaa
+KAIKKI: Votkaa
+KAIKKI: – joo, votkaa!
+
+122. Skumppadaa
+(San. luultavasti Jyrki Luukko, Mel. Sammy Babitzin: Daa-da daa-da)
+
+Jälleen lähtee wappu voimaan,
+Kansa syöksyy karkeloimaan,
+Sulaa ilmaan sointi musiikin
+Tänne tultiin halki Suomen,
+Missä lienee koittaa huomen,
+On siellä skumppaa kuitenkin.
+
+Daa daa daa-da daa-da,
+Kiitää alla wappustrada,
+Aina skumppaa skumppaa jossakin on, on, on.
+Daa daa daa-da daa-da,
+Skumppaa meidän täytyy saada.
+Fuksit antaa mennä siitä vain näin!
+
+Skumppa pieni kohta koittaa,
+Juomakisan jaksaa voittaa.
+Kaikki mukaan, daa-da, daa-da, daa, daa!
+Juhlimaan on meidät luotu,
+kun on Otaniemeen tuotu,
+Jokainen nyt mukaan tulla jo saa.
+
+<kertsi>
+
+Teekkareiks on meidät luotu,
+Hieman wappumieltä suotu.
+Kaikki mukaan, daa-da, daa-da, daa, daa!
+Eilen oltiin kekkulissa,
+Huomenna en muista missä.
+Mutta tulkaa mukaan, skumppaa taas saa.
+
+<kertsi>
+
+123. Kullan ylistys
+(San. trad, Mel. trad. Venäjän Karjalasta peräisin oleva kansanlaulu. Painettuna ensimmäisen kerran vuonna 1855 Filip von Schantzin kokoelmassa Valituita Suomalaisia Kansan-lauluja 3 Wihko.)
+
+Minun kultani kaunis on,
+vaikk’ on kaitaluinen,
+minun kultani kaunis on,
+vaikk’ on kaitaluinen.
+Hei luulia illalla,
+vaikk’ on kaitaluinen,
+hei luulia illalla,
+vaikk’ on kaitaluinen.
+
+Silmät sill’ on siniset,
+vaikk’ on kieronlaiset,
+silmät sill’ on siniset,
+vaikk’ on kieronlaiset.
+Hei luulia illalla,
+vaikk’ on kieronlaiset,
+hei luulia illalla,
+vaikk’ on kieronlaiset.
+
+Suu on sillä supukka,
+vaikk’ on toista syltä,
+suu on sillä supukka,
+vaikk’ on toista syltä.
+Hei luulia illalla,
+vaikk’ on toista syltä,
+hei luulia illalla,
+vaikk’ on toista syltä.
+
+Kun minä vien sen markkinoille, niin
+hevosetkin nauraa,
+kun minä vien sen markkinoille, niin
+hevosetkin nauraa.
+Hei luulia hah hah haa,
+hevosetkin nauraa,
+hei luulia hah hah haa,
+hevosetkin nauraa.
 `
