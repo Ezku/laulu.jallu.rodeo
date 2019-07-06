@@ -40,7 +40,7 @@
     "tslint": "^5.9.1",
     "tslint-config-standard": "^7.0.0",
     "typescript": "^2.8.1",
-    "unorm": "^1.4.1",
+    "unorm": "^1.6.0",
     "webfontloader": "^1.6.28"
   },
   "scripts": {
