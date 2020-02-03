@@ -29,7 +29,7 @@
     "gatsby-react-router-scroll": "^1.0.14",
     "glamor": "^2.20.40",
     "glamorous": "^4.9.7",
-    "minireset.css": "^0.0.3",
+    "minireset.css": "^0.0.6",
     "npm-run-all": "^4.1.2",
     "parsimmon": "^1.6.2",
     "react": "^16.3.0",
